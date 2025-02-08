@@ -1,0 +1,23 @@
+# Changes here will be overwritten by Copier
+_commit: 793ee0d
+_src_path: gh:browniebroke/pypackage-template
+add_me_as_contributor: true
+cli_name: tea-data-file-conversion
+copyright_year: '2025'
+documentation: true
+email: mamoreno@aldineisd.org
+full_name: Mark Moreno
+github_username: markm-io
+has_cli: true
+initial_commit: true
+is_django_package: false
+open_source_license: MIT
+package_name: tea_data_file_conversion
+project_name: tea-data-file-conversion
+project_short_description: Fixedwidth Processor is a Python package designed to transform
+    fixed-width text files into CSVs using dynamic YAML schema configurations.
+project_slug: tea-data-file-conversion
+run_uv_sync: true
+setup_github: false
+setup_pre_commit: true
+
