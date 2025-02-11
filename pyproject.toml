@@ -26,6 +26,9 @@ classifiers = [
 ]
 
 dependencies = [
+  "importlib-resources>=6.5.2",
+  "pandas>=2.2.3",
+  "pyyaml>=6.0.2",
   "rich>=10",
   "typer>=0.15,<1",
 ]
@@ -49,10 +52,9 @@ docs = [
 
 [tool.ruff]
 target-version = "py39"
-line-length = 88
+line-length = 120
 lint.select = [
-  "B",   # flake8-bugbear
-  "D",   # flake8-docstrings
+  "B",   # flake8-bugbearlear
   "C4",  # flake8-comprehensions
   "S",   # flake8-bandit
   "F",   # pyflake
@@ -69,6 +71,7 @@ lint.ignore = [
   "D104", # Missing docstring in public package
   "D107", # Missing docstring in `__init__`
   "D401", # First line of docstring should be in imperative mood
+    "S324", # Use of insecure MD2, MD4, MD5, or SHA1 hash function
 ]
 lint.per-file-ignores."conftest.py" = [ "D100" ]
 lint.per-file-ignores."docs/conf.py" = [ "D100" ]
