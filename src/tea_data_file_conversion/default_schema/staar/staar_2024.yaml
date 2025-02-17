@@ -1,0 +1,2121 @@
+fields:
+  - start: 1
+    end: 4
+    output_field: "Administration and Student ID Information: Administration Date"
+    keep: true
+    mapped_field_name: "Student Information: Administration Date"
+  - start: 5
+    end: 6
+    output_field: "Administration and Student ID Information: Grade-Level-Tested"
+    keep: true
+    mapped_field_name: "Student Information: Tested Grade Level"
+  - start: 7
+    end: 8
+    output_field: "Administration and Student ID Information: ESC Region Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 9
+    end: 17
+    output_field:
+      "Administration and Student ID Information: County-District-Campus
+      Number"
+    keep: true
+    mapped_field_name: "Student Information: Campus Number"
+  - start: 18
+    end: 32
+    output_field: "Administration and Student ID Information: District-Name"
+    keep: false
+    mapped_field_name: .nan
+  - start: 33
+    end: 47
+    output_field: "Administration and Student ID Information: Campus-Name"
+    keep: true
+    mapped_field_name: "Student Information: Campus Name"
+  - start: 48
+    end: 62
+    output_field: "Administration and Student ID Information: Last-Name"
+    keep: false
+    mapped_field_name: .nan
+  - start: 63
+    end: 72
+    output_field: "Administration and Student ID Information: First-Name"
+    keep: false
+    mapped_field_name: .nan
+  - start: 73
+    end: 73
+    output_field: "Administration and Student ID Information: Middle Initial"
+    keep: false
+    mapped_field_name: .nan
+  - start: 74
+    end: 82
+    output_field: "Administration and Student ID Information: PEIMS ID"
+    keep: false
+    mapped_field_name: .nan
+  - start: 83
+    end: 83
+    output_field: "Administration and Student ID Information: Sex-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 84
+    end: 91
+    output_field: "Administration and Student ID Information: Date-of-birth"
+    keep: false
+    mapped_field_name: .nan
+  - start: 92
+    end: 92
+    output_field: "Administration and Student ID Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 93
+    end: 93
+    output_field: "Demographic Information: Hispanic-Latino-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 94
+    end: 94
+    output_field: "Demographic Information: American Indian-Alaska-Native-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 95
+    end: 95
+    output_field: "Demographic Information: Asian-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 96
+    end: 96
+    output_field: "Demographic Information: Black-African American-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 97
+    end: 97
+    output_field: "Demographic Information: Native-Hawaiian-Pacific-Islander- Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 98
+    end: 98
+    output_field: "Demographic Information: White-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 99
+    end: 99
+    output_field: "Demographic Information: Ethnicity/Race Reporting Category"
+    keep: false
+    mapped_field_name: .nan
+  - start: 100
+    end: 100
+    output_field: "Demographic Information: Economic-Disadvantage-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 101
+    end: 101
+    output_field: "Demographic Information: Title-I-Part-A-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 102
+    end: 102
+    output_field: "Demographic Information: Migrant-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 103
+    end: 106
+    output_field: "Demographic Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 107
+    end: 107
+    output_field: "Demographic Information: Emergent-Bilingual-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 108
+    end: 108
+    output_field: "Demographic Information: Bilingual-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 109
+    end: 109
+    output_field: "Demographic Information: ESL-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 110
+    end: 110
+    output_field: "Demographic Information: Fall 2023 TSDS PEIMS Homeless- Status-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 111
+    end: 111
+    output_field: "Demographic Information: Special-Ed-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 112
+    end: 112
+    output_field: "Demographic Information: Section-504-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 113
+    end: 116
+    output_field: "Demographic Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 117
+    end: 117
+    output_field: "Demographic Information: Gifted-Talented-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 118
+    end: 118
+    output_field: "Demographic Information: At-Risk-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 119
+    end: 122
+    output_field: "Demographic Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 123
+    end: 131
+    output_field: "Other Student Information: Local-Student-ID"
+    keep: true
+    mapped_field_name: "Student Information: Local Student ID"
+  - start: 132
+    end: 140
+    output_field: "Other Student Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 141
+    end: 142
+    output_field: "Other Student Information: Enrolled Grade"
+    keep: true
+    mapped_field_name: "Student Information: Enrolled Grade"
+  - start: 143
+    end: 143
+    output_field: "Other Student Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 144
+    end: 152
+    output_field:
+      "Other Student Information: Fall 2023 TSDS PEIMS County-District-Campus
+      Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 153
+    end: 154
+    output_field: "Other Student Information: Fall 2023 TSDS PEIMS Student-Language-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 155
+    end: 156
+    output_field: "Other Student Information: Fall 2023 TSDS PEIMS Student-Attribution-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 157
+    end: 162
+    output_field: "Other Student Information: Family Portal Unique Access Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 163
+    end: 163
+    output_field:
+      "Other Student Information: Migrant Student in Texas Migrant Interstate
+      Program (TMIP)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 164
+    end: 164
+    output_field: "Other Student Information: Fall 2023 TSDS PEIMS Military- Connected-Student-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 165
+    end: 165
+    output_field: "Other Student Information: Fall 2023 TSDS PEIMS Foster-Care- Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 166
+    end: 185
+    output_field: "Other Student Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 186
+    end: 186
+    output_field: "Other Student Information: Fall 2023 TSDS PEIMS Dyslexia- Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 187
+    end: 189
+    output_field: "Other Student Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 190
+    end: 190
+    output_field: "Other Student Information: New to Texas"
+    keep: false
+    mapped_field_name: .nan
+  - start: 191
+    end: 200
+    output_field: "Other Student Information: TSDS-ID"
+    keep: true
+    mapped_field_name: "Student Information: TSDS ID"
+  - start: 201
+    end: 204
+    output_field: "Subject Information: Local Use - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 205
+    end: 208
+    output_field: "Subject Information: Local Use - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 209
+    end: 212
+    output_field: "Subject Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 213
+    end: 216
+    output_field: "Subject Information: Local Use - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 217
+    end: 220
+    output_field: "Subject Information: Local Use - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 221
+    end: 221
+    output_field: "Subject Information: Agency Use Code A - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 222
+    end: 222
+    output_field: "Subject Information: Agency Use Code B - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 223
+    end: 223
+    output_field: "Subject Information: Agency Use Code C - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 224
+    end: 224
+    output_field: "Subject Information: Agency Use Code D - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 225
+    end: 225
+    output_field: "Subject Information: Agency Use Code E - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 226
+    end: 226
+    output_field: "Subject Information: Agency Use Code A - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 227
+    end: 227
+    output_field: "Subject Information: Agency Use Code B - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 228
+    end: 228
+    output_field: "Subject Information: Agency Use Code C - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 229
+    end: 229
+    output_field: "Subject Information: Agency Use Code D - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 230
+    end: 230
+    output_field: "Subject Information: Agency Use Code E - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 231
+    end: 235
+    output_field: "Subject Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 236
+    end: 236
+    output_field: "Subject Information: Agency Use Code A - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 237
+    end: 237
+    output_field: "Subject Information: Agency Use Code B - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 238
+    end: 238
+    output_field: "Subject Information: Agency Use Code C - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 239
+    end: 239
+    output_field: "Subject Information: Agency Use Code D - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 240
+    end: 240
+    output_field: "Subject Information: Agency Use Code E - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 241
+    end: 241
+    output_field: "Subject Information: Agency Use Code A - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 242
+    end: 242
+    output_field: "Subject Information: Agency Use Code B - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 243
+    end: 243
+    output_field: "Subject Information: Agency Use Code C - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 244
+    end: 244
+    output_field: "Subject Information: Agency Use Code D - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 245
+    end: 245
+    output_field: "Subject Information: Agency Use Code E - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 246
+    end: 246
+    output_field: "Subject Information: EOC/Above Grade - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 247
+    end: 247
+    output_field: "Subject Information: EOC/Above Grade - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 248
+    end: 248
+    output_field: "Subject Information: EOC/Above Grade - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 249
+    end: 249
+    output_field: "Subject Information: EOC/Above Grade - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 250
+    end: 251
+    output_field: "Subject Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 252
+    end: 252
+    output_field: "Accommodations Information: Speech-to-Text - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 253
+    end: 253
+    output_field:
+      "Accommodations Information: Braille/Refreshable Braille Device and
+      Screen Reader - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 254
+    end: 254
+    output_field: "Accommodations Information: Large Print - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 255
+    end: 255
+    output_field:
+      "Accommodations Information: Non-Embedded Designated Supports - Reading
+      Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 256
+    end: 256
+    output_field: "Accommodations Information: Extra Day - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 257
+    end: 257
+    output_field: "Accommodations Information: Word-Prediction - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 258
+    end: 258
+    output_field: "Accommodations Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 259
+    end: 259
+    output_field: "Accommodations Information: Text-to-Speech - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 260
+    end: 260
+    output_field: "Accommodations Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 261
+    end: 261
+    output_field: "Accommodations Information: Spell Check - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 262
+    end: 262
+    output_field:
+      "Accommodations Information: Content and Language Supports - Reading
+      Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 263
+    end: 263
+    output_field:
+      "Accommodations Information: ASL Signed Videos - Reading Language
+      Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 264
+    end: 272
+    output_field: "Accommodations Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 273
+    end: 273
+    output_field:
+      "Accommodations Information: Braille/Refreshable Braille Device and
+      Screen Reader - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 274
+    end: 274
+    output_field: "Accommodations Information: Large Print - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 275
+    end: 275
+    output_field: "Accommodations Information: Non-Embedded Designated Supports - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 276
+    end: 276
+    output_field: "Accommodations Information: Extra Day - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 277
+    end: 277
+    output_field: "Accommodations Information: Basic Calculator - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 278
+    end: 278
+    output_field: "Accommodations Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 279
+    end: 279
+    output_field: "Accommodations Information: Text-to-Speech - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 280
+    end: 281
+    output_field: "Accommodations Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 282
+    end: 282
+    output_field: "Accommodations Information: Content and Language Supports - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 283
+    end: 283
+    output_field: "Accommodations Information: ASL Signed Videos - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 284
+    end: 285
+    output_field: "Accommodations Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 286
+    end: 286
+    output_field:
+      "Accommodations Information: Auto Text-to-Speech - Reading Language
+      Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 287
+    end: 287
+    output_field: "Accommodations Information: Auto Text-to-Speech - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 288
+    end: 288
+    output_field: "Accommodations Information: Auto Text-to-Speech - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 289
+    end: 289
+    output_field: "Accommodations Information: Auto Text-to-Speech - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 290
+    end: 311
+    output_field: "Accommodations Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 312
+    end: 312
+    output_field: "Accommodations Information: Speech-to-Text - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 313
+    end: 313
+    output_field:
+      "Accommodations Information: Braille/Refreshable Braille Device and
+      Screen Reader - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 314
+    end: 314
+    output_field: "Accommodations Information: Large Print - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 315
+    end: 315
+    output_field:
+      "Accommodations Information: Non-Embedded Designated Supports - Social
+      Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 316
+    end: 316
+    output_field: "Accommodations Information: Extra Day - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 317
+    end: 317
+    output_field: "Accommodations Information: Word-Prediction - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 318
+    end: 318
+    output_field: "Accommodations Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 319
+    end: 319
+    output_field: "Accommodations Information: Text-to-Speech - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 320
+    end: 320
+    output_field: "Accommodations Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 321
+    end: 321
+    output_field: "Accommodations Information: Spell Check - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 322
+    end: 322
+    output_field:
+      "Accommodations Information: Content and Language Supports - Social
+      Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 323
+    end: 323
+    output_field: "Accommodations Information: ASL Signed Videos - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 324
+    end: 331
+    output_field: "Accommodations Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 332
+    end: 332
+    output_field: "Accommodations Information: Speech-to-Text - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 333
+    end: 333
+    output_field:
+      "Accommodations Information: Braille/Refreshable Braille Device and
+      Screen Reader - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 334
+    end: 334
+    output_field: "Accommodations Information: Large Print - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 335
+    end: 335
+    output_field: "Accommodations Information: Non-Embedded Designated Supports - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 336
+    end: 336
+    output_field: "Accommodations Information: Extra Day - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 337
+    end: 337
+    output_field: "Accommodations Information: Basic Calculator - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 338
+    end: 338
+    output_field: "Accommodations Information: Word-Prediction - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 339
+    end: 339
+    output_field: "Accommodations Information: Text-to-Speech - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 340
+    end: 340
+    output_field: "Accommodations Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 341
+    end: 341
+    output_field: "Accommodations Information: Spell Check - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 342
+    end: 342
+    output_field: "Accommodations Information: Content and Language Supports - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 343
+    end: 343
+    output_field: "Accommodations Information: ASL Signed Videos - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 344
+    end: 350
+    output_field: "Accommodations Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 351
+    end: 351
+    output_field: "Score Code Information: Score Code - Reading Language Arts"
+    keep: true
+    mapped_field_name: "Reading Language Arts: Score Code"
+  - start: 352
+    end: 352
+    output_field: "Score Code Information: Score Code - Mathematics"
+    keep: true
+    mapped_field_name: "Mathematics: Score Code"
+  - start: 353
+    end: 353
+    output_field: "Score Code Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 354
+    end: 354
+    output_field: "Score Code Information: Score Code - Social Studies"
+    keep: true
+    mapped_field_name: "Social Studies: Score Code"
+  - start: 355
+    end: 355
+    output_field: "Score Code Information: Score Code - Science"
+    keep: true
+    mapped_field_name: "Science: Score Code"
+  - start: 356
+    end: 400
+    output_field: "Score Code Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 401
+    end: 402
+    output_field:
+      "Reading Language Arts Subject Information: Reading Language Arts
+      Reporting Category 1 Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 403
+    end: 404
+    output_field:
+      "Reading Language Arts Subject Information: Reading Language Arts
+      Reporting Category 2 Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 405
+    end: 406
+    output_field:
+      "Reading Language Arts Subject Information: Performance Level Indicator
+      - Reading Language Arts"
+    keep: true
+    mapped_field_name: "Reading Language Arts: Performance Level Indicator"
+  - start: 407
+    end: 408
+    output_field:
+      "Reading Language Arts Subject Information: Reading Language Arts
+      Raw Score"
+    keep: true
+    mapped_field_name: "Reading Language Arts: Raw Score"
+  - start: 409
+    end: 412
+    output_field:
+      "Reading Language Arts Subject Information: Reading Language Arts
+      Scale Score"
+    keep: true
+    mapped_field_name: "Reading Language Arts: Scale Score"
+  - start: 413
+    end: 413
+    output_field:
+      "Reading Language Arts Subject Information: Reading Language Arts
+      Test Language Version"
+    keep: true
+    mapped_field_name: "Reading Language Arts: Tested Language"
+  - start: 414
+    end: 414
+    output_field:
+      "Reading Language Arts Subject Information: Reading Language Arts
+      Test Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 415
+    end: 415
+    output_field:
+      "Reading Language Arts Subject Information: Test Administration Mode
+      - Reading Language Arts"
+    keep: true
+    mapped_field_name: "Reading Language Arts: Administration Mode"
+  - start: 416
+    end: 422
+    output_field: "Reading Language Arts Subject Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 423
+    end: 423
+    output_field:
+      "Reading Language Arts Subject Information: Meets Grade Level in Reading
+      Language Arts"
+    keep: true
+    mapped_field_name: "Reading Language Arts: Meets Grade Level"
+  - start: 424
+    end: 424
+    output_field:
+      "Reading Language Arts Subject Information: Approaches Grade Level
+      in Reading Language Arts"
+    keep: true
+    mapped_field_name: "Reading Language Arts: Approaches Grade Level"
+  - start: 425
+    end: 425
+    output_field:
+      "Reading Language Arts Subject Information: Masters Grade Level in
+      Reading Language Arts"
+    keep: true
+    mapped_field_name: "Reading Language Arts: Masters Grade Level"
+  - start: 426
+    end: 426
+    output_field:
+      "Reading Language Arts STAAR Progress Measure Information: STAAR Progress
+      Measure - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 427
+    end: 428
+    output_field: "Reading Language Arts STAAR Progress Measure Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 429
+    end: 429
+    output_field:
+      "Reading Language Arts STAAR Progress Measure Information: On-Track
+      to Meet Grade Level - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 430
+    end: 433
+    output_field:
+      "Reading Language Arts STAAR Progress Measure Information: Previous-Year
+      Administration Date - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 434
+    end: 437
+    output_field:
+      "Reading Language Arts STAAR Progress Measure Information: Previous-Year
+      Scale Score - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 438
+    end: 438
+    output_field:
+      "Reading Language Arts STAAR Progress Measure Information: Previous-Year
+      Language Version - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 439
+    end: 439
+    output_field: "Reading Language Arts STAAR Progress Measure Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 440
+    end: 440
+    output_field:
+      "Reading Language Arts STAAR Progress Measure Information: Previous-Year
+      Score Code - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 441
+    end: 441
+    output_field: "Reading Language Arts STAAR Progress Measure Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 442
+    end: 442
+    output_field:
+      "Reading Language Arts STAAR Progress Measure Information: Previous-Year
+      Masters Grade Level - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 443
+    end: 444
+    output_field:
+      "Reading Language Arts STAAR Progress Measure Information: Previous-Year
+      Tested Grade - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 445
+    end: 445
+    output_field:
+      "Reading Language Arts English Learner (EL) Performance Measure Information:
+      EL Performance Measure - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 446
+    end: 450
+    output_field:
+      "Reading Language Arts English Learner (EL) Performance Measure Information:
+      Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 451
+    end: 495
+    output_field:
+      "Reading Language Arts Item Level Information: Item Reporting Category
+      Numbers - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 496
+    end: 502
+    output_field: "Reading Language Arts Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 503
+    end: 547
+    output_field:
+      "Reading Language Arts Item Level Information: Item Student Responses
+      - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 548
+    end: 554
+    output_field: "Reading Language Arts Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 555
+    end: 599
+    output_field:
+      "Reading Language Arts Item Level Information: Item Correct Responses
+      - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 600
+    end: 606
+    output_field: "Reading Language Arts Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 607
+    end: 611
+    output_field: "Reading Language Arts Item Level Information: Lexile Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 612
+    end: 614
+    output_field:
+      "Reading Language Arts Item Level Information: Percentile - Reading
+      Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 615
+    end: 616
+    output_field:
+      "Reading Language Arts Item Level Information: Extended Constructed
+      Response Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 617
+    end: 750
+    output_field: "Reading Language Arts Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 751
+    end: 752
+    output_field:
+      "Mathematics Subject Information: Mathematics Reporting Category 1
+      Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 753
+    end: 754
+    output_field:
+      "Mathematics Subject Information: Mathematics Reporting Category 2
+      Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 755
+    end: 756
+    output_field:
+      "Mathematics Subject Information: Mathematics Reporting Category 3
+      Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 757
+    end: 758
+    output_field:
+      "Mathematics Subject Information: Mathematics Reporting Category 4
+      Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 759
+    end: 760
+    output_field: "Mathematics Subject Information: Performance Level Indicator - Mathematics"
+    keep: true
+    mapped_field_name: "Mathematics: Performance Level Indicator"
+  - start: 761
+    end: 762
+    output_field: "Mathematics Subject Information: Mathematics Raw Score"
+    keep: true
+    mapped_field_name: "Mathematics: Raw Score"
+  - start: 763
+    end: 766
+    output_field: "Mathematics Subject Information: Mathematics Scale Score"
+    keep: true
+    mapped_field_name: "Mathematics: Scale Score"
+  - start: 767
+    end: 767
+    output_field: "Mathematics Subject Information: Mathematics Test Language Version"
+    keep: true
+    mapped_field_name: "Mathematics: Tested Language"
+  - start: 768
+    end: 768
+    output_field: "Mathematics Subject Information: Mathematics Test Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 769
+    end: 769
+    output_field: "Mathematics Subject Information: Test Administration Mode - Mathematics"
+    keep: true
+    mapped_field_name: "Mathematics: Administration Mode"
+  - start: 770
+    end: 776
+    output_field: "Mathematics Subject Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 777
+    end: 777
+    output_field: "Mathematics Subject Information: Meets Grade Level in Mathematics"
+    keep: true
+    mapped_field_name: "Mathematics: Meets Grade Level"
+  - start: 778
+    end: 778
+    output_field: "Mathematics Subject Information: Approaches Grade Level in Mathematics"
+    keep: true
+    mapped_field_name: "Mathematics: Approaches Grade Level"
+  - start: 779
+    end: 779
+    output_field: "Mathematics Subject Information: Masters Grade Level in Mathematics"
+    keep: true
+    mapped_field_name: "Mathematics: Masters Grade Level"
+  - start: 780
+    end: 780
+    output_field:
+      "Mathematics STAAR Progress Measure Information: STAAR Progress Measure
+      - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 781
+    end: 781
+    output_field: "Mathematics STAAR Progress Measure Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 782
+    end: 782
+    output_field:
+      "Mathematics STAAR Progress Measure Information: On-Track to Meet
+      Grade Level - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 783
+    end: 786
+    output_field:
+      "Mathematics STAAR Progress Measure Information: Previous-Year Administration
+      Date - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 787
+    end: 790
+    output_field:
+      "Mathematics STAAR Progress Measure Information: Previous-Year Scale
+      Score - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 791
+    end: 791
+    output_field:
+      "Mathematics STAAR Progress Measure Information: Previous-Year Language
+      Version - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 792
+    end: 792
+    output_field: "Mathematics STAAR Progress Measure Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 793
+    end: 793
+    output_field:
+      "Mathematics STAAR Progress Measure Information: Previous-Year Score
+      Code - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 794
+    end: 794
+    output_field: "Mathematics STAAR Progress Measure Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 795
+    end: 795
+    output_field:
+      "Mathematics STAAR Progress Measure Information: Previous-Year Masters
+      Grade Level- Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 796
+    end: 797
+    output_field:
+      "Mathematics STAAR Progress Measure Information: Previous-Year Tested
+      Grade - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 798
+    end: 798
+    output_field:
+      "Mathematics English Learner (EL) Performance Measure Information:
+      EL Performance Measure - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 799
+    end: 800
+    output_field:
+      "Mathematics English Learner (EL) Performance Measure Information:
+      Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 801
+    end: 840
+    output_field:
+      "Mathematics Item Level Information: Item Reporting Category Numbers
+      - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 841
+    end: 856
+    output_field: "Mathematics Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 857
+    end: 896
+    output_field: "Mathematics Item Level Information: Item Student Responses - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 897
+    end: 912
+    output_field: "Mathematics Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 913
+    end: 952
+    output_field: "Mathematics Item Level Information: Item Correct Responses - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 953
+    end: 968
+    output_field: "Mathematics Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 969
+    end: 971
+    output_field: "Mathematics Item Level Information: Percentile - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 972
+    end: 976
+    output_field: "Mathematics Item Level Information: Quantile Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 977
+    end: 977
+    output_field: "Mathematics Item Level Information: Mathematics Badge Indicator"
+    keep: false
+    mapped_field_name: .nan
+  - start: 978
+    end: 1017
+    output_field: "Mathematics Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1018
+    end: 1057
+    output_field: "Mathematics Item Level Information: Points Possible - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1058
+    end: 1097
+    output_field: "Mathematics Item Level Information: Points Achieved - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1098
+    end: 1102
+    output_field: "Mathematics Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1103
+    end: 1147
+    output_field:
+      "Reading Language Arts Item Points Information: Points Possible -
+      Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1148
+    end: 1192
+    output_field:
+      "Reading Language Arts Item Points Information: Points Achieved -
+      Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1193
+    end: 1500
+    output_field: "Reading Language Arts Item Points Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1501
+    end: 1502
+    output_field:
+      "Social Studies Subject Information: Social Studies Reporting Category
+      1 Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1503
+    end: 1504
+    output_field:
+      "Social Studies Subject Information: Social Studies Reporting Category
+      2 Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1505
+    end: 1506
+    output_field:
+      "Social Studies Subject Information: Social Studies Reporting Category
+      3 Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1507
+    end: 1508
+    output_field:
+      "Social Studies Subject Information: Social Studies Reporting Category
+      4 Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1509
+    end: 1510
+    output_field: "Social Studies Subject Information: Social Studies Raw Score"
+    keep: true
+    mapped_field_name: "Social Studies: Raw Score"
+  - start: 1511
+    end: 1514
+    output_field: "Social Studies Subject Information: Social Studies Scale Score"
+    keep: true
+    mapped_field_name: "Social Studies: Scale Score"
+  - start: 1515
+    end: 1515
+    output_field:
+      "Social Studies Subject Information: Social Studies Test Language
+      Version"
+    keep: true
+    mapped_field_name: "Social Studies: Tested Language"
+  - start: 1516
+    end: 1516
+    output_field: "Social Studies Subject Information: Social Studies Test Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1517
+    end: 1517
+    output_field:
+      "Social Studies Subject Information: Test Administration Mode - Social
+      Studies"
+    keep: true
+    mapped_field_name: "Social Studies: Administration Mode"
+  - start: 1518
+    end: 1518
+    output_field: "Social Studies Subject Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1519
+    end: 1520
+    output_field:
+      "Social Studies Subject Information: Performance Level Indicator -
+      Social Studies"
+    keep: true
+    mapped_field_name: "Social Studies: Performance Level Indicator"
+  - start: 1521
+    end: 1524
+    output_field: "Social Studies Subject Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1525
+    end: 1525
+    output_field: "Social Studies Subject Information: Meets Grade Level in Social Studies"
+    keep: true
+    mapped_field_name: "Social Studies: Meets Grade Level"
+  - start: 1526
+    end: 1526
+    output_field:
+      "Social Studies Subject Information: Approaches Grade Level in Social
+      Studies"
+    keep: true
+    mapped_field_name: "Social Studies: Approaches Grade Level"
+  - start: 1527
+    end: 1527
+    output_field:
+      "Social Studies Subject Information: Masters Grade Level in Social
+      Studies"
+    keep: true
+    mapped_field_name: "Social Studies: Masters Grade Level"
+  - start: 1528
+    end: 1528
+    output_field:
+      "Social Studies English Learner (EL) Performance Measure Information:
+      EL Performance Measure - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1529
+    end: 1600
+    output_field:
+      "Social Studies English Learner (EL) Performance Measure Information:
+      Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1601
+    end: 1640
+    output_field:
+      "Social Studies Item Level Information: Item Reporting Category Numbers
+      - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1641
+    end: 1652
+    output_field: "Social Studies Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1653
+    end: 1692
+    output_field:
+      "Social Studies Item Level Information: Item Student Responses - Social
+      Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1693
+    end: 1704
+    output_field: "Social Studies Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1705
+    end: 1744
+    output_field:
+      "Social Studies Item Level Information: Item Correct Responses - Social
+      Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1745
+    end: 1756
+    output_field: "Social Studies Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1757
+    end: 1759
+    output_field: "Social Studies Item Level Information: Percentile - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1760
+    end: 1799
+    output_field: "Social Studies Item Level Information: Points Possible - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1800
+    end: 1816
+    output_field: "Social Studies Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1817
+    end: 1856
+    output_field: "Social Studies Item Level Information: Points Achieved - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1857
+    end: 1900
+    output_field: "Social Studies Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1901
+    end: 1902
+    output_field: "Science Subject Information: Science Reporting Category 1 Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1903
+    end: 1904
+    output_field: "Science Subject Information: Science Reporting Category 2 Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1905
+    end: 1906
+    output_field: "Science Subject Information: Science Reporting Category 3 Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1907
+    end: 1908
+    output_field: "Science Subject Information: Science Reporting Category 4 Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1909
+    end: 1910
+    output_field: "Science Subject Information: Science Raw Score"
+    keep: true
+    mapped_field_name: "Science: Raw Score"
+  - start: 1911
+    end: 1914
+    output_field: "Science Subject Information: Science Scale Score"
+    keep: true
+    mapped_field_name: "Science: Scale Score"
+  - start: 1915
+    end: 1915
+    output_field: "Science Subject Information: Science Test Language Version"
+    keep: true
+    mapped_field_name: "Science: Tested Language"
+  - start: 1916
+    end: 1916
+    output_field: "Science Subject Information: Science Test Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1917
+    end: 1917
+    output_field: "Science Subject Information: Test Administration Mode - Science"
+    keep: true
+    mapped_field_name: "Science: Administration Mode"
+  - start: 1918
+    end: 1918
+    output_field: "Science Subject Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1919
+    end: 1920
+    output_field: "Science Subject Information: Performance Level Indicator - Science"
+    keep: true
+    mapped_field_name: "Science: Performance Level Indicator"
+  - start: 1921
+    end: 1924
+    output_field: "Science Subject Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1925
+    end: 1925
+    output_field: "Science Subject Information: Meets Grade Level in Science"
+    keep: true
+    mapped_field_name: "Science: Meets Grade Level"
+  - start: 1926
+    end: 1926
+    output_field: "Science Subject Information: Approaches Grade Level in Science"
+    keep: true
+    mapped_field_name: "Science: Approaches Grade Level"
+  - start: 1927
+    end: 1927
+    output_field: "Science Subject Information: Masters Grade Level in Science"
+    keep: true
+    mapped_field_name: "Science: Masters Grade Level"
+  - start: 1928
+    end: 1928
+    output_field:
+      "Science English Learner (EL) Performance Measure Information: EL
+      Performance Measure - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1929
+    end: 2000
+    output_field: "Science English Learner (EL) Performance Measure Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2001
+    end: 2038
+    output_field:
+      "Science Item Level Information: Item Reporting Category Numbers -
+      Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2039
+    end: 2054
+    output_field: "Science Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2055
+    end: 2092
+    output_field: "Science Item Level Information: Item Student Responses - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2093
+    end: 2108
+    output_field: "Science Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2109
+    end: 2146
+    output_field: "Science Item Level Information: Item Correct Responses - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2147
+    end: 2162
+    output_field: "Science Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2163
+    end: 2165
+    output_field: "Science Item Level Information: Percentile - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2166
+    end: 2445
+    output_field: "Science Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2446
+    end: 2483
+    output_field: "Science Item Level Information: Points Possible - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2484
+    end: 2487
+    output_field: "Science Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2488
+    end: 2525
+    output_field: "Science Item Level Information: Points Achieved - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2526
+    end: 2530
+    output_field: "Science Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2531
+    end: 2539
+    output_field:
+      "Previous Year Reading Language Arts History: County-District-Campus
+      Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2540
+    end: 2540
+    output_field: "Previous Year Reading Language Arts History: Language Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2541
+    end: 2541
+    output_field: "Previous Year Reading Language Arts History: Test Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2542
+    end: 2542
+    output_field: "Previous Year Reading Language Arts History: Score Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2543
+    end: 2543
+    output_field: "Previous Year Reading Language Arts History: Approaches Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2544
+    end: 2544
+    output_field: "Previous Year Reading Language Arts History: Masters Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2545
+    end: 2548
+    output_field: "Previous Year Reading Language Arts History: Scale Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2549
+    end: 2550
+    output_field: "Previous Year Reading Language Arts History: Tested Grade"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2551
+    end: 2552
+    output_field: "Previous Year Reading Language Arts History: Enrolled Grade"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2553
+    end: 2553
+    output_field: "Previous Year Reading Language Arts History: On-Track Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2554
+    end: 2554
+    output_field: "Previous Year Reading Language Arts History: STAAR Progress Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2555
+    end: 2555
+    output_field: "Previous Year Reading Language Arts History: EL Performance Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2556
+    end: 2560
+    output_field: "Previous Year Reading Language Arts History: Lexile Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2561
+    end: 2650
+    output_field: "Previous Year Reading Language Arts History: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2651
+    end: 2659
+    output_field: "Previous Year Mathematics History: County-District-Campus-Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2660
+    end: 2660
+    output_field: "Previous Year Mathematics History: Language Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2661
+    end: 2661
+    output_field: "Previous Year Mathematics History: Test Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2662
+    end: 2662
+    output_field: "Previous Year Mathematics History: Score Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2663
+    end: 2663
+    output_field: "Previous Year Mathematics History: Approaches Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2664
+    end: 2664
+    output_field: "Previous Year Mathematics History: Masters Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2665
+    end: 2668
+    output_field: "Previous Year Mathematics History: Scale Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2669
+    end: 2670
+    output_field: "Previous Year Mathematics History: Tested Grade"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2671
+    end: 2672
+    output_field: "Previous Year Mathematics History: Enrolled Grade"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2673
+    end: 2673
+    output_field: "Previous Year Mathematics History: On-Track Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2674
+    end: 2674
+    output_field: "Previous Year Mathematics History: STAAR Progress Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2675
+    end: 2675
+    output_field: "Previous Year Mathematics History: Meets Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2676
+    end: 2680
+    output_field: "Previous Year Mathematics History: Quantile Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2681
+    end: 2770
+    output_field: "Previous Year Mathematics History: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2771
+    end: 2779
+    output_field: "Previous Year Social Studies History: County-District-Campus Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2780
+    end: 2780
+    output_field: "Previous Year Social Studies History: Language Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2781
+    end: 2781
+    output_field: "Previous Year Social Studies History: Test Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2782
+    end: 2782
+    output_field: "Previous Year Social Studies History: Score Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2783
+    end: 2783
+    output_field: "Previous Year Social Studies History: Approaches Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2784
+    end: 2784
+    output_field: "Previous Year Social Studies History: Masters Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2785
+    end: 2788
+    output_field: "Previous Year Social Studies History: Scale Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2789
+    end: 2790
+    output_field: "Previous Year Social Studies History: Tested Grade"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2791
+    end: 2792
+    output_field: "Previous Year Social Studies History: Enrolled Grade"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2793
+    end: 2793
+    output_field: "Previous Year Social Studies History: Meets Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2794
+    end: 2794
+    output_field: "Previous Year Social Studies History: EL Performance Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2795
+    end: 2800
+    output_field: "Previous Year Social Studies History: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2801
+    end: 2809
+    output_field: "Previous Year Science History: County-District-Campus Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2810
+    end: 2810
+    output_field: "Previous Year Science History: Language Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2811
+    end: 2811
+    output_field: "Previous Year Science History: Test Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2812
+    end: 2812
+    output_field: "Previous Year Science History: Score Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2813
+    end: 2813
+    output_field: "Previous Year Science History: Approaches Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2814
+    end: 2814
+    output_field: "Previous Year Science History: Masters Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2815
+    end: 2818
+    output_field: "Previous Year Science History: Scale Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2819
+    end: 2820
+    output_field: "Previous Year Science History: Tested Grade"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2821
+    end: 2822
+    output_field: "Previous Year Science History: Enrolled Grade"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2823
+    end: 2823
+    output_field: "Previous Year Science History: Meets Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2824
+    end: 2824
+    output_field: "Previous Year Science History: EL Performance Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2825
+    end: 2839
+    output_field: "Previous Year Science History: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2840
+    end: 2840
+    output_field:
+      "Previous Year History Additional Data: Meets Grade Level - Reading
+      Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2841
+    end: 2841
+    output_field: "Previous Year History Additional Data: EL Performance Measure - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2842
+    end: 2900
+    output_field: "Previous Year History Additional Data: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2901
+    end: 2905
+    output_field: "Lexile Measure History: Lexile Measure Grade 3"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2906
+    end: 2910
+    output_field: "Lexile Measure History: Lexile Measure Grade 4"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2911
+    end: 2915
+    output_field: "Lexile Measure History: Lexile Measure Grade 5"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2916
+    end: 2920
+    output_field: "Lexile Measure History: Lexile Measure Grade 6"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2921
+    end: 2925
+    output_field: "Lexile Measure History: Lexile Measure Grade 7"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2926
+    end: 2930
+    output_field: "Lexile Measure History: Lexile Measure Grade 8"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2931
+    end: 2955
+    output_field: "Lexile Measure History: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2956
+    end: 2960
+    output_field: "Quantile Measure History: Quantile Measure Grade 3"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2961
+    end: 2965
+    output_field: "Quantile Measure History: Quantile Measure Grade 4"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2966
+    end: 2970
+    output_field: "Quantile Measure History: Quantile Measure Grade 5"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2971
+    end: 2975
+    output_field: "Quantile Measure History: Quantile Measure Grade 6"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2976
+    end: 2980
+    output_field: "Quantile Measure History: Quantile Measure Grade 7"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2981
+    end: 2985
+    output_field: "Quantile Measure History: Quantile Measure Grade 8"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2986
+    end: 3074
+    output_field: "Quantile Measure History: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3075
+    end: 3075
+    output_field:
+      "TELPAS Data and Calculated Fields for EL Performance Measure Reporting
+      and/or Accountability Reporting: EL Performance Measure (ELPM) Plan"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3076
+    end: 3079
+    output_field:
+      "TELPAS Data and Calculated Fields for EL Performance Measure Reporting
+      and/or Accountability Reporting: Plan Year"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3080
+    end: 3080
+    output_field:
+      "TELPAS Data and Calculated Fields for EL Performance Measure Reporting
+      and/or Accountability Reporting: Current Year TELPAS Composite Rating"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3081
+    end: 3081
+    output_field:
+      "TELPAS Data and Calculated Fields for EL Performance Measure Reporting
+      and/or Accountability Reporting: Current Year TELPAS Years in U.S. Schools"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3082
+    end: 3082
+    output_field:
+      "TELPAS Data and Calculated Fields for EL Performance Measure Reporting
+      and/or Accountability Reporting: Current Year TELPAS Parental Denial"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3083
+    end: 3099
+    output_field:
+      "TELPAS Data and Calculated Fields for EL Performance Measure Reporting
+      and/or Accountability Reporting: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3100
+    end: 3100
+    output_field: "Algebra I Test Information: Score Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3101
+    end: 3101
+    output_field: "Algebra I Test Information: Test Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3102
+    end: 3103
+    output_field: "Algebra I Test Information: Algebra I Reporting Category 1 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3104
+    end: 3105
+    output_field: "Algebra I Test Information: Algebra I Reporting Category 2 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3106
+    end: 3107
+    output_field: "Algebra I Test Information: Algebra I Reporting Category 3 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3108
+    end: 3109
+    output_field: "Algebra I Test Information: Algebra I Reporting Category 4 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3110
+    end: 3111
+    output_field: "Algebra I Test Information: Algebra I Reporting Category 5 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3112
+    end: 3113
+    output_field: "Algebra I Test Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3114
+    end: 3115
+    output_field: "Algebra I Test Information: Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3116
+    end: 3119
+    output_field: "Algebra I Test Information: Scale Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3120
+    end: 3120
+    output_field: "Algebra I Test Information: Approaches Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3121
+    end: 3121
+    output_field: "Algebra I Test Information: Meets Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3122
+    end: 3122
+    output_field: "Algebra I Test Information: Masters Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3123
+    end: 3123
+    output_field: "Algebra I Test Information: STAAR Progress Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3124
+    end: 3126
+    output_field: "Algebra I Test Information: Percentile"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3127
+    end: 3131
+    output_field: "Algebra I Test Information: Quantile Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3132
+    end: 3132
+    output_field: "Algebra I Test Information: Test Information Indicator"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3133
+    end: 3135
+    output_field: "Algebra I Test Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3136
+    end: 3138
+    output_field: "Crisis Codes: Fall 2023 TSDS PEIMS Crisis-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3139
+    end: 3144
+    output_field: "Crisis Codes: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3145
+    end: 3153
+    output_field: "Reference: Test Result ID - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3154
+    end: 3162
+    output_field: "Reference: Test Result ID - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3163
+    end: 3171
+    output_field: "Reference: Test Result ID - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3172
+    end: 3180
+    output_field: "Reference: Test Result ID - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3181
+    end: 3186
+    output_field: "Reference: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3187
+    end: 3222
+    output_field: "Reference: Opportunity Key - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3223
+    end: 3258
+    output_field: "Reference: Opportunity Key - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3259
+    end: 3294
+    output_field: "Reference: Opportunity Key - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3295
+    end: 3330
+    output_field: "Reference: Opportunity Key - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3331
+    end: 3366
+    output_field: "Reference: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3367
+    end: 3367
+    output_field: "Reference: Non-Participant - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3368
+    end: 3368
+    output_field: "Reference: Non-Participant - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3369
+    end: 3369
+    output_field: "Reference: Non-Participant - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3370
+    end: 3370
+    output_field: "Reference: Non-Participant - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3371
+    end: 3371
+    output_field: "Reference: Discrepancy Indicator - Reading Language Arts"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3372
+    end: 3372
+    output_field: "Reference: Discrepancy Indicator - Mathematics"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3373
+    end: 3373
+    output_field: "Reference: Discrepancy Indicator - Social Studies"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3374
+    end: 3374
+    output_field: "Reference: Discrepancy Indicator - Science"
+    keep: false
+    mapped_field_name: .nan
+  - start: 3375
+    end: 3999
+    output_field: "Reference: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 4000
+    end: 4000
+    output_field: "Reference: Period"
+    keep: false
+    mapped_field_name: .nan
