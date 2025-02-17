@@ -191,10 +191,6 @@ def process_file(input_file, output_file=None, schema_folder=None, filter_column
     # Process the fixed-width file (skipping the header).
     df = process_fixed_width_file(input_file, schema_config, skip_header=True, filter_columns=filter_columns)
 
-    # Add the computed fields.
-    df["school_year"] = full_school_year
-    df["test_name"] = test_name
-
     # Write the output CSV.
     df.to_csv(output_file, index=False)
     print(f"Data has been written to {output_file}")
@@ -334,16 +330,3 @@ def csv_to_schema_yaml(csv_file, yaml_output_file=None):
         print(f"Schema YAML file successfully created: {yaml_output_file}")
     except Exception as e:
         print(f"Error writing YAML file: {e}")
-
-
-if __name__ == "__main__":
-    # # If run as a script, call the main function.
-    process_file(
-        "/Users/markm/Downloads/TEA-Data-Files/RAW_Data_files/STAAR/SF_0524_3-8_101902_ALDINE ISD_V01.txt",
-        "/Users/markm/Downloads/TEA-Data-Files/RAW_Data_files/STAAR/SF_0524_3-8_101902_ALDINE ISD_V01_output.csv",
-        filter_columns=True,
-    )
-
-    # If run as a script, call the main function.
-    # csv_to_schema_yaml('/Users/markm/Downloads/TEA-Data-Files/CSV/2024-staar-3-8-data-file.csv',
-    #                       '/Users/markm/Downloads/TEA-Data-Files/CSV/2024-staar-3-8-data-file_schema.yaml')
