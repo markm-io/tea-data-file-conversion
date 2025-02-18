@@ -1,0 +1,1566 @@
+fields:
+  - start: 1
+    end: 4
+    output_field: "Administration and Student ID Information: Administration Date"
+    keep: true
+    mapped_field_name: "Student Information: Administration Date"
+  - start: 5
+    end: 6
+    output_field: "Administration and Student ID Information: Grade-Level-\
+      Code"
+    keep: true
+    mapped_field_name: "Student Information: Tested Grade Level"
+  - start: 7
+    end: 8
+    output_field: "Administration and Student ID Information: ESC Region Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 9
+    end: 17
+    output_field: "Administration and Student ID Information: County-District-\
+      Campus Number"
+    keep: true
+    mapped_field_name: "Student Information: Campus Number"
+  - start: 18
+    end: 32
+    output_field: "Administration and Student ID Information: District-Name"
+    keep: false
+    mapped_field_name: .nan
+  - start: 33
+    end: 47
+    output_field: "Administration and Student ID Information: Campus-Name"
+    keep: true
+    mapped_field_name: "Student Information: Campus Name"
+  - start: 48
+    end: 62
+    output_field: "Administration and Student ID Information: Last-Name"
+    keep: false
+    mapped_field_name: .nan
+  - start: 63
+    end: 72
+    output_field: "Administration and Student ID Information: First-Name"
+    keep: false
+    mapped_field_name: .nan
+  - start: 73
+    end: 73
+    output_field: "Administration and Student ID Information: Middle Initial"
+    keep: false
+    mapped_field_name: .nan
+  - start: 74
+    end: 82
+    output_field: "Administration and Student ID Information: Student-ID"
+    keep: false
+    mapped_field_name: .nan
+  - start: 83
+    end: 83
+    output_field: "Administration and Student ID Information: Sex-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 84
+    end: 91
+    output_field: "Administration and Student ID Information: Date-of-birth"
+    keep: true
+    mapped_field_name: "Student Information: Date of Birth"
+  - start: 92
+    end: 92
+    output_field: "Administration and Student ID Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 93
+    end: 93
+    output_field: "Demographic Information: Hispanic-Latino-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 94
+    end: 94
+    output_field: "Demographic Information: American-Indian-Alaska-Native-\
+      \ Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 95
+    end: 95
+    output_field: "Demographic Information: Asian-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 96
+    end: 96
+    output_field: "Demographic Information: Black-African-American-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 97
+    end: 97
+    output_field: "Demographic Information: Native-Hawaiian-Pacific-\
+      Islander-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 98
+    end: 98
+    output_field: "Demographic Information: White-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 99
+    end: 99
+    output_field: "Demographic Information: Ethnicity/Race Reporting Category"
+    keep: false
+    mapped_field_name: .nan
+  - start: 100
+    end: 100
+    output_field: "Demographic Information: Economic-Disadvantage-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 101
+    end: 101
+    output_field: "Demographic Information: Title-I-Part-A-Indicator-\
+      Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 102
+    end: 102
+    output_field: "Demographic Information: Migrant-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 103
+    end: 106
+    output_field: "Demographic Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 107
+    end: 107
+    output_field: "Demographic Information: Emergent-Bilingual-Indicator-\
+      \ Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 108
+    end: 108
+    output_field: "Demographic Information: Bilingual-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 109
+    end: 109
+    output_field: "Demographic Information: ESL-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 110
+    end: 110
+    output_field:
+      "Demographic Information: Fall 2022 TSDS PEIMS Homeless- Status-\
+      Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 111
+    end: 111
+    output_field: "Demographic Information: Special-Ed-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 112
+    end: 112
+    output_field: "Demographic Information: Section 504-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 113
+    end: 116
+    output_field: "Demographic Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 117
+    end: 117
+    output_field: "Demographic Information: Gifted-Talented-Indicator-\
+      Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 118
+    end: 118
+    output_field: "Demographic Information: At-Risk-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 119
+    end: 122
+    output_field: "Demographic Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 123
+    end: 131
+    output_field: "Other Student Information: Local-Student-ID"
+    keep: true
+    mapped_field_name: "Student Information: Local Student ID"
+  - start: 132
+    end: 140
+    output_field: "Other Student Information: Test Result ID"
+    keep: false
+    mapped_field_name: .nan
+  - start: 141
+    end: 142
+    output_field: "Other Student Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 143
+    end: 143
+    output_field: "Other Student Information: Discrepancy Indicator"
+    keep: false
+    mapped_field_name: .nan
+  - start: 144
+    end: 152
+    output_field:
+      "Other Student Information: Fall 2022 TSDS PEIMS County District-\
+      Campus Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 153
+    end: 154
+    output_field:
+      "Other Student Information: Fall 2022 TSDS PEIMS Student- Language-\
+      Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 155
+    end: 156
+    output_field:
+      "Other Student Information: Fall 2022 TSDS PEIMS Student Attribution
+      Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 157
+    end: 162
+    output_field: "Other Student Information: Family Portal Unique Access Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 163
+    end: 163
+    output_field:
+      "Other Student Information: Migrant Student in Texas Migrant Interstate
+      Program (TMIP)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 164
+    end: 164
+    output_field: "Other Student Information: High School Equivalency Program (HSEP)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 165
+    end: 165
+    output_field:
+      "Other Student Information: Fall 2022 TSDS PEIMS Military- Connected-\
+      Student-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 166
+    end: 166
+    output_field:
+      "Other Student Information: Fall 2022 TSDS PEIMS Foster- Care-\
+      Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 167
+    end: 186
+    output_field: "Other Student Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 187
+    end: 187
+    output_field:
+      "Other Student Information: Fall 2022 TSDS PEIMS Dyslexia Indicator-\
+      Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 188
+    end: 189
+    output_field: "Other Student Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 190
+    end: 190
+    output_field: "Other Student Information: New to Texas"
+    keep: false
+    mapped_field_name: .nan
+  - start: 191
+    end: 200
+    output_field: "Other Student Information: TX Unique Student-ID"
+    keep: true
+    mapped_field_name: "Student Information: TSDS ID"
+  - start: 201
+    end: 202
+    output_field: "Subject Information: End-of-Course Code"
+    keep: true
+    mapped_field_name: "Assessment: Subject"
+  - start: 203
+    end: 206
+    output_field: "Subject Information: Local Use"
+    keep: false
+    mapped_field_name: .nan
+  - start: 207
+    end: 214
+    output_field: "Subject Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 215
+    end: 215
+    output_field: "Agency Use: Agency Use Code A"
+    keep: false
+    mapped_field_name: .nan
+  - start: 216
+    end: 216
+    output_field: "Agency Use: Agency Use Code B"
+    keep: false
+    mapped_field_name: .nan
+  - start: 217
+    end: 217
+    output_field: "Agency Use: Agency Use Code C"
+    keep: false
+    mapped_field_name: .nan
+  - start: 218
+    end: 218
+    output_field: "Agency Use: Agency Use Code D"
+    keep: false
+    mapped_field_name: .nan
+  - start: 219
+    end: 219
+    output_field: "Agency Use: Agency Use Code E"
+    keep: false
+    mapped_field_name: .nan
+  - start: 220
+    end: 232
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 233
+    end: 233
+    output_field: "Agency Use: For TAKS/TAAS/TEAMS Testers Only"
+    keep: false
+    mapped_field_name: .nan
+  - start: 234
+    end: 252
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 253
+    end: 253
+    output_field:
+      "Test Accommodations Information: Braille/Refreshable Braille Device
+      and Screen Reader"
+    keep: false
+    mapped_field_name: .nan
+  - start: 254
+    end: 254
+    output_field: "Test Accommodations Information: Large Print"
+    keep: false
+    mapped_field_name: .nan
+  - start: 255
+    end: 255
+    output_field: "Test Accommodations Information: Non-Embedded Designated Supports"
+    keep: false
+    mapped_field_name: .nan
+  - start: 256
+    end: 256
+    output_field: "Test Accommodations Information: Extra Day"
+    keep: false
+    mapped_field_name: .nan
+  - start: 257
+    end: 257
+    output_field: "Test Accommodations Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 258
+    end: 258
+    output_field: "Test Accommodations Information: Text-To-Speech"
+    keep: false
+    mapped_field_name: .nan
+  - start: 259
+    end: 259
+    output_field: "Test Accommodations Information: Speech-To-Text"
+    keep: false
+    mapped_field_name: .nan
+  - start: 260
+    end: 260
+    output_field: "Test Accommodations Information: Auto Text-To-Speech"
+    keep: false
+    mapped_field_name: .nan
+  - start: 261
+    end: 261
+    output_field: "Test Accommodations Information: Content and Language Supports"
+    keep: false
+    mapped_field_name: .nan
+  - start: 262
+    end: 262
+    output_field: "Test Accommodations Information: Spelling Assistance"
+    keep: false
+    mapped_field_name: .nan
+  - start: 263
+    end: 263
+    output_field: "Test Accommodations Information: ASL Signed Videos"
+    keep: false
+    mapped_field_name: .nan
+  - start: 264
+    end: 290
+    output_field: "Test Accommodations Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 291
+    end: 291
+    output_field: "Score Code Information: Score Code"
+    keep: true
+    mapped_field_name: "Assessment: Score Code"
+  - start: 292
+    end: 295
+    output_field: "Score Code Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 296
+    end: 296
+    output_field: "Score Code Information: Score Code Default"
+    keep: false
+    mapped_field_name: .nan
+  - start: 297
+    end: 300
+    output_field: "Score Code Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 301
+    end: 301
+    output_field: "Test Administration Mode Information: Test Administration Mode"
+    keep: true
+    mapped_field_name: "Assessment: Administration Mode"
+  - start: 302
+    end: 305
+    output_field: "Test Administration Mode Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 306
+    end: 306
+    output_field: "Test Version Information: Test Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 307
+    end: 307
+    output_field: "First-Time Tester/Re-tester Information: First-Time Tester/Re-tester"
+    keep: true
+    mapped_field_name: "Assessment: First Time Tester - Retester"
+  - start: 308
+    end: 350
+    output_field: "First-Time Tester/Re-tester Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 351
+    end: 352
+    output_field: "Assessment Score Information: Reporting Category 1 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 353
+    end: 354
+    output_field: "Assessment Score Information: Reporting Category 2 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 355
+    end: 356
+    output_field: "Assessment Score Information: Reporting Category 3 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 357
+    end: 358
+    output_field: "Assessment Score Information: Reporting Category 4 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 359
+    end: 360
+    output_field: "Assessment Score Information: Reporting Category 5 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 361
+    end: 362
+    output_field: "Assessment Score Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 363
+    end: 364
+    output_field: "Assessment Score Information: Performance Level Indicator"
+    keep: true
+    mapped_field_name: "Assessment: Performance Level Indicator"
+  - start: 365
+    end: 366
+    output_field: "Assessment Score Information: Raw Score"
+    keep: true
+    mapped_field_name: "Assessment: Raw Score"
+  - start: 367
+    end: 370
+    output_field: "Assessment Score Information: Scale Score"
+    keep: true
+    mapped_field_name: "Assessment: Scale Score"
+  - start: 371
+    end: 371
+    output_field: "Assessment Score Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 372
+    end: 373
+    output_field: "Assessment Score Information: Extended Constructed Response Score"
+    keep: true
+    mapped_field_name: "Assessment: ECR Score"
+  - start: 374
+    end: 375
+    output_field:
+      "Alternate Assessments for TAKS/TAAS/TEAMS: T/T/T Tester English II
+      Reading Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 376
+    end: 376
+    output_field:
+      "Alternate Assessments for TAKS/TAAS/TEAMS: T/T/T Tester English II
+      Reading Performance Information"
+    keep: false
+    mapped_field_name: .nan
+  - start: 377
+    end: 378
+    output_field:
+      "Alternate Assessments for TAKS/TAAS/TEAMS: T/T/T Tester English II
+      Writing Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 379
+    end: 379
+    output_field:
+      "Alternate Assessments for TAKS/TAAS/TEAMS: T/T/T Tester English II
+      Writing Performance Information"
+    keep: false
+    mapped_field_name: .nan
+  - start: 380
+    end: 380
+    output_field:
+      "Alternate Assessments for TAKS/TAAS/TEAMS: T/T/T Tester Algebra I
+      Performance Information"
+    keep: false
+    mapped_field_name: .nan
+  - start: 381
+    end: 381
+    output_field:
+      "Alternate Assessments for TAKS/TAAS/TEAMS: T/T/T Tester Biology Performance
+      Information"
+    keep: false
+    mapped_field_name: .nan
+  - start: 382
+    end: 382
+    output_field:
+      "Alternate Assessments for TAKS/TAAS/TEAMS: T/T/T Tester English II
+      Performance Information"
+    keep: false
+    mapped_field_name: .nan
+  - start: 383
+    end: 383
+    output_field:
+      "Alternate Assessments for TAKS/TAAS/TEAMS: T/T/T Tester U.S. History
+      Performance Information"
+    keep: false
+    mapped_field_name: .nan
+  - start: 384
+    end: 384
+    output_field:
+      "Alternate Assessments for TAKS/TAAS/TEAMS: TAKS/TAAS/TEAMS Tester
+      Indicator"
+    keep: false
+    mapped_field_name: .nan
+  - start: 385
+    end: 386
+    output_field: "Alternate Assessments for TAKS/TAAS/TEAMS: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 387
+    end: 387
+    output_field:
+      "Student\u2019s Passing Standard: Student\u2019s Passing Standard\
+      \ for Approaches Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 388
+    end: 388
+    output_field: "Student Performance Level Results: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 389
+    end: 389
+    output_field: "Student Performance Level Results: Meets Grade Level"
+    keep: true
+    mapped_field_name: "Assessment: Meets Grade Level"
+  - start: 390
+    end: 390
+    output_field:
+      "Student Performance Level Results: Approaches Grade Level at the\
+      \ Student\u2019s Standard"
+    keep: true
+    mapped_field_name: "Assessment: Approaches Grade Level"
+  - start: 391
+    end: 391
+    output_field: "Student Performance Level Results: Masters Grade Level"
+    keep: true
+    mapped_field_name: "Assessment: Masters Grade Level"
+  - start: 392
+    end: 392
+    output_field:
+      "Student\u2019s Performance Level Results at All Applicable Standards:\
+      \ Approaches Grade Level at the 2012-2015 Standard"
+    keep: false
+    mapped_field_name: .nan
+  - start: 393
+    end: 393
+    output_field:
+      "Student\u2019s Performance Level Results at All Applicable Standards:\
+      \ Approaches Grade Level at the Current Standard"
+    keep: false
+    mapped_field_name: .nan
+  - start: 394
+    end: 394
+    output_field:
+      "Student\u2019s Performance Level Results at All Applicable Standards:\
+      \ Approaches Grade Level at the 2015-2022 Standard"
+    keep: false
+    mapped_field_name: .nan
+  - start: 395
+    end: 417
+    output_field:
+      "Student\u2019s Performance Level Results at All Applicable Standards:\
+      \ Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 418
+    end: 418
+    output_field:
+      "English Learner (EL) Performance Measure Information: EL Performance
+      Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 419
+    end: 419
+    output_field:
+      "English Learner (EL) Performance Measure Information: EL Performance
+      Measure (ELPM) Plan"
+    keep: false
+    mapped_field_name: .nan
+  - start: 420
+    end: 423
+    output_field:
+      "English Learner (EL) Performance Measure Information: Year ELPM Plan
+      Determined"
+    keep: false
+    mapped_field_name: .nan
+  - start: 424
+    end: 424
+    output_field: "English Learner (EL) Performance Measure Information: Plan-\
+      Year TELPAS Composite Rating"
+    keep: false
+    mapped_field_name: .nan
+  - start: 425
+    end: 430
+    output_field: "English Learner (EL) Performance Measure Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 431
+    end: 494
+    output_field: "Item Level Information: Item Reporting Category Numbers"
+    keep: false
+    mapped_field_name: .nan
+  - start: 495
+    end: 498
+    output_field: "Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 499
+    end: 562
+    output_field: "Item Level Information: Item Student Responses"
+    keep: false
+    mapped_field_name: .nan
+  - start: 563
+    end: 566
+    output_field: "Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 567
+    end: 630
+    output_field: "Item Level Information: Item Correct Responses"
+    keep: false
+    mapped_field_name: .nan
+  - start: 631
+    end: 634
+    output_field: "Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 635
+    end: 637
+    output_field: "Item Level Information: Percentile"
+    keep: false
+    mapped_field_name: .nan
+  - start: 638
+    end: 716
+    output_field: "Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 717
+    end: 780
+    output_field: "Item Level Information: Item Student Scores"
+    keep: false
+    mapped_field_name: .nan
+  - start: 781
+    end: 822
+    output_field: "Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 823
+    end: 827
+    output_field: "Item Level Information: Lexile Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 828
+    end: 832
+    output_field: "Item Level Information: Quantile Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 833
+    end: 896
+    output_field: "Item Level Information: Points Possible"
+    keep: false
+    mapped_field_name: .nan
+  - start: 897
+    end: 1000
+    output_field: "Item Level Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1001
+    end: 1004
+    output_field:
+      "STAAR EOC Cumulative History - Algebra 1: Algebra I Administration
+      Date"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1005
+    end: 1013
+    output_field: "STAAR EOC Cumulative History - Algebra 1: Algebra I County-\
+      District-Campus Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1014
+    end: 1014
+    output_field: "STAAR EOC Cumulative History - Algebra 1: Algebra I Test Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1015
+    end: 1015
+    output_field: "STAAR EOC Cumulative History - Algebra 1: Algebra I Score Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1016
+    end: 1016
+    output_field:
+      "STAAR EOC Cumulative History - Algebra 1: Algebra I Level II: Satisfactory\
+      \ Academic Performance at the Student\u2019s Standard (Approaches Grade Level)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1017
+    end: 1017
+    output_field: "STAAR EOC Cumulative History - Algebra 1: Algebra I Meets Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1018
+    end: 1018
+    output_field:
+      "STAAR EOC Cumulative History - Algebra 1: Algebra I Level III: Advanced
+      Academic Performance (Masters Grade Level)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1019
+    end: 1019
+    output_field: "STAAR EOC Cumulative History - Algebra 1: Algebra I Substitute Assessment"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1020
+    end: 1021
+    output_field: "STAAR EOC Cumulative History - Algebra 1: Algebra I Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1022
+    end: 1025
+    output_field: "STAAR EOC Cumulative History - Algebra 1: Algebra I Scale Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1026
+    end: 1027
+    output_field:
+      "STAAR EOC Cumulative History - Algebra 1: Algebra I Reporting Category
+      1 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1028
+    end: 1029
+    output_field:
+      "STAAR EOC Cumulative History - Algebra 1: Algebra I Reporting Category
+      2 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1030
+    end: 1031
+    output_field:
+      "STAAR EOC Cumulative History - Algebra 1: Algebra I Reporting Category
+      3 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1032
+    end: 1033
+    output_field:
+      "STAAR EOC Cumulative History - Algebra 1: Algebra I Reporting Category
+      4 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1034
+    end: 1035
+    output_field:
+      "STAAR EOC Cumulative History - Algebra 1: Algebra I Reporting Category
+      5 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1036
+    end: 1036
+    output_field:
+      "STAAR EOC Cumulative History - Algebra 1: Algebra I Test Information
+      Indicator"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1037
+    end: 1049
+    output_field: "STAAR EOC Cumulative History - Algebra 1: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1050
+    end: 1050
+    output_field:
+      "STAAR EOC Cumulative History - Algebra 1: Algebra I STAAR Progress
+      Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1051
+    end: 1051
+    output_field:
+      "STAAR EOC Cumulative History - Algebra 1: Algebra I EL Performance
+      Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1052
+    end: 1054
+    output_field: "STAAR EOC Cumulative History - Algebra 1: Algebra I Percentile"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1055
+    end: 1100
+    output_field: "STAAR EOC Cumulative History - Algebra 1: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1101
+    end: 1104
+    output_field: "STAAR EOC Cumulative History - Biology: Biology Administration Date"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1105
+    end: 1113
+    output_field:
+      "STAAR EOC Cumulative History - Biology: Biology County-District-\
+      Campus Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1114
+    end: 1114
+    output_field: "STAAR EOC Cumulative History - Biology: Biology Test Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1115
+    end: 1115
+    output_field: "STAAR EOC Cumulative History - Biology: Biology Score Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1116
+    end: 1116
+    output_field:
+      "STAAR EOC Cumulative History - Biology: Biology Level II: Satisfactory\
+      \ Academic Performance at the Student\u2019s Standard (Approaches Grade Level)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1117
+    end: 1117
+    output_field: "STAAR EOC Cumulative History - Biology: Biology Meets Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1118
+    end: 1118
+    output_field:
+      "STAAR EOC Cumulative History - Biology: Biology Level III: Advanced
+      Academic Performance (Masters Grade Level)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1119
+    end: 1119
+    output_field: "STAAR EOC Cumulative History - Biology: Biology Substitute Assessment"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1120
+    end: 1121
+    output_field: "STAAR EOC Cumulative History - Biology: Biology Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1122
+    end: 1125
+    output_field: "STAAR EOC Cumulative History - Biology: Biology Scale Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1126
+    end: 1127
+    output_field:
+      "STAAR EOC Cumulative History - Biology: Biology Reporting Category
+      1 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1128
+    end: 1129
+    output_field:
+      "STAAR EOC Cumulative History - Biology: Biology Reporting Category
+      2 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1130
+    end: 1131
+    output_field:
+      "STAAR EOC Cumulative History - Biology: Biology Reporting Category
+      3 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1132
+    end: 1133
+    output_field:
+      "STAAR EOC Cumulative History - Biology: Biology Reporting Category
+      4 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1134
+    end: 1135
+    output_field:
+      "STAAR EOC Cumulative History - Biology: Biology Reporting Category
+      5 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1136
+    end: 1136
+    output_field:
+      "STAAR EOC Cumulative History - Biology: Biology Test Information
+      Indicator"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1137
+    end: 1150
+    output_field: "STAAR EOC Cumulative History - Biology: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1151
+    end: 1151
+    output_field: "STAAR EOC Cumulative History - Biology: Biology EL Performance Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1152
+    end: 1154
+    output_field: "STAAR EOC Cumulative History - Biology: Biology Percentile"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1155
+    end: 1200
+    output_field: "STAAR EOC Cumulative History - Biology: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1201
+    end: 1204
+    output_field:
+      "STAAR EOC Cumulative History - English I: English I Administration
+      Date"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1205
+    end: 1213
+    output_field: "STAAR EOC Cumulative History - English I: English I County-\
+      District-Campus Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1214
+    end: 1214
+    output_field: "STAAR EOC Cumulative History - English I: English I Test Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1215
+    end: 1215
+    output_field: "STAAR EOC Cumulative History - English I: English I Score Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1216
+    end: 1216
+    output_field:
+      "STAAR EOC Cumulative History - English I: English I Level I: Satisfactory\
+      \ Academic Performance at the Student\u2019s Standard (Approaches Grade Level)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1217
+    end: 1217
+    output_field: "STAAR EOC Cumulative History - English I: English I Meets Grade Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1218
+    end: 1218
+    output_field:
+      "STAAR EOC Cumulative History - English I: English I Level III: Advanced
+      Academic Performance (Masters Grade Level)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1219
+    end: 1219
+    output_field: "STAAR EOC Cumulative History - English I: English Substitute Assessment"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1220
+    end: 1221
+    output_field: "STAAR EOC Cumulative History - English I: English I Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1222
+    end: 1225
+    output_field: "STAAR EOC Cumulative History - English I: English I Scale Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1226
+    end: 1227
+    output_field:
+      "STAAR EOC Cumulative History - English I: English I Reporting Category
+      1 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1228
+    end: 1229
+    output_field:
+      "STAAR EOC Cumulative History - English I: English I Reporting Category
+      2 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1230
+    end: 1231
+    output_field:
+      "STAAR EOC Cumulative History - English I: English I Reporting Category
+      3 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1232
+    end: 1233
+    output_field:
+      "STAAR EOC Cumulative History - English I: English I Reporting Category
+      4 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1234
+    end: 1235
+    output_field:
+      "STAAR EOC Cumulative History - English I: English I Reporting Category
+      5Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1236
+    end: 1237
+    output_field:
+      "STAAR EOC Cumulative History - English I: English I Reporting Category
+      6 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1238
+    end: 1238
+    output_field: "STAAR EOC Cumulative History - English I: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1239
+    end: 1239
+    output_field:
+      "STAAR EOC Cumulative History - English I: English I Test Information
+      Indicator"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1240
+    end: 1241
+    output_field:
+      "STAAR EOC Cumulative History - English I: English I Written Composition
+      Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1242
+    end: 1250
+    output_field: "STAAR EOC Cumulative History - English I: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1251
+    end: 1251
+    output_field:
+      "STAAR EOC Cumulative History - English I: English I EL Performance
+      Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1252
+    end: 1254
+    output_field: "STAAR EOC Cumulative History - English I: English I Percentile"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1255
+    end: 1300
+    output_field: "STAAR EOC Cumulative History - English I: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1301
+    end: 1304
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II Administration
+      Date"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1305
+    end: 1313
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II County-\
+      District-Campus Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1314
+    end: 1314
+    output_field: "STAAR EOC Cumulative History - English II: English II Test Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1315
+    end: 1315
+    output_field: "STAAR EOC Cumulative History - English II: English II Score Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1316
+    end: 1316
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II Level II: Satisfactory\
+      \ Academic Performance at the Student\u2019s Standard (Approaches Grade Level)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1317
+    end: 1317
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II Meets Grade
+      Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1318
+    end: 1318
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II Level III:
+      Advanced Academic Performance (Masters Grade Level)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1319
+    end: 1319
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II Substitute
+      Assessment"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1320
+    end: 1321
+    output_field: "STAAR EOC Cumulative History - English II: English II Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1322
+    end: 1325
+    output_field: "STAAR EOC Cumulative History - English II: English II Scale Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1326
+    end: 1327
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II Reporting Category
+      1 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1328
+    end: 1329
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II Reporting Category
+      2 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1330
+    end: 1331
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II Reporting Category
+      3 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1332
+    end: 1333
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II Reporting Category
+      4 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1334
+    end: 1335
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II Reporting Category
+      5 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1336
+    end: 1337
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II Reporting Category
+      6 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1338
+    end: 1338
+    output_field: "STAAR EOC Cumulative History - English II: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1339
+    end: 1339
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II Test Information
+      Indicator"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1340
+    end: 1341
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II Written Composition
+      Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1342
+    end: 1349
+    output_field: "STAAR EOC Cumulative History - English II: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1350
+    end: 1350
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II STAAR Progress
+      Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1351
+    end: 1351
+    output_field:
+      "STAAR EOC Cumulative History - English II: English II EL Performance
+      Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1352
+    end: 1354
+    output_field: "STAAR EOC Cumulative History - English II: English II Percentile"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1355
+    end: 1400
+    output_field: "STAAR EOC Cumulative History - English II: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1401
+    end: 1404
+    output_field:
+      "STAAR EOC Cumulative History - U.S. History: U.S. History Administration
+      Date"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1405
+    end: 1413
+    output_field:
+      "STAAR EOC Cumulative History - U.S. History: U.S. History County-\
+      District-Campus-Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1414
+    end: 1414
+    output_field: "STAAR EOC Cumulative History - U.S. History: U.S. History Test Version"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1415
+    end: 1415
+    output_field: "STAAR EOC Cumulative History - U.S. History: U.S. History Score Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1416
+    end: 1416
+    output_field:
+      "STAAR EOC Cumulative History - U.S. History: U.S. History Level II:\
+      \ Satisfactory Academic Performance at the Student\u2019s Standard (Approaches\
+      \ Grade Level)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1417
+    end: 1417
+    output_field:
+      "STAAR EOC Cumulative History - U.S. History: U.S. History Meets Grade
+      Level"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1418
+    end: 1418
+    output_field:
+      "STAAR EOC Cumulative History - U.S. History: U.S. History Level III:
+      Advanced Academic Performance (Masters Grade Level)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1419
+    end: 1419
+    output_field:
+      "STAAR EOC Cumulative History - U.S. History: U.S. History Substitute
+      Assessment"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1420
+    end: 1421
+    output_field: "STAAR EOC Cumulative History - U.S. History: U.S. History Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1422
+    end: 1425
+    output_field: "STAAR EOC Cumulative History - U.S. History: U.S. History Scale Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1426
+    end: 1427
+    output_field:
+      "STAAR EOC Cumulative History - U.S. History: U.S. History Reporting
+      Category 1 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1428
+    end: 1429
+    output_field:
+      "STAAR EOC Cumulative History - U.S. History: U.S. History Reporting
+      Category 2 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1430
+    end: 1431
+    output_field:
+      "STAAR EOC Cumulative History - U.S. History: U.S. History Reporting
+      Category 3 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1432
+    end: 1433
+    output_field:
+      "STAAR EOC Cumulative History - U.S. History: U.S. History Reporting
+      Category 4 Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1434
+    end: 1434
+    output_field:
+      "STAAR EOC Cumulative History - U.S. History: U.S. History Test Information
+      Indicator"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1435
+    end: 1450
+    output_field: "STAAR EOC Cumulative History - U.S. History: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1451
+    end: 1451
+    output_field:
+      "STAAR EOC Cumulative History - U.S. History: U.S. History EL Performance
+      Measure"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1452
+    end: 1454
+    output_field: "STAAR EOC Cumulative History - U.S. History: U.S. History Percentile"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1455
+    end: 1498
+    output_field: "STAAR EOC Cumulative History - U.S. History: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1499
+    end: 1503
+    output_field: "Lexile Measure History: Lexile Measure Grade 8"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1504
+    end: 1505
+    output_field: "Lexile Measure History: Lexile Measure Grade 8 End-of Course\
+      \ Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1506
+    end: 1509
+    output_field: "Lexile Measure History: Lexile Measure Grade 8 Administration Date"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1510
+    end: 1514
+    output_field: "Lexile Measure History: Lexile Measure Grade 9"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1515
+    end: 1516
+    output_field: "Lexile Measure History: Lexile Measure Grade 9 End-of-\
+      \ Course Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1517
+    end: 1520
+    output_field: "Lexile Measure History: Lexile Measure Grade 9 Administration Date"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1521
+    end: 1525
+    output_field: "Lexile Measure History: Lexile Measure Grade 10"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1526
+    end: 1527
+    output_field: "Lexile Measure History: Lexile Measure Grade 10 End-of-\
+      Course Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1528
+    end: 1531
+    output_field: "Lexile Measure History: Lexile Measure Grade 10 Administration Date"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1532
+    end: 1536
+    output_field: "Lexile Measure History: Lexile Measure Grade 11"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1537
+    end: 1538
+    output_field: "Lexile Measure History: Lexile Measure Grade 11 End-of-\
+      Course Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1539
+    end: 1542
+    output_field: "Lexile Measure History: Lexile Measure Grade 11 Administration Date"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1543
+    end: 1562
+    output_field: "Lexile Measure History: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1563
+    end: 1567
+    output_field: "Quantile Measure History: Quantile Measure Grade 8"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1568
+    end: 1571
+    output_field:
+      "Quantile Measure History: Quantile Measure Grade 8 Administration
+      Date"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1572
+    end: 1576
+    output_field: "Quantile Measure History: Quantile Measure Grade 9"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1577
+    end: 1580
+    output_field:
+      "Quantile Measure History: Quantile Measure Grade 9 Administration
+      Date"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1581
+    end: 1585
+    output_field: "Quantile Measure History: Quantile Measure Grade 10"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1586
+    end: 1589
+    output_field:
+      "Quantile Measure History: Quantile Measure Grade 10 Administration
+      Date"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1590
+    end: 1594
+    output_field: "Quantile Measure History: Quantile Measure Grade 11"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1595
+    end: 1598
+    output_field:
+      "Quantile Measure History: Quantile Measure Grade 11 Administration
+      Date"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1599
+    end: 1618
+    output_field: "Quantile Measure History: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1619
+    end: 1619
+    output_field:
+      "TELPAS Data for EL Performance Measure Reporting and/or Accountability
+      Reporting: Current Year TELPAS Years in U.S. Schools"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1620
+    end: 1620
+    output_field:
+      "TELPAS Data for EL Performance Measure Reporting and/or Accountability
+      Reporting: Current Year TELPAS Parental Denial"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1621
+    end: 1621
+    output_field:
+      "TELPAS Data for EL Performance Measure Reporting and/or Accountability
+      Reporting: Current Year TELPAS Unschooled Asylee/Refugee"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1622
+    end: 1622
+    output_field:
+      "TELPAS Data for EL Performance Measure Reporting and/or Accountability
+      Reporting: Current Year TELPAS Students with Interrupted Formal Education (SIFE)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1623
+    end: 1625
+    output_field: "Crisis Codes: Fall 2022 TSDS PEIMS Crisis Code 1"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1626
+    end: 1628
+    output_field: "Crisis Codes: Fall 2022 TSDS PEIMS Crisis Code 2"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1629
+    end: 1631
+    output_field: "Crisis Codes: Fall 2022 TSDS PEIMS Crisis Code 3"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1632
+    end: 1667
+    output_field: "Reference: Opportunity Key"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1668
+    end: 1668
+    output_field: "Reference: Non-Participant Online Refusal"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1669
+    end: 1999
+    output_field: "Reference: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 2000
+    end: 2000
+    output_field: "Reference: Period"
+    keep: false
+    mapped_field_name: .nan

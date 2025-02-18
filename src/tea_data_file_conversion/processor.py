@@ -307,7 +307,9 @@ def csv_to_schema_yaml(csv_file, yaml_output_file=None):
             print(f"Row {index}: Could not convert end value '{row[end_col]}' to int. Skipping this row.")
             continue
 
-        output_field_value = str(row[output_field_col]).replace("\u2013", "-").replace("\n", "").replace("\r", "")
+        output_field_value = (
+            str(row[output_field_col]).replace("\u2010", "-").replace("\u2013", "-").replace("\n", "").replace("\r", "")
+        )
         field_entry = {
             "start": start_value,
             "end": end_value,

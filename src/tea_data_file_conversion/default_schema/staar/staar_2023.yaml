@@ -59,8 +59,8 @@ fields:
   - start: 84
     end: 91
     output_field: "Administration and Student ID Information: Date-of-birth"
-    keep: false
-    mapped_field_name: .nan
+    keep: true
+    mapped_field_name: "Student Information: Date of Birth"
   - start: 92
     end: 92
     output_field: "Administration and Student ID Information: Blank"
