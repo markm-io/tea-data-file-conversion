@@ -2,7 +2,7 @@
 
 import argparse
 
-from tea_data_file_conversion.processor import export_templates, process_file
+from .processor import export_templates, process_file
 
 
 def main():
