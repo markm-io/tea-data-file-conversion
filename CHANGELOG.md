@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.2 (2025-02-24)
+
+### Bug fixes
+
+- Update labels sync command to remove unnecessary flag ([`568eeb1`](https://github.com/markm-io/tea-data-file-conversion/commit/568eeb1deeca80f7eda2241501083a7e6523216d))
+
 ## v0.1.1 (2025-02-24)
 
 ### Bug fixes
