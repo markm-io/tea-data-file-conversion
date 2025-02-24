@@ -240,23 +240,24 @@ def export_templates(schema_folder):
     schema_folder : str
         The destination folder for exporting the template YAML files.
 
-    Exits
+    Notes
     -----
     The function exits after exporting the template files.
     """
     # Locate the default_schema folder within the package.
-    default_schema_path = importlib_resources.path("fixedwidth_processor", "default_schema")
-    if not os.path.isdir(default_schema_path):
-        print("Default schema folder not found in package.")
-        sys.exit(1)
+    with importlib_resources.path("fixedwidth_processor", "default_schema") as default_schema_path:
+        # Check if the default_schema_path is a valid directory.
+        if not os.path.isdir(str(default_schema_path)):
+            print("Default schema folder not found in package.")
+            sys.exit(1)
 
-    # Iterate over the directory structure and copy each file.
-    for root, _dirs, files in os.walk(default_schema_path):
-        for file in files:
-            rel_path = os.path.relpath(os.path.join(root, file), default_schema_path)
-            target_file = os.path.join(schema_folder, rel_path)
-            os.makedirs(os.path.dirname(target_file), exist_ok=True)
-            shutil.copy(os.path.join(root, file), target_file)
+        # Walk the directory using the string version of the path.
+        for root, _dirs, files in os.walk(str(default_schema_path)):
+            for file in files:
+                rel_path = os.path.relpath(os.path.join(root, file), str(default_schema_path))
+                target_file = os.path.join(schema_folder, rel_path)
+                os.makedirs(os.path.dirname(target_file), exist_ok=True)
+                shutil.copy(os.path.join(root, file), target_file)
     print(f"Template YAML files exported to {schema_folder}.")
     print(
         "Please review and update the templates as needed, then run the script again using the --schema_folder option."
