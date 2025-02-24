@@ -68,7 +68,7 @@ html_static_path = ["_static"]
 # These are options specifically for the Wagtail Theme.
 html_theme_options = dict(
     project_name="tea-data-file-conversion",
-    logo="static/logo.svg",
+    logo="logo.svg",
     logo_alt="tea-data-file-conversion",
     logo_height=59,
     logo_url="/",
