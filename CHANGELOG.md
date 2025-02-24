@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.1.1 (2025-02-24)
+
+### Bug fixes
+
+- Improve directory handling in template export function ([`4f011d1`](https://github.com/markm-io/tea-data-file-conversion/commit/4f011d10b9b647ca7589c048349c76b9aab7b34d))
+
+### Documentation
+
+- Update logo path and replace logo.svg with new design ([`29fa0bd`](https://github.com/markm-io/tea-data-file-conversion/commit/29fa0bdc520aaac3d470547d6fc402aa35669d56))
+- Add wagtail theme options for project branding in sphinx configuration ([`d573e87`](https://github.com/markm-io/tea-data-file-conversion/commit/d573e87507811e6c3f3aa39ffb6eb7166cbe4645))
+- Update documentation and configuration for sphinx theme and dependencies ([`30cee62`](https://github.com/markm-io/tea-data-file-conversion/commit/30cee62acc1d05449ac4273bdb171c848a6bb58b))
+
 ## v0.1.0 (2025-02-24)
 
 ### Features
