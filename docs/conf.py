@@ -65,6 +65,16 @@ html_theme = "sphinx_wagtail_theme"
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 
+# These are options specifically for the Wagtail Theme.
+html_theme_options = dict(
+    project_name="tea-data-file-conversion",
+    logo="static/logo.svg",
+    logo_alt="tea-data-file-conversion",
+    logo_height=59,
+    logo_url="/",
+    logo_width=45,
+)
+
 
 # -- Automatically run sphinx-apidoc -----------------------------------------
 
