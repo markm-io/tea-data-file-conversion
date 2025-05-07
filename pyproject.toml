@@ -36,7 +36,7 @@ urls."Bug Tracker" = "https://github.com/markm-io/tea-data-file-conversion/issue
 urls.Changelog = "https://github.com/markm-io/tea-data-file-conversion/blob/main/CHANGELOG.md"
 urls.documentation = "https://tea-data-file-conversion.readthedocs.io"
 urls.repository = "https://github.com/markm-io/tea-data-file-conversion"
-scripts.tea-data-file-conversion = "tea_data_file_conversion.cli:app"
+scripts.tea-data-file-conversion = "tea_data_file_conversion.cli:main"
 
 [dependency-groups]
 dev = [
