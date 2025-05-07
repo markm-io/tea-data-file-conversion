@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.3 (2025-05-07)
+
+### Bug fixes
+
+- Update entry point in pyproject.toml from 'app' to 'main' ([`80c4c49`](https://github.com/markm-io/tea-data-file-conversion/commit/80c4c49866d74e447a53955123a7bed343b1aca9))
+
 ## v0.1.2 (2025-02-24)
 
 ### Bug fixes

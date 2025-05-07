@@ -4,7 +4,7 @@ requires = [ "setuptools" ]
 
 [project]
 name = "tea-data-file-conversion"
-version = "0.1.2"
+version = "0.1.3"
 description = "Fixedwidth Processor is a Python package designed to transform fixed-width text files into CSVs using dynamic YAML schema configurations."
 readme = "README.md"
 license = { text = "MIT" }
