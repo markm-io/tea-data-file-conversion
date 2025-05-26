@@ -1,4 +1,4 @@
-__version__ = "0.1.3"
+__version__ = "1.0.0-rc.1"
 
 # fixedwidth_processor/__init__.py
 

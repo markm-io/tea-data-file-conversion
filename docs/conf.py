@@ -15,7 +15,7 @@ from sphinx.ext import apidoc
 project = "tea-data-file-conversion"
 copyright = "2025, Mark Moreno"
 author = "Mark Moreno"
-release = "0.1.3"
+release = "1.0.0-rc.1"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
