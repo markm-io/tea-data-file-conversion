@@ -41,7 +41,7 @@ scripts.tea-data-file-conversion = "tea_data_file_conversion.cli:main"
 [dependency-groups]
 dev = [
   "pytest>=8,<9",
-  "pytest-cov>=6,<7",
+  "pytest-cov>=7,<8",
 ]
 docs = [
   "myst-parser>=0.16; python_version>='3.11'",
