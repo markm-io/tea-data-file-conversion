@@ -141,3 +141,4 @@ cython_debug/
 
 # Pycharm Projects
 .idea
+/src/tea_data_file_conversion/del.py

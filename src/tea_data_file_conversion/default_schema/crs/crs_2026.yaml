@@ -1,0 +1,296 @@
+fields:
+  - start: 1
+    end: 8
+    output_field: Test Date
+    keep: true
+    mapped_field_name: "Student Information: Administration Date"
+  - start: 9
+    end: 24
+    output_field: Assessment Type
+    keep: true
+    mapped_field_name: "Assessment Information: Assessment Type"
+  - start: 25
+    end: 144
+    output_field: Test Name
+    keep: true
+    mapped_field_name: "Assessment Information: Test Name"
+  - start: 145
+    end: 146
+    output_field: Student-Enrolled-Grade-Code
+    keep: true
+    mapped_field_name: "Student Information: Enrolled Grade"
+  - start: 147
+    end: 148
+    output_field: ESC Region Number
+    keep: false
+    mapped_field_name: .nan
+  - start: 149
+    end: 157
+    output_field: County-District-Campus Number
+    keep: true
+    mapped_field_name: "Student Information: Campus Number"
+  - start: 158
+    end: 172
+    output_field: District-Name
+    keep: false
+    mapped_field_name: .nan
+  - start: 173
+    end: 187
+    output_field: Campus-Name
+    keep: true
+    mapped_field_name: "Student Information: Campus Name"
+  - start: 188
+    end: 202
+    output_field: Student Last-Name
+    keep: false
+    mapped_field_name: .nan
+  - start: 203
+    end: 212
+    output_field: Student First-Name
+    keep: false
+    mapped_field_name: .nan
+  - start: 213
+    end: 213
+    output_field: Student Middle-Initial
+    keep: false
+    mapped_field_name: .nan
+  - start: 214
+    end: 222
+    output_field: PEIMS-ID
+    keep: false
+    mapped_field_name: .nan
+  - start: 223
+    end: 223
+    output_field: Sex-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 224
+    end: 231
+    output_field: Date-of-Birth
+    keep: true
+    mapped_field_name: "Student Information: Date of Birth"
+  - start: 232
+    end: 236
+    output_field: Blank
+    keep: false
+    mapped_field_name: .nan
+  - start: 237
+    end: 237
+    output_field: Hispanic-Latino-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 238
+    end: 238
+    output_field: American-Indian-Alaska-Native-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 239
+    end: 239
+    output_field: Asian-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 240
+    end: 240
+    output_field: Black-African-American-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 241
+    end: 241
+    output_field: Native-Hawaiian-Pacific-Islander-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 242
+    end: 242
+    output_field: White-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 243
+    end: 243
+    output_field: Ethnicity/Race Reporting Category
+    keep: false
+    mapped_field_name: .nan
+  - start: 244
+    end: 244
+    output_field: Economic-Disadvantage-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 245
+    end: 245
+    output_field: Title-I-Part-A-Indicator-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 246
+    end: 246
+    output_field: Migrant-Indicator-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 247
+    end: 250
+    output_field: Blank1
+    keep: false
+    mapped_field_name: .nan
+  - start: 251
+    end: 251
+    output_field: Emergent-Bilingual-Indicator-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 252
+    end: 252
+    output_field: Bilingual-Indicator-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 253
+    end: 253
+    output_field: ESL-Indicator-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 254
+    end: 258
+    output_field: Blank2
+    keep: false
+    mapped_field_name: .nan
+  - start: 259
+    end: 259
+    output_field: Special-Ed-Indicator-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 260
+    end: 260
+    output_field: Section-504-Indicator-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 261
+    end: 261
+    output_field: Gifted-Talented-Indicator-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 262
+    end: 262
+    output_field: At-Risk-Indicator-Code
+    keep: false
+    mapped_field_name: .nan
+  - start: 263
+    end: 263
+    output_field: Local Use 1
+    keep: false
+    mapped_field_name: .nan
+  - start: 264
+    end: 264
+    output_field: Local Use 2
+    keep: false
+    mapped_field_name: .nan
+  - start: 265
+    end: 265
+    output_field: Local Use 3
+    keep: false
+    mapped_field_name: .nan
+  - start: 266
+    end: 266
+    output_field: Local Use 4
+    keep: false
+    mapped_field_name: .nan
+  - start: 267
+    end: 271
+    output_field: Blank3
+    keep: false
+    mapped_field_name: .nan
+  - start: 272
+    end: 280
+    output_field: Local Student ID
+    keep: true
+    mapped_field_name: "Student Information: Local Student ID"
+  - start: 281
+    end: 290
+    output_field: TSDS ID
+    keep: true
+    mapped_field_name: "Student Information: TSDS ID"
+  - start: 291
+    end: 295
+    output_field: Blank4
+    keep: false
+    mapped_field_name: .nan
+  - start: 296
+    end: 297
+    output_field: "Reporting Category 1: Raw Score"
+    keep: true
+    mapped_field_name: "Assessment Results: Reporting Category 1 Raw Score"
+  - start: 298
+    end: 299
+    output_field: "Reporting Category 2: Raw Score"
+    keep: true
+    mapped_field_name: "Assessment Results: Reporting Category 2 Raw Score"
+  - start: 300
+    end: 301
+    output_field: "Reporting Category 3: Raw Score"
+    keep: true
+    mapped_field_name: "Assessment Results: Reporting Category 3 Raw Score"
+  - start: 302
+    end: 303
+    output_field: "Reporting Category 4: Raw Score"
+    keep: true
+    mapped_field_name: "Assessment Results: Reporting Category 4 Raw Score"
+  - start: 304
+    end: 305
+    output_field: "Reporting Category 5: Raw Score"
+    keep: true
+    mapped_field_name: "Assessment Results: Reporting Category 5 Raw Score"
+  - start: 306
+    end: 309
+    output_field: Blank5
+    keep: false
+    mapped_field_name: .nan
+  - start: 310
+    end: 311
+    output_field: Total Raw Score
+    keep: true
+    mapped_field_name: "Assessment Results: Total Raw Score"
+  - start: 312
+    end: 315
+    output_field: Scale Score
+    keep: true
+    mapped_field_name: "Assessment Results: Scale Score"
+  - start: 316
+    end: 316
+    output_field: Overall Performance Level
+    keep: true
+    mapped_field_name: "Assessment Results: Overall Performance Level"
+  - start: 317
+    end: 346
+    output_field: TELPAS/TELPAS Alternate Composite Rating
+    keep: true
+    mapped_field_name: "TELPAS Results: Composite Rating"
+  - start: 347
+    end: 376
+    output_field: TELPAS/TELPAS Alternate Reading Proficiency Rating
+    keep: true
+    mapped_field_name: "TELPAS Results: Reading Proficiency Rating"
+  - start: 377
+    end: 406
+    output_field: TELPAS/TELPAS Alternate Writing Proficiency Rating
+    keep: true
+    mapped_field_name: "TELPAS Results: Writing Proficiency Rating"
+  - start: 407
+    end: 436
+    output_field: TELPAS/TELPAS Alternate Speaking Proficiency Rating
+    keep: true
+    mapped_field_name: "TELPAS Results: Speaking Proficiency Rating"
+  - start: 437
+    end: 466
+    output_field: TELPAS/TELPAS Alternate Listening Proficiency Rating
+    keep: true
+    mapped_field_name: "TELPAS Results: Listening Proficiency Rating"
+  - start: 467
+    end: 502
+    output_field: Result ID
+    keep: true
+    mapped_field_name: "Reference: Result ID"
+  - start: 503
+    end: 512
+    output_field: Blank6
+    keep: false
+    mapped_field_name: .nan
+  - start: 513
+    end: 513
+    output_field: Period
+    keep: true
+    mapped_field_name: "Assessment Information: Period"
