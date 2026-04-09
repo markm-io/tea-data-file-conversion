@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.3.0 (2026-04-09)
+
+### Features
+
+- Ensure fixed-width file processing reads all fields as strings ([`31994fd`](https://github.com/securehst/tea-data-file-conversion/commit/31994fdf44c1c2719edf872cff3729c0fd03bc7b))
+
 ## v0.2.0 (2026-04-08)
 
 ### Features
