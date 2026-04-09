@@ -102,6 +102,26 @@ def test_process_file_integration(tmp_path):
     assert isinstance(df, pd.DataFrame)
 
 
+def test_process_fixed_width_file_preserves_strings(tmp_path):
+    """Verify all fields are read as strings, not auto-inferred as numeric."""
+    # Row 1: numeric data in both fields. Row 2: blank second field (triggers float conversion without dtype=str).
+    input_data = "ABC123\nDEF   "
+    input_file = tmp_path / "test_dtype.txt"
+    input_file.write_text(input_data)
+
+    config = {
+        "fields": [
+            {"start": 1, "end": 3, "output_field": "letters", "keep": True},
+            {"start": 4, "end": 6, "output_field": "numbers", "keep": True},
+        ]
+    }
+
+    df = process_fixed_width_file(str(input_file), config)
+    assert df["letters"].dtype == object
+    assert df["numbers"].dtype == object
+    assert df.loc[0, "numbers"] == "123"
+
+
 def test_csv_to_schema_yaml(tmp_path, monkeypatch):
     # Create test CSV
     csv_content = "start,end,field_name\n1,5,Field A\n6,10,Field B"

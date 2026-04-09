@@ -146,7 +146,7 @@ def process_fixed_width_file(input_file, schema_config, skip_header=False, filte
             unique_col_names.append(col_name)
 
     # Read the fixed\-width file into a DataFrame.
-    df = pd.read_fwf(input_file, colspecs=colspecs, header=None, names=unique_col_names)
+    df = pd.read_fwf(input_file, colspecs=colspecs, header=None, names=unique_col_names, dtype=str)
 
     if filter_columns:
         df = df[keep_columns]
