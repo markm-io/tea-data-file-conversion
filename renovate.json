@@ -1,3 +1,41 @@
 {
-  "extends": ["github>browniebroke/renovate-configs:python"]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>browniebroke/renovate-configs:python",
+    "config:best-practices"
+  ],
+  "reviewers": ["securehst"],
+  "assignees": ["securehst"],
+  "assignAutomerge": true,
+  "dependencyDashboard": true,
+  "prHourlyLimit": 2,
+  "prConcurrentLimit": 5,
+  "rebaseWhen": "behind-base-branch",
+  "lockFileMaintenance": {
+    "enabled": false
+  },
+  "copier": {
+    "description": "Copier template updates are managed manually due to scaffold customizations",
+    "enabled": false
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": ["certifi"],
+      "enabled": false,
+      "description": "Pin certifi version for SSL compatibility - do not auto-update"
+    },
+    {
+      "matchDepNames": ["python"],
+      "allowedVersions": "<3.14",
+      "description": "Stick to Python 3.13 - 3.14 is still in alpha/beta"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "minor and patch dependencies"
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    }
+  ]
 }
