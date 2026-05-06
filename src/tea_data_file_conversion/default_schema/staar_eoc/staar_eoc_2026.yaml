@@ -97,13 +97,13 @@ fields:
   - start: 99
     end: 99
     output_field: "Demographic Information: Ethnicity/Race Reporting Category"
-    keep: false
-    mapped_field_name: .nan
+    keep: true
+    mapped_field_name: "Student Information: Ethnicity"
   - start: 100
     end: 100
     output_field: "Demographic Information: Economic-Disadvantage-Code"
-    keep: false
-    mapped_field_name: .nan
+    keep: true
+    mapped_field_name: "Student Information: Economic Disadvantage Indicator"
   - start: 101
     end: 101
     output_field: "Demographic Information: Title-I-Part-A-Indicator-Code"
@@ -122,13 +122,13 @@ fields:
   - start: 107
     end: 107
     output_field: "Demographic Information: Emergent-Bilingual-Indicator- Code"
-    keep: false
-    mapped_field_name: .nan
+    keep: true
+    mapped_field_name: "Student Information: Emergent-Bilingual Indicator"
   - start: 108
     end: 108
     output_field: "Demographic Information: Bilingual-Indicator-Code"
-    keep: false
-    mapped_field_name: .nan
+    keep: true
+    mapped_field_name: "Student Information: Special Education Indicator"
   - start: 109
     end: 109
     output_field: "Demographic Information: ESL-Indicator-Code"
