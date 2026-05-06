@@ -112,4 +112,4 @@ YAML schemas must contain a `fields` array with objects having:
 - Type checking configured with `mypy`
 - Pre-commit hooks enforce code quality
 - Semantic versioning with automatic releases via GitHub Actions
-- Testing across Python 3.9-3.12 on multiple OS platforms
+- Testing across Python 3.11-3.13 on multiple OS platforms
