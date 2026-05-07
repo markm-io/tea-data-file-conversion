@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.4.0 (2026-05-07)
+
+### Features
+
+- Retain demographic fields in staar outputs ([`ce41ad0`](https://github.com/securehst/tea-data-file-conversion/commit/ce41ad0e419f24a585632c8c5b59e91fdd37e6dd))
+
 ## v0.3.0 (2026-04-09)
 
 ### Features
