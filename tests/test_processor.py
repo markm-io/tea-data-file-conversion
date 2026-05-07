@@ -117,8 +117,8 @@ def test_process_fixed_width_file_preserves_strings(tmp_path):
     }
 
     df = process_fixed_width_file(str(input_file), config)
-    assert df["letters"].dtype == object
-    assert df["numbers"].dtype == object
+    assert pd.api.types.is_string_dtype(df["letters"])
+    assert pd.api.types.is_string_dtype(df["numbers"])
     assert df.loc[0, "numbers"] == "123"
 
 
