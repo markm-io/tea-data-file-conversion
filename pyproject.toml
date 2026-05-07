@@ -38,7 +38,7 @@ scripts.tea-data-file-conversion = "tea_data_file_conversion.cli:main"
 
 [dependency-groups]
 dev = [
-  "pytest>=8,<9",
+  "pytest>=9,<10",
   "pytest-cov>=6,<7",
 ]
 docs = [
