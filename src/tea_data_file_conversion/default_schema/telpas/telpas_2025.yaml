@@ -2,7 +2,7 @@ fields:
   - start: 1
     end: 4
     output_field: "Administration and Student ID Information: Administration Date"
-    keep: false
+    keep: true
     mapped_field_name: .nan
   - start: 5
     end: 6
@@ -17,7 +17,7 @@ fields:
   - start: 9
     end: 17
     output_field: "Administration and Student ID Information: County-District-Campus Number"
-    keep: false
+    keep: true
     mapped_field_name: .nan
   - start: 18
     end: 32
@@ -32,12 +32,12 @@ fields:
   - start: 48
     end: 62
     output_field: "Administration and Student ID Information: Last-Name"
-    keep: false
+    keep: true
     mapped_field_name: .nan
   - start: 63
     end: 72
     output_field: "Administration and Student ID Information: First-Name"
-    keep: false
+    keep: true
     mapped_field_name: .nan
   - start: 73
     end: 73
@@ -47,7 +47,7 @@ fields:
   - start: 74
     end: 82
     output_field: "Administration and Student ID Information: PEIMS ID"
-    keep: false
+    keep: true
     mapped_field_name: .nan
   - start: 83
     end: 83

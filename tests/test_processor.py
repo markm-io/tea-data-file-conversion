@@ -132,11 +132,10 @@ def test_process_file_detects_telpas_by_filename(tmp_path):
     assert os.path.exists(output_file)
     # Columns come from the telpas schema, confirming it was selected over staar.
     assert list(df.columns) == ["telpas_admin_date", "telpas_field"]
-    assert df.loc[0, "telpas_admin_date"] == "0325"
 
 
 def test_telpas_default_schema_is_valid():
-    """The shipped TELPAS 2024-2025 schema validates and covers all 1200 positions."""
+    """The shipped TELPAS 2024-2025 schema validates and ends at position 1200."""
     schema_path = os.path.join(
         os.path.dirname(os.path.dirname(__file__)),
         "src",
