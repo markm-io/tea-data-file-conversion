@@ -200,8 +200,14 @@ def process_file(input_file, output_file=None, schema_folder=None, filter_column
     # Determine test type and adjust school year if necessary.
     # TELPAS shares STAAR's spring month range, so it cannot be distinguished by
     # header month alone; detect it from the input filename instead.
-    if "TELPAS" in os.path.basename(input_file).upper():
+    # The consolidated accountability data file uses "2025" (year) as its header,
+    # which would otherwise misroute via the month-based fallback (test_month=20
+    # falls into the staar_eoc branch); detect it from the filename instead.
+    basename_upper = os.path.basename(input_file).upper()
+    if "TELPAS" in basename_upper:
         test_name = "telpas"
+    elif "ACCOUNTABILITY" in basename_upper:
+        test_name = "consolidated_accountability"
     elif test_month < 10:
         test_name = "staar"
     else:
