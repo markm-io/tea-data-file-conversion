@@ -1,4 +1,5 @@
 import os
+from itertools import pairwise
 
 import pandas as pd
 import pytest
@@ -147,6 +148,61 @@ def test_telpas_default_schema_is_valid():
     config = load_yaml_config(schema_path)
     validate_yaml_config(config, schema_path)  # Should not raise.
     assert max(field["end"] for field in config["fields"]) == 1200
+
+
+def test_process_file_detects_consolidated_accountability_by_filename(tmp_path):
+    """A filename containing ACCOUNTABILITY routes to the consolidated_accountability
+    schema even when the header (2025 = month 20) would otherwise fall into staar_eoc."""
+    # Header "2025" parses to test_month=20, which would otherwise hit the staar_eoc branch.
+    input_data = "2025ABCDEF\nXYZ456789"
+    input_file = tmp_path / "DF_25_101902_Accountability_V01_07212025.txt"
+    input_file.write_text(input_data)
+
+    schema_folder = tmp_path / "schemas"
+    accountability_folder = schema_folder / "consolidated_accountability"
+    accountability_folder.mkdir(parents=True)
+    schema_content = """
+    fields:
+      - start: 1
+        end: 4
+        output_field: "accountability_year"
+        keep: false
+      - start: 5
+        end: 10
+        output_field: "accountability_field"
+        keep: false
+    """
+    (accountability_folder / "consolidated_accountability_2025.yaml").write_text(schema_content)
+
+    output_file = tmp_path / "output.csv"
+    df = process_file(str(input_file), str(output_file), schema_folder=str(schema_folder))
+
+    assert os.path.exists(output_file)
+    # Columns come from the accountability schema, confirming it was selected over staar_eoc.
+    assert list(df.columns) == ["accountability_year", "accountability_field"]
+    assert df.loc[0, "accountability_year"] == "2025"
+
+
+def test_consolidated_accountability_default_schema_is_valid():
+    """The shipped consolidated accountability 2024-2025 schema validates and covers positions 1-2206."""
+    schema_path = os.path.join(
+        os.path.dirname(os.path.dirname(__file__)),
+        "src",
+        "tea_data_file_conversion",
+        "default_schema",
+        "consolidated_accountability",
+        "consolidated_accountability_2025.yaml",
+    )
+    config = load_yaml_config(schema_path)
+    validate_yaml_config(config, schema_path)  # Should not raise.
+    fields = sorted(config["fields"], key=lambda f: f["start"])
+    assert fields[0]["start"] == 1
+    assert fields[-1]["end"] == 2206
+    # Every position 1..2206 covered exactly once (no gaps, no overlaps).
+    for prev, curr in pairwise(fields):
+        assert prev["end"] + 1 == curr["start"], (
+            f"Gap or overlap between fields ending at {prev['end']} and starting at {curr['start']}"
+        )
 
 
 def test_process_fixed_width_file_preserves_strings(tmp_path):

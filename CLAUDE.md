@@ -88,7 +88,14 @@ The system determines test type and year from the header:
 - Characters 3-4: School year abbreviation (e.g., 25 for 2025)
 - STAAR EOC files with month 10-14 have their year incremented by 1
 
-**Currently implemented test types:** Only `staar` (month < 10) and `staar_eoc` (month >= 10) are selected by `processor.process_file`. The `crs/` and `staar_alt/` folders under `default_schema/` ship schemas but have no detection branch — adding support requires editing `processor.py:201`.
+**Currently implemented test types:** `processor.process_file` selects:
+
+- `telpas` when "TELPAS" appears in the input filename (case-insensitive)
+- `consolidated_accountability` when "ACCOUNTABILITY" appears in the input filename (case-insensitive); schemas live under `default_schema/consolidated_accountability/`
+- `staar` when the header month is < 10
+- `staar_eoc` otherwise
+
+Filename-based detection runs before month-based detection, so files whose headers would otherwise collide (TELPAS spring months overlap STAAR; accountability files use the year `2025` as their header which parses as month 20) still route correctly. The `crs/` and `staar_alt/` folders under `default_schema/` ship schemas but have no detection branch — adding support requires editing `processor.py:201`.
 
 ## Known Gotchas
 
