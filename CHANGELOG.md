@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.2.0 (2026-05-28)
+
+### Features
+
+- Add consolidated accountability test type detection and schema ([`7b0e7d5`](https://github.com/securehst/tea-data-file-conversion/commit/7b0e7d590475e376c06bf4d10df213f321b171ab))
+
 ## v1.1.0 (2026-05-28)
 
 ### Bug fixes
