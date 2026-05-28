@@ -90,6 +90,10 @@ jobs:
         with:
           root_options: --noop
           github_token: noop
+          # PR builds run on a synthetic `<PR>/merge` ref with no upstream
+          # branch, so PSR's verify_upstream_unchanged() check would error out.
+          # --no-push skips that branch of the version command entirely.
+          push: "false"
 
       # On main branch: actual PSR + upload to PyPI & GitHub
       - name: Release
