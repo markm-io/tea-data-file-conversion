@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.1.0 (2026-05-28)
+
+### Bug fixes
+
+- Address telpas review-thread feedback ([`a0b00b6`](https://github.com/securehst/tea-data-file-conversion/commit/a0b00b6519264632b2df0085c95b354ae79bf515))
+
+### Features
+
+- Add telpas test type detection and schema ([`ce4c867`](https://github.com/securehst/tea-data-file-conversion/commit/ce4c867cc03b4a9a8d2f5af791149e674e1b4a54))
+
 ## v1.0.0 (2026-05-07)
 
 ## v0.4.0 (2026-05-07)
