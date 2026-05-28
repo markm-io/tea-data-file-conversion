@@ -102,6 +102,54 @@ def test_process_file_integration(tmp_path):
     assert isinstance(df, pd.DataFrame)
 
 
+def test_process_file_detects_telpas_by_filename(tmp_path):
+    """A filename containing TELPAS routes to the telpas schema even when the
+    header month (03) would otherwise be detected as STAAR."""
+    # Header month 03 collides with STAAR's range; the filename must win.
+    input_data = "0325ABCDEF\nDEF456789"
+    input_file = tmp_path / "SF_0325_TELPAS_101902_TEST.txt"
+    input_file.write_text(input_data)
+
+    schema_folder = tmp_path / "schemas"
+    telpas_folder = schema_folder / "telpas"
+    telpas_folder.mkdir(parents=True)
+    schema_content = """
+    fields:
+      - start: 1
+        end: 4
+        output_field: "telpas_admin_date"
+        keep: false
+      - start: 5
+        end: 10
+        output_field: "telpas_field"
+        keep: false
+    """
+    (telpas_folder / "telpas_2025.yaml").write_text(schema_content)
+
+    output_file = tmp_path / "output.csv"
+    df = process_file(str(input_file), str(output_file), schema_folder=str(schema_folder))
+
+    assert os.path.exists(output_file)
+    # Columns come from the telpas schema, confirming it was selected over staar.
+    assert list(df.columns) == ["telpas_admin_date", "telpas_field"]
+    assert df.loc[0, "telpas_admin_date"] == "0325"
+
+
+def test_telpas_default_schema_is_valid():
+    """The shipped TELPAS 2024-2025 schema validates and covers all 1200 positions."""
+    schema_path = os.path.join(
+        os.path.dirname(os.path.dirname(__file__)),
+        "src",
+        "tea_data_file_conversion",
+        "default_schema",
+        "telpas",
+        "telpas_2025.yaml",
+    )
+    config = load_yaml_config(schema_path)
+    validate_yaml_config(config, schema_path)  # Should not raise.
+    assert max(field["end"] for field in config["fields"]) == 1200
+
+
 def test_process_fixed_width_file_preserves_strings(tmp_path):
     """Verify all fields are read as strings, not auto-inferred as numeric."""
     # Row 1: numeric data in both fields. Row 2: blank second field (triggers float conversion without dtype=str).

@@ -198,7 +198,11 @@ def process_file(input_file, output_file=None, schema_folder=None, filter_column
     full_school_year = 2000 + school_year_abbr
 
     # Determine test type and adjust school year if necessary.
-    if test_month < 10:
+    # TELPAS shares STAAR's spring month range, so it cannot be distinguished by
+    # header month alone; detect it from the input filename instead.
+    if "TELPAS" in os.path.basename(input_file).upper():
+        test_name = "telpas"
+    elif test_month < 10:
         test_name = "staar"
     else:
         test_name = "staar_eoc"

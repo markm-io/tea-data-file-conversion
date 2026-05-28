@@ -1,0 +1,1061 @@
+fields:
+  - start: 1
+    end: 4
+    output_field: "Administration and Student ID Information: Administration Date"
+    keep: false
+    mapped_field_name: .nan
+  - start: 5
+    end: 6
+    output_field: "Administration and Student ID Information: Enrolled-Grade-Level-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 7
+    end: 8
+    output_field: "Administration and Student ID Information: ESC Region Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 9
+    end: 17
+    output_field: "Administration and Student ID Information: County-District-Campus Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 18
+    end: 32
+    output_field: "Administration and Student ID Information: District-Name"
+    keep: false
+    mapped_field_name: .nan
+  - start: 33
+    end: 47
+    output_field: "Administration and Student ID Information: Campus-Name"
+    keep: false
+    mapped_field_name: .nan
+  - start: 48
+    end: 62
+    output_field: "Administration and Student ID Information: Last-Name"
+    keep: false
+    mapped_field_name: .nan
+  - start: 63
+    end: 72
+    output_field: "Administration and Student ID Information: First-Name"
+    keep: false
+    mapped_field_name: .nan
+  - start: 73
+    end: 73
+    output_field: "Administration and Student ID Information: Middle Initial"
+    keep: false
+    mapped_field_name: .nan
+  - start: 74
+    end: 82
+    output_field: "Administration and Student ID Information: PEIMS ID"
+    keep: false
+    mapped_field_name: .nan
+  - start: 83
+    end: 83
+    output_field: "Administration and Student ID Information: Sex-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 84
+    end: 91
+    output_field: "Administration and Student ID Information: Date-of-birth"
+    keep: false
+    mapped_field_name: .nan
+  - start: 92
+    end: 92
+    output_field: "Administration and Student ID Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 93
+    end: 93
+    output_field: "Demographic Information: Hispanic-Latino-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 94
+    end: 94
+    output_field: "Demographic Information: American-Indian-Alaska-Native-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 95
+    end: 95
+    output_field: "Demographic Information: Asian-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 96
+    end: 96
+    output_field: "Demographic Information: Black-African American-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 97
+    end: 97
+    output_field: "Demographic Information: Native-Hawaiian-Pacific-Islander-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 98
+    end: 98
+    output_field: "Demographic Information: White-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 99
+    end: 99
+    output_field: "Demographic Information: Ethnicity/Race Reporting Category"
+    keep: false
+    mapped_field_name: .nan
+  - start: 100
+    end: 100
+    output_field: "Demographic Information: Economic-Disadvantage-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 101
+    end: 101
+    output_field: "Demographic Information: Title-I-Part-A-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 102
+    end: 102
+    output_field: "Demographic Information: Migrant-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 103
+    end: 106
+    output_field: "Demographic Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 107
+    end: 107
+    output_field: "Demographic Information: Emergent-Bilingual-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 108
+    end: 108
+    output_field: "Demographic Information: Bilingual-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 109
+    end: 109
+    output_field: "Demographic Information: ESL-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 110
+    end: 110
+    output_field: "Demographic Information: Fall 2024 TSDS PEIMS Homeless-Status-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 111
+    end: 111
+    output_field: "Demographic Information: Special-Ed-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 112
+    end: 112
+    output_field: "Demographic Information: Section-504-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 113
+    end: 116
+    output_field: "Demographic Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 117
+    end: 117
+    output_field: "Demographic Information: Gifted-Talented-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 118
+    end: 118
+    output_field: "Demographic Information: At-Risk-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 119
+    end: 122
+    output_field: "Demographic Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 123
+    end: 126
+    output_field: "Other Student Information: Local Use"
+    keep: false
+    mapped_field_name: .nan
+  - start: 127
+    end: 130
+    output_field: "Other Student Information: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 131
+    end: 131
+    output_field: "Other Student Information: Unschooled Asylee/Refugee"
+    keep: false
+    mapped_field_name: .nan
+  - start: 132
+    end: 132
+    output_field: "Other Student Information: Students with Interrupted Formal Education (SIFE)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 133
+    end: 133
+    output_field: "Agency Use: Agency Use A"
+    keep: false
+    mapped_field_name: .nan
+  - start: 134
+    end: 134
+    output_field: "Agency Use: Agency Use B"
+    keep: false
+    mapped_field_name: .nan
+  - start: 135
+    end: 135
+    output_field: "Agency Use: Agency Use C"
+    keep: false
+    mapped_field_name: .nan
+  - start: 136
+    end: 136
+    output_field: "Agency Use: Agency Use D"
+    keep: false
+    mapped_field_name: .nan
+  - start: 137
+    end: 137
+    output_field: "Agency Use: Agency Use E"
+    keep: false
+    mapped_field_name: .nan
+  - start: 138
+    end: 140
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 141
+    end: 141
+    output_field: "Agency Use: Years in U.S. Schools"
+    keep: false
+    mapped_field_name: .nan
+  - start: 142
+    end: 143
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 144
+    end: 144
+    output_field: "Agency Use: Parental Denial"
+    keep: false
+    mapped_field_name: .nan
+  - start: 145
+    end: 153
+    output_field: "Agency Use: Local-Student-ID"
+    keep: false
+    mapped_field_name: .nan
+  - start: 154
+    end: 154
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 155
+    end: 163
+    output_field: "Agency Use: Fall 2024 TSDS PEIMS County-District-Campus Number"
+    keep: false
+    mapped_field_name: .nan
+  - start: 164
+    end: 175
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 176
+    end: 177
+    output_field: "Agency Use: Fall 2024 TSDS PEIMS Student-Attribution-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 178
+    end: 178
+    output_field: "Agency Use: Fall 2024 TSDS PEIMS Military-Connected-Student-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 179
+    end: 179
+    output_field: "Agency Use: Fall 2024 TSDS PEIMS Foster-Care-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 180
+    end: 180
+    output_field: "Agency Use: Fall 2024 TSDS PEIMS Dyslexia-Indicator-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 181
+    end: 184
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 185
+    end: 190
+    output_field: "Agency Use: Family Portal Unique Access Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 191
+    end: 200
+    output_field: "Agency Use: TSDS-ID"
+    keep: false
+    mapped_field_name: .nan
+  - start: 201
+    end: 201
+    output_field: "Agency Use: Rater Info-A"
+    keep: false
+    mapped_field_name: .nan
+  - start: 202
+    end: 210
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 211
+    end: 211
+    output_field: "Agency Use: Rater Info-B"
+    keep: false
+    mapped_field_name: .nan
+  - start: 212
+    end: 220
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 221
+    end: 221
+    output_field: "Agency Use: Listening and Speaking - Designated Supports"
+    keep: false
+    mapped_field_name: .nan
+  - start: 222
+    end: 222
+    output_field: "Agency Use: Listening and Speaking - Extra Day"
+    keep: false
+    mapped_field_name: .nan
+  - start: 223
+    end: 240
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 241
+    end: 241
+    output_field: "Agency Use: Reading and Writing - Designated Supports"
+    keep: false
+    mapped_field_name: .nan
+  - start: 242
+    end: 242
+    output_field: "Agency Use: Large Print Reading and Writing"
+    keep: false
+    mapped_field_name: .nan
+  - start: 243
+    end: 243
+    output_field: "Agency Use: Reading and Writing - Extra Day"
+    keep: false
+    mapped_field_name: .nan
+  - start: 244
+    end: 244
+    output_field: "Agency Use: Reading Braille Language"
+    keep: false
+    mapped_field_name: .nan
+  - start: 245
+    end: 245
+    output_field: "Agency Use: Writing Speech-to-Text"
+    keep: false
+    mapped_field_name: .nan
+  - start: 246
+    end: 260
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 261
+    end: 261
+    output_field: "Agency Use: Listening Score Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 262
+    end: 262
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 263
+    end: 263
+    output_field: "Agency Use: Listening Proficiency Rating"
+    keep: false
+    mapped_field_name: .nan
+  - start: 264
+    end: 265
+    output_field: "Agency Use: Listening Tested Grade"
+    keep: false
+    mapped_field_name: .nan
+  - start: 266
+    end: 270
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 271
+    end: 271
+    output_field: "Agency Use: Speaking Score Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 272
+    end: 272
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 273
+    end: 273
+    output_field: "Agency Use: Speaking Proficiency Rating"
+    keep: false
+    mapped_field_name: .nan
+  - start: 274
+    end: 275
+    output_field: "Agency Use: Speaking Tested Grade"
+    keep: false
+    mapped_field_name: .nan
+  - start: 276
+    end: 280
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 281
+    end: 281
+    output_field: "Agency Use: Reading Score Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 282
+    end: 282
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 283
+    end: 283
+    output_field: "Agency Use: Reading Proficiency Rating"
+    keep: false
+    mapped_field_name: .nan
+  - start: 284
+    end: 285
+    output_field: "Agency Use: Reading Tested Grade"
+    keep: false
+    mapped_field_name: .nan
+  - start: 286
+    end: 290
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 291
+    end: 291
+    output_field: "Agency Use: Writing Score Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 292
+    end: 292
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 293
+    end: 293
+    output_field: "Agency Use: Writing Proficiency Rating"
+    keep: false
+    mapped_field_name: .nan
+  - start: 294
+    end: 295
+    output_field: "Agency Use: Writing Tested Grade"
+    keep: false
+    mapped_field_name: .nan
+  - start: 296
+    end: 300
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 301
+    end: 302
+    output_field: "Agency Use: Listening Reporting Category Score - Reporting Category 1"
+    keep: false
+    mapped_field_name: .nan
+  - start: 303
+    end: 304
+    output_field: "Agency Use: Listening Reporting Category Score - Reporting Category 2"
+    keep: false
+    mapped_field_name: .nan
+  - start: 305
+    end: 306
+    output_field: "Agency Use: Listening Reporting Category Score - Reporting Category 3"
+    keep: false
+    mapped_field_name: .nan
+  - start: 307
+    end: 308
+    output_field: "Agency Use: Listening Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 309
+    end: 312
+    output_field: "Agency Use: Listening Scale Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 313
+    end: 313
+    output_field: "Agency Use: Listening Holistic Rating Test Administration"
+    keep: false
+    mapped_field_name: .nan
+  - start: 314
+    end: 330
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 331
+    end: 360
+    output_field: "Agency Use: Listening Reporting Category Numbers by Item (1 position per item)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 361
+    end: 390
+    output_field: "Agency Use: Listening Points Possible by Item (1 position per item)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 391
+    end: 420
+    output_field: "Agency Use: Listening Points Achieved by Item (1 position per item)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 421
+    end: 430
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 431
+    end: 432
+    output_field: "Agency Use: Writing Reporting Category Score for Reporting Category 1"
+    keep: false
+    mapped_field_name: .nan
+  - start: 433
+    end: 434
+    output_field: "Agency Use: Writing Reporting Category Score for Reporting Category 2"
+    keep: false
+    mapped_field_name: .nan
+  - start: 435
+    end: 436
+    output_field: "Agency Use: Writing Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 437
+    end: 440
+    output_field: "Agency Use: Writing Scale Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 441
+    end: 441
+    output_field: "Agency Use: Writing Holistic Rating Test Administration"
+    keep: false
+    mapped_field_name: .nan
+  - start: 442
+    end: 446
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 447
+    end: 455
+    output_field: "Agency Use: Writing Reporting Category Numbers by Item (1 position per item)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 456
+    end: 456
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 457
+    end: 474
+    output_field: "Agency Use: Writing Points Possible by Item (2 positions per item)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 475
+    end: 476
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 477
+    end: 494
+    output_field: "Agency Use: Writing Points Achieved by Item (2 positions per item)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 495
+    end: 500
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 501
+    end: 502
+    output_field: "Agency Use: Speaking Reporting Category Score - Reporting Category 1"
+    keep: false
+    mapped_field_name: .nan
+  - start: 503
+    end: 504
+    output_field: "Agency Use: Speaking Reporting Category Score - Reporting Category 2"
+    keep: false
+    mapped_field_name: .nan
+  - start: 505
+    end: 506
+    output_field: "Agency Use: Speaking Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 507
+    end: 510
+    output_field: "Agency Use: Speaking Scale Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 511
+    end: 511
+    output_field: "Agency Use: Speaking Holistic Rating Test Administration"
+    keep: false
+    mapped_field_name: .nan
+  - start: 512
+    end: 530
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 531
+    end: 570
+    output_field: "Agency Use: Speaking Reporting Category Numbers by Item (1 position per item)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 571
+    end: 610
+    output_field: "Agency Use: Speaking Points Possible by Item (1 position per item)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 611
+    end: 650
+    output_field: "Agency Use: Speaking Points Achieved by Item (1 position per item)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 651
+    end: 700
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 701
+    end: 702
+    output_field: "Agency Use: Reading Reporting Category Score - Reporting Category 1"
+    keep: false
+    mapped_field_name: .nan
+  - start: 703
+    end: 704
+    output_field: "Agency Use: Reading Reporting Category Score - Reporting Category 2"
+    keep: false
+    mapped_field_name: .nan
+  - start: 705
+    end: 706
+    output_field: "Agency Use: Reading Reporting Category Score - Reporting Category 3"
+    keep: false
+    mapped_field_name: .nan
+  - start: 707
+    end: 708
+    output_field: "Agency Use: Reading Raw Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 709
+    end: 712
+    output_field: "Agency Use: Reading Scale Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 713
+    end: 713
+    output_field: "Agency Use: Reading Paper Test Administration"
+    keep: false
+    mapped_field_name: .nan
+  - start: 714
+    end: 730
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 731
+    end: 767
+    output_field: "Agency Use: Reading Reporting Category Numbers by Item (1 position per item)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 768
+    end: 770
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 771
+    end: 807
+    output_field: "Agency Use: Reading Correct Response by Item"
+    keep: false
+    mapped_field_name: .nan
+  - start: 808
+    end: 810
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 811
+    end: 847
+    output_field: "Agency Use: Reading Student Response by Item (1 position per item)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 848
+    end: 850
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 851
+    end: 880
+    output_field: "Agency Use: Listening Student Response by Item (1 position per item)"
+    keep: false
+    mapped_field_name: .nan
+  - start: 881
+    end: 900
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 901
+    end: 901
+    output_field: "Agency Use: Yearly Progress Indicator"
+    keep: false
+    mapped_field_name: .nan
+  - start: 902
+    end: 904
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 905
+    end: 907
+    output_field: "Agency Use: TELPAS Composite Score"
+    keep: false
+    mapped_field_name: .nan
+  - start: 908
+    end: 908
+    output_field: "Agency Use: TELPAS Composite Rating"
+    keep: false
+    mapped_field_name: .nan
+  - start: 909
+    end: 909
+    output_field: "Agency Use: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 910
+    end: 912
+    output_field: "Crisis Codes: Fall 2024 TSDS PEIMS Crisis-Code"
+    keep: false
+    mapped_field_name: .nan
+  - start: 913
+    end: 1000
+    output_field: "Crisis Codes: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1001
+    end: 1002
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Grade-2022"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1003
+    end: 1011
+    output_field: "Historical Information TELPAS Spring 2022 Administration: County-District-Campus (CDC) Number 2022"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1012
+    end: 1012
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Years in U.S. Schools 2022"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1013
+    end: 1014
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1015
+    end: 1015
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Listening Score Code 2022"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1016
+    end: 1016
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Listening Proficiency Rating 2022"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1017
+    end: 1020
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Listening Scale Score 2022"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1021
+    end: 1022
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1023
+    end: 1023
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Speaking Score Code 2022"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1024
+    end: 1024
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Speaking Proficiency Rating 2022"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1025
+    end: 1028
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Speaking Scale Score 2022"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1029
+    end: 1030
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1031
+    end: 1031
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Reading Score Code 2022"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1032
+    end: 1032
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Reading Proficiency Rating 2022"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1033
+    end: 1036
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Reading Scale Score 2022"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1037
+    end: 1038
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1039
+    end: 1039
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Writing Score Code 2022"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1040
+    end: 1040
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Writing Proficiency Rating 2022"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1041
+    end: 1044
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1045
+    end: 1045
+    output_field: "Historical Information TELPAS Spring 2022 Administration: Composite Rating 2022"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1046
+    end: 1047
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Grade 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1048
+    end: 1056
+    output_field: "Historical Information TELPAS Spring 2023 Administration: County-District-Campus (CDC) Number 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1057
+    end: 1057
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Years in U.S. Schools 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1058
+    end: 1059
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Listening Tested Grade 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1060
+    end: 1060
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Listening Score Code 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1061
+    end: 1061
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Listening Proficiency Rating 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1062
+    end: 1065
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Listening Scale Score 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1066
+    end: 1067
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Speaking Tested Grade 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1068
+    end: 1068
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Speaking Score Code 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1069
+    end: 1069
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Speaking Proficiency Rating 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1070
+    end: 1073
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Speaking Scale Score 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1074
+    end: 1075
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Reading Tested Grade 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1076
+    end: 1076
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Reading Score Code 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1077
+    end: 1077
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Reading Proficiency Rating 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1078
+    end: 1081
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Reading Scale Score 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1082
+    end: 1083
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Writing Tested Grade 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1084
+    end: 1084
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Writing Score Code 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1085
+    end: 1085
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Writing Proficiency Rating 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1086
+    end: 1089
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Writing Scale Score 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1090
+    end: 1090
+    output_field: "Historical Information TELPAS Spring 2023 Administration: Composite Rating 2023"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1091
+    end: 1092
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Grade 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1093
+    end: 1101
+    output_field: "Historical Information TELPAS Spring 2024 Administration: County-District-Campus (CDC) Number 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1102
+    end: 1102
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Years in U.S. Schools 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1103
+    end: 1104
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Listening Tested Grade 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1105
+    end: 1105
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Listening Score Code 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1106
+    end: 1106
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Listening Proficiency Rating 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1107
+    end: 1110
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Listening Scale Score 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1111
+    end: 1112
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Speaking Tested Grade 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1113
+    end: 1113
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Speaking Score Code 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1114
+    end: 1114
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Speaking Proficiency Rating 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1115
+    end: 1118
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Speaking Scale Score 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1119
+    end: 1120
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Reading Tested Grade 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1121
+    end: 1121
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Reading Score Code 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1122
+    end: 1122
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Reading Proficiency Rating 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1123
+    end: 1126
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Reading Scale Score 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1127
+    end: 1128
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Writing Tested Grade 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1129
+    end: 1129
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Writing Score Code 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1130
+    end: 1130
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Writing Proficiency Rating 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1131
+    end: 1134
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Writing Scale Score 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1135
+    end: 1135
+    output_field: "Historical Information TELPAS Spring 2024 Administration: Composite Rating 2024"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1136
+    end: 1171
+    output_field: "Reference: Opportunity Key"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1172
+    end: 1180
+    output_field: "Reference: Test Result ID"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1181
+    end: 1181
+    output_field: "Reference: Non-Participant - Listening/Speaking"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1182
+    end: 1182
+    output_field: "Reference: Non-Participant - Reading/Writing"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1183
+    end: 1199
+    output_field: "Reference: Blank"
+    keep: false
+    mapped_field_name: .nan
+  - start: 1200
+    end: 1200
+    output_field: "Reference: Period"
+    keep: false
+    mapped_field_name: .nan
