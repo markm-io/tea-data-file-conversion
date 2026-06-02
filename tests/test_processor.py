@@ -245,3 +245,43 @@ def test_csv_to_schema_yaml(tmp_path, monkeypatch):
     config = load_yaml_config(str(yaml_output))
     assert "fields" in config
     assert len(config["fields"]) == 2
+
+
+def test_telpas_2026_default_schema_is_valid():
+    """The shipped TELPAS 2025-2026 schema validates, tiles positions 1-1200
+    exactly, and flags the 10 expected keep-fields."""
+    schema_path = os.path.join(
+        os.path.dirname(os.path.dirname(__file__)),
+        "src",
+        "tea_data_file_conversion",
+        "default_schema",
+        "telpas",
+        "telpas_2026.yaml",
+    )
+    config = load_yaml_config(schema_path)
+    validate_yaml_config(config, schema_path)  # Should not raise.
+
+    fields = sorted(config["fields"], key=lambda f: f["start"])
+    assert fields[0]["start"] == 1
+    assert fields[-1]["end"] == 1200
+    # Every position 1..1200 covered exactly once (no gaps, no overlaps).
+    for prev, curr in pairwise(fields):
+        assert prev["end"] + 1 == curr["start"], (
+            f"Gap or overlap between fields ending at {prev['end']} and starting at {curr['start']}"
+        )
+
+    # The brainstormed keep policy: exactly these 10 fields are kept.
+    kept = {f["output_field"] for f in fields if f.get("keep", False)}
+    expected_kept = {
+        "Administration and Student ID Information: Administration Date",
+        "Administration and Student ID Information: County-District-Campus Number",
+        "Administration and Student ID Information: Last-Name",
+        "Administration and Student ID Information: First-Name",
+        "Administration and Student ID Information: PEIMS ID",
+        "Agency Use: Listening Proficiency Rating",
+        "Agency Use: Speaking Proficiency Rating",
+        "Agency Use: Reading Proficiency Rating",
+        "Agency Use: Writing Proficiency Rating",
+        "Agency Use: TELPAS Composite Rating",
+    }
+    assert kept == expected_kept
