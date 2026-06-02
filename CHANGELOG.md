@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.3.0 (2026-06-02)
+
+### Features
+
+- Add telpas 2026 schema and validation tests ([`ffca8d8`](https://github.com/securehst/tea-data-file-conversion/commit/ffca8d8f2f670e0be9fd8faf5a06f85ba6cd8845))
+- Add staar_alt_2025 schema file ([`d6d3f3e`](https://github.com/securehst/tea-data-file-conversion/commit/d6d3f3efc965c917777c59e5263f1d0b71427010))
+
+### Documentation
+
+- Design spec for 2025-2026 telpas schema support ([`ce71a90`](https://github.com/securehst/tea-data-file-conversion/commit/ce71a90b0fb3dde71c5d8b2a3376ed991653f5c3))
+
 ## v1.2.0 (2026-05-28)
 
 ### Features
