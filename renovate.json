@@ -8,6 +8,8 @@
   "assignees": ["securehst"],
   "assignAutomerge": true,
   "dependencyDashboard": true,
+  "schedule": ["before 4am on Monday"],
+  "timezone": "America/Chicago",
   "prHourlyLimit": 2,
   "prConcurrentLimit": 5,
   "rebaseWhen": "behind-base-branch",
