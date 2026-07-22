@@ -1,17 +1,16 @@
 name: Issue Manager
 
+# The label-applied triggers were removed: this job rescans *every* open issue
+# on each invocation, so firing it per-label (mostly from Renovate labelling its
+# own PRs) was ~49 full redundant scans per 60 days. The daily cron already
+# covers every case, since closing is time-delayed anyway and nothing here needs
+# to react within the delay window.
 on:
   schedule:
     - cron: "0 0 * * *"
   issue_comment:
     types:
       - created
-  issues:
-    types:
-      - labeled
-  pull_request_target:
-    types:
-      - labeled
   workflow_dispatch:
 
 permissions:
