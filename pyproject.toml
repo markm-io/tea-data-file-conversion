@@ -86,6 +86,11 @@ lint.isort.known-first-party = [ "tea_data_file_conversion", "tests" ]
 exclude = [
     "docs/conf.py",
 ]
+# Formatting Markdown here rewrites the Python code fences inside the specs and
+# plans, changing the meaning of the snippets they document.
+extend-exclude = [
+    "docs/superpowers",
+]
 
 [tool.pytest.ini_options]
 addopts = """\
