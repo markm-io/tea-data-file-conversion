@@ -245,6 +245,35 @@ def test_consolidated_accountability_2025_output_fields_are_unique():
     # which is unusable as a column name, so both years emit the literal "EOF".
     assert by_position[(2206, 2206)] == "EOF"
 
+    # One anchor per remaining administration, so that a section-walk bug in any block
+    # fails here rather than sliding through on count and uniqueness alone. The EOC and
+    # Grades 3-8 blocks are structurally identical to one another -- same subjects, same
+    # field shape -- so a swap between two of them stays unique and stays contiguous.
+    # Each anchor was read off the format PDF, not copied from the schema.
+    # The TSDS PEIMS block repeats the Assessment Demographic block's field titles
+    # verbatim (Special-Education-Code is also at position 99), so this anchor catches a
+    # walk that attributes one block's fields to the other.
+    assert by_position[(146, 146)] == "TSDS PEIMS - Special-Education-Code"
+    assert by_position[(458, 458)] == "2024 Fall EOC - Algebra I - Approaches Grade Level at Student's Standard"
+    assert by_position[(637, 637)] == (
+        "2025 Spring EOC - Algebra I - Approaches Grade Level at Student's Standard"
+        "/Level II: Satisfactory Academic Performance"
+    )
+    assert by_position[(923, 923)] == "2023 Summer EOC - U.S. History - Score Code"
+    assert by_position[(991, 991)] == "2023 Fall EOC - Biology - Score Code"
+    assert by_position[(1167, 1167)] == "2024 Spring EOC - English I - Score Code"
+    assert by_position[(1826, 1827)] == "2025 Grades 3-8 - Science - Tested Grade"
+    assert by_position[(1910, 1911)] == "2024 Grades 3-8 - Mathematics - Tested Grade"
+    # The 2023 block's subject is "Reading"; the 2024 and 2025 blocks' is "Reading
+    # Language Arts", so an off-by-one walk across the Grades 3-8 blocks breaks this.
+    assert by_position[(1943, 1951)] == "2023 Grades 3-8 - Reading - County-District-Campus Number"
+    assert by_position[(2168, 2168)] == "2024 TELPAS - Speaking - Score Code"
+
+    # Deliberately doubled: "EL Performance Measure Plan" is both the administration
+    # label and the start of the PDF's own field title. Ruled to stay as-is; this anchor
+    # exists to stop a well-meaning "cleanup" from changing it.
+    assert by_position[(2194, 2194)] == "EL Performance Measure Plan - EL Performance Measure Plan (non-English I/II)"
+
 
 def test_process_fixed_width_file_preserves_strings(tmp_path):
     """Verify all fields are read as strings, not auto-inferred as numeric."""
