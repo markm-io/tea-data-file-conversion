@@ -7,6 +7,7 @@ import pytest
 from tea_data_file_conversion.processor import (
     csv_to_schema_yaml,
     load_yaml_config,
+    process_delimited_file,
     process_file,
     process_fixed_width_file,
     schema_shape,
@@ -324,3 +325,69 @@ def test_schema_shape_reports_the_declared_shape():
     delimited = {"fields": [{"source_column": "YEAR", "output_field": "Year"}]}
     assert schema_shape(fixed) == "fixed_width"
     assert schema_shape(delimited) == "delimited"
+
+
+def test_process_delimited_file_renames_and_preserves_order(tmp_path):
+    """Columns are renamed per the schema and stay in the source file's order."""
+    input_file = tmp_path / "test.csv"
+    input_file.write_text('"YEAR","MIGSTA","LNAME"\n"2026","1","SMITH"\n')
+
+    config = {
+        "fields": [
+            {"source_column": "MIGSTA", "output_field": "Migrant Code", "keep": False},
+            {"source_column": "YEAR", "output_field": "Year", "keep": False},
+            {"source_column": "LNAME", "output_field": "Last Name", "keep": False},
+        ]
+    }
+
+    df = process_delimited_file(str(input_file), config)
+    # Schema order is MIGSTA, YEAR, LNAME but the file's order wins.
+    assert list(df.columns) == ["Year", "Migrant Code", "Last Name"]
+    assert df.loc[0, "Migrant Code"] == "1"
+
+
+def test_process_delimited_file_preserves_strings_and_blanks(tmp_path):
+    """Everything reads as a string; blanks stay empty and literal NA stays 'NA'.
+
+    Without keep_default_na=False, pandas turns the blank into NaN and coerces
+    the literal string NA into a missing value, corrupting TEA codes.
+    """
+    input_file = tmp_path / "test.csv"
+    input_file.write_text('"YEAR","CODE","NUM"\n"2026","NA","007"\n"2026","","012"\n')
+
+    config = {
+        "fields": [
+            {"source_column": "YEAR", "output_field": "Year"},
+            {"source_column": "CODE", "output_field": "Code"},
+            {"source_column": "NUM", "output_field": "Number"},
+        ]
+    }
+
+    df = process_delimited_file(str(input_file), config)
+    assert pd.api.types.is_string_dtype(df["Code"])
+    assert df.loc[0, "Code"] == "NA"
+    assert df.loc[1, "Code"] == ""
+    # Leading zeros survive because nothing is inferred as numeric.
+    assert df.loc[0, "Number"] == "007"
+
+
+def test_process_delimited_file_filter_columns(tmp_path):
+    """filter_columns keeps only keep:true fields, using mapped_field_name when present."""
+    input_file = tmp_path / "test.csv"
+    input_file.write_text('"YEAR","MIGSTA","LNAME"\n"2026","1","SMITH"\n')
+
+    config = {
+        "fields": [
+            {"source_column": "YEAR", "output_field": "Year", "keep": False},
+            {
+                "source_column": "MIGSTA",
+                "output_field": "Migrant Code",
+                "keep": True,
+                "mapped_field_name": "migrant_code",
+            },
+            {"source_column": "LNAME", "output_field": "Last Name", "keep": True},
+        ]
+    }
+
+    df = process_delimited_file(str(input_file), config, filter_columns=True)
+    assert list(df.columns) == ["migrant_code", "Last Name"]

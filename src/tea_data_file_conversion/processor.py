@@ -222,6 +222,54 @@ def process_fixed_width_file(input_file, schema_config, skip_header=False, filte
     return df
 
 
+def process_delimited_file(input_file, schema_config, filter_columns=False):
+    """
+    Process a delimited (CSV) file using the provided YAML schema configuration.
+
+    Each schema field maps a source column in the file to an output column name.
+    Columns keep the order they have in the input file, which is also the order
+    the TEA format document lists them in.
+
+    Parameters
+    ----------
+    input_file : str
+        The path to the delimited input file.
+    schema_config : dict
+        Schema configuration dictionary whose fields use 'source_column'.
+    filter_columns : bool, optional
+        If True, return only columns that are marked with "keep": true.
+
+    Returns
+    -------
+    pd.DataFrame
+        DataFrame with the processed data.
+    """
+    rename_map = {}  # Source column name -> output column name.
+    keep_columns = []  # Output names of columns flagged to be retained.
+
+    for field in schema_config["fields"]:
+        # Use 'mapped_field_name' when filtering columns if available.
+        if filter_columns:
+            mapped_name = field.get("mapped_field_name")
+            output_name = field["output_field"] if pd.isna(mapped_name) else mapped_name
+        else:
+            output_name = field["output_field"]
+        rename_map[field[DELIMITED_FIELD_KEY]] = output_name
+        if field.get("keep", False):
+            keep_columns.append(output_name)
+
+    # dtype=str matches the fixed-width path. keep_default_na=False stops pandas
+    # from converting blanks to NaN and coercing literal TEA codes such as "NA".
+    df = pd.read_csv(input_file, dtype=str, keep_default_na=False)
+
+    df = df.rename(columns=rename_map)
+
+    if filter_columns:
+        df = df[keep_columns]
+
+    return df
+
+
 def process_file(input_file, output_file=None, schema_folder=None, filter_columns=False):
     r"""
     Process an input fixed\-width file and output a CSV file.
