@@ -1,5 +1,34 @@
 # Changelog
 
+## v1.4.0 (2026-08-07)
+
+### Build system
+
+- Exclude docs/superpowers from ruff ([`7a4d991`](https://github.com/securehst/tea-data-file-conversion/commit/7a4d9919775285a7772a5888ab6adc2a17b94074))
+
+### Documentation
+
+- Describe delimited (csv) input across cli help and user docs ([`c954338`](https://github.com/securehst/tea-data-file-conversion/commit/c954338abdaefa79d031fe0309476026e56a2656))
+- Fix stale line-number pointer and complete top-of-file summary ([`54e9abc`](https://github.com/securehst/tea-data-file-conversion/commit/54e9abc573d2bd53d79f6504c3b08efa0af21681))
+- Document delimited input handling and schema shapes ([`dda4570`](https://github.com/securehst/tea-data-file-conversion/commit/dda4570bafdac7dd0ac752403162f55ff887de2f))
+- Add implementation plan for caf 2025-2026 csv conversion ([`defe3f5`](https://github.com/securehst/tea-data-file-conversion/commit/defe3f5462f8b25987516d3a850370bbe9aa0ce8))
+- Add design spec for caf 2025-2026 csv conversion ([`18ee8e1`](https://github.com/securehst/tea-data-file-conversion/commit/18ee8e111accc32805e58cced7caa24199adc3df))
+
+### Bug fixes
+
+- Guard fixed-width header parse and reject duplicate delimited output_field ([`0ce7dfb`](https://github.com/securehst/tea-data-file-conversion/commit/0ce7dfb8ccc6be1e47fea31d7b806452d3b215b6))
+- Name the 2024-2025 end-of-record marker eof ([`5baeef6`](https://github.com/securehst/tea-data-file-conversion/commit/5baeef6cc51ca82ce9aa3aa3932403267fb3f6bf))
+- Stop folding long output_field values in the 2026 caf schema ([`549f1e8`](https://github.com/securehst/tea-data-file-conversion/commit/549f1e8e4686eb8d83d247a5de005d0b5840ecf9))
+- Preserve file column order when filter_columns=true in process_delimited_file ([`0aeed83`](https://github.com/securehst/tea-data-file-conversion/commit/0aeed83c1d687fc8ee679b314d607cd2468b3902))
+
+### Features
+
+- Add 2025-2026 consolidated accountability delimited schema ([`a03b389`](https://github.com/securehst/tea-data-file-conversion/commit/a03b38982fdfbbb9844f9900326c14bcea94f28b))
+- Route .csv input through the delimited path in process_file ([`4831c16`](https://github.com/securehst/tea-data-file-conversion/commit/4831c16c27e2e39359c32b8a9ee17c3edf60a5e0))
+- Warn and continue on delimited schema/file column mismatches ([`5478a4e`](https://github.com/securehst/tea-data-file-conversion/commit/5478a4e16cd4573eb6872519ebbad9d0b893ff07))
+- Add process_delimited_file for csv input ([`004c90c`](https://github.com/securehst/tea-data-file-conversion/commit/004c90cf8551a012646287a1cac8919ed9e857d8))
+- Accept delimited schema shape in validate_yaml_config ([`9f6a267`](https://github.com/securehst/tea-data-file-conversion/commit/9f6a267d768bdaa613ec347ffde348ab1f72688c))
+
 ## v1.3.0 (2026-06-02)
 
 ### Features
