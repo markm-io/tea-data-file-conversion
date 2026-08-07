@@ -327,6 +327,32 @@ def test_consolidated_accountability_2026_default_schema_is_valid():
     assert by_source["T2_RE_SCODE"] == "2026 TELPAS - Reading - Score Code"
     assert by_source["EOF"] == "EOF"
 
+    # One anchor per remaining administration, so that a section-walk bug in any
+    # block fails here rather than sliding through on count and uniqueness alone.
+    # Each exercises all three naming levels and was read off the format PDF.
+    assert (
+        by_source["CU_US_1SUBMIT_TESTVER"]
+        == "EOC Cumulative History - U.S. History First-Time Document Submitted - Test Version"
+    )
+    assert by_source["A2_MA_SSC"] == "2026 Grades 3-8 - Mathematics - Scale Score"
+    assert by_source["A1_MA_RAW"] == "2025 Grades 3-8 - Mathematics - Raw Score"
+    # The 2024 block's subject is "Reading"; 2025's and 2026's is "Reading Language
+    # Arts", so an off-by-one walk across the Grades 3-8 blocks breaks this.
+    assert by_source["A0_RE_SSC"] == "2024 Grades 3-8 - Reading - Scale Score"
+    assert by_source["S1_US_SSC"] == "2024 Summer EOC - U.S. History - Scale Score"
+    assert by_source["F1_E1_SSC"] == "2024 Fall EOC - English I - Scale Score"
+    assert by_source["P1_BI_SSC"] == "2025 Spring EOC - Biology - Scale Score"
+    assert by_source["T1_SP_PROF"] == "2025 TELPAS - Speaking - Proficiency Level"
+
+    # Naming rule 4: the description already carries both its subject and its
+    # season-and-year, so neither prefix level is added. Subtle, easy to regress.
+    assert by_source["S0_A1_SCODE"] == "Algebra I Summer 2023 Score Code"
+
+    # Deliberately doubled: "EL Performance Measure Plan" is both the administration
+    # label and the start of the PDF's own field description. Ruled to stay as-is;
+    # this anchor exists to stop a well-meaning "cleanup" from changing it.
+    assert by_source["PM_ELL_PLAN"] == "EL Performance Measure Plan - EL Performance Measure Plan (non English I II)"
+
     # The one known drift between the format document and the delivered file.
     assert "P_PARENT_DENIAL" in by_source
     assert "P_PARENTAL_DENIAL" not in by_source
