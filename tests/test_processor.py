@@ -289,6 +289,49 @@ def test_telpas_2026_default_schema_is_valid():
     assert kept == expected_kept
 
 
+def test_consolidated_accountability_2026_default_schema_is_valid():
+    """The shipped 2025-2026 schema is a delimited schema covering all 782 columns
+    of the delivered file with unique source and output names."""
+    schema_path = os.path.join(
+        os.path.dirname(os.path.dirname(__file__)),
+        "src",
+        "tea_data_file_conversion",
+        "default_schema",
+        "consolidated_accountability",
+        "consolidated_accountability_2026.yaml",
+    )
+    config = load_yaml_config(schema_path)
+    validate_yaml_config(config, schema_path)  # Should not raise.
+    assert schema_shape(config) == "delimited"
+
+    fields = config["fields"]
+    assert len(fields) == 782
+
+    source_columns = [field["source_column"] for field in fields]
+    assert len(set(source_columns)) == 782, "duplicate source_column values"
+
+    output_fields = [field["output_field"] for field in fields]
+    assert len(set(output_fields)) == 782, "duplicate output_field values"
+
+    # Document order is preserved: the delivered file's first and last columns.
+    assert source_columns[0] == "YEAR"
+    assert source_columns[-1] == "EOF"
+
+    # Naming anchors, one per rule in the design spec.
+    by_source = dict(zip(source_columns, output_fields, strict=True))
+    assert by_source["MIGSTA"] == "Migrant Code"
+    assert by_source["P_MIGSTA"] == "TSDS PEIMS - Migrant Code"
+    assert by_source["S2_A1_SSC"] == "2025 Summer EOC - Algebra I - Scale Score"
+    assert by_source["P2_A1_SSC"] == "2026 Spring EOC - Algebra I - Scale Score"
+    assert by_source["F2_E2_LVL3"] == "2025 Fall EOC - English II - Masters Grade Level"
+    assert by_source["T2_RE_SCODE"] == "2026 TELPAS - Reading - Score Code"
+    assert by_source["EOF"] == "EOF"
+
+    # The one known drift between the format document and the delivered file.
+    assert "P_PARENT_DENIAL" in by_source
+    assert "P_PARENTAL_DENIAL" not in by_source
+
+
 def test_validate_yaml_config_accepts_delimited_shape():
     """A delimited schema uses source_column instead of start/end."""
     config = {"fields": [{"source_column": "MIGSTA", "output_field": "Migrant Code", "keep": False}]}

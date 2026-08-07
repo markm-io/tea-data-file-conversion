@@ -1,0 +1,2681 @@
+fields:
+  - source_column: YEAR
+    output_field: Year
+    keep: false
+  - source_column: REGION
+    output_field: Region Number
+    keep: false
+  - source_column: REPORT_DISTRICT
+    output_field: District Number
+    keep: false
+  - source_column: DNAME
+    output_field: District Name
+    keep: false
+  - source_column: STUDENTID
+    output_field: PEIMS ID
+    keep: false
+  - source_column: LNAME
+    output_field: Last Name
+    keep: false
+  - source_column: FNAME
+    output_field: First Name
+    keep: false
+  - source_column: MINIT
+    output_field: Middle Initial
+    keep: false
+  - source_column: DOB
+    output_field: Date of Birth
+    keep: false
+  - source_column: SEX
+    output_field: Sex
+    keep: false
+  - source_column: RACEH
+    output_field: Hispanic Latino Code
+    keep: false
+  - source_column: RACEI
+    output_field: American Indian or Alaskan Native Code
+    keep: false
+  - source_column: RACEA
+    output_field: Asian Code
+    keep: false
+  - source_column: RACEB
+    output_field: Black African American Code
+    keep: false
+  - source_column: RACEP
+    output_field: Native Hawaiian or Pacific Islander Code
+    keep: false
+  - source_column: RACEW
+    output_field: White Code
+    keep: false
+  - source_column: ETHNIC
+    output_field: Ethnicity/Race Reporting Category
+    keep: false
+  - source_column: SPECED
+    output_field: Special Education Code
+    keep: false
+  - source_column: DISADV
+    output_field: Economically Disadvantaged Code
+    keep: false
+  - source_column: TITLE1
+    output_field: Title I Part A Code
+    keep: false
+  - source_column: MIGSTA
+    output_field: Migrant Code
+    keep: false
+  - source_column: LEP
+    output_field: Emergent Bilingual Code
+    keep: false
+  - source_column: BILING
+    output_field: Bilingual Code
+    keep: false
+  - source_column: ESL
+    output_field: English as a Second Language Code
+    keep: false
+  - source_column: GIFTAL
+    output_field: Gifted Talented Code
+    keep: false
+  - source_column: ATRISK
+    output_field: At Risk Code
+    keep: false
+  - source_column: NEW_TX
+    output_field: New to Texas
+    keep: false
+  - source_column: LOCAL_ID
+    output_field: Local Student ID
+    keep: false
+  - source_column: SECTION_504
+    output_field: Section 504 Code
+    keep: false
+  - source_column: ADA
+    output_field: ADA Eligibility
+    keep: false
+  - source_column: ALC
+    output_field: Alternate Language Code
+    keep: false
+  - source_column: P_SEX
+    output_field: TSDS PEIMS - Sex
+    keep: false
+  - source_column: P_RACEH
+    output_field: TSDS PEIMS - Hispanic Latino Code
+    keep: false
+  - source_column: P_RACEI
+    output_field: TSDS PEIMS - American Indian or Alaskan Native Code
+    keep: false
+  - source_column: P_RACEA
+    output_field: TSDS PEIMS - Asian Code
+    keep: false
+  - source_column: P_RACEB
+    output_field: TSDS PEIMS - Black African American Code
+    keep: false
+  - source_column: P_RACEP
+    output_field: TSDS PEIMS - Native Hawaiian or Pacific Islander Code
+    keep: false
+  - source_column: P_RACEW
+    output_field: TSDS PEIMS - White Code
+    keep: false
+  - source_column: P_ETHNIC
+    output_field: TSDS PEIMS - Ethnicity/Race Reporting Category
+    keep: false
+  - source_column: P_SPECED
+    output_field: TSDS PEIMS - Special Education Code
+    keep: false
+  - source_column: P_DISADV
+    output_field: TSDS PEIMS - Economically Disadvantaged Code
+    keep: false
+  - source_column: P_TITLE1
+    output_field: TSDS PEIMS - Title I Part A Code
+    keep: false
+  - source_column: P_MIGSTA
+    output_field: TSDS PEIMS - Migrant Code
+    keep: false
+  - source_column: P_LEP
+    output_field: TSDS PEIMS - Emergent Bilingual Code
+    keep: false
+  - source_column: P_BILING
+    output_field: TSDS PEIMS - Bilingual Code
+    keep: false
+  - source_column: P_ESL
+    output_field: TSDS PEIMS - English as a Second Language Code
+    keep: false
+  - source_column: P_GIFTAL
+    output_field: TSDS PEIMS - Gifted Talented Code
+    keep: false
+  - source_column: P_ATRISK
+    output_field: TSDS PEIMS - At Risk Code
+    keep: false
+  - source_column: P_ADA
+    output_field: TSDS PEIMS - ADA Eligibility
+    keep: false
+  - source_column: P_MILITARY
+    output_field: TSDS PEIMS - Military Connected Student Code
+    keep: false
+  - source_column: ALT_LANG_PGM
+    output_field: TSDS PEIMS - Alternative Language Programs
+    keep: false
+  - source_column: P_504
+    output_field: TSDS PEIMS - Section 504 Code
+    keep: false
+  - source_column: P_PARENTAL_PERMISSION
+    output_field: TSDS PEIMS - Parental Permission
+    keep: false
+  - source_column: P_GRADE
+    output_field: 2025 TSDS PEIMS Snapshot Grade
+    keep: false
+  - source_column: PEIMSCDC
+    output_field: 2025 TSDS PEIMS Snapshot CDC
+    keep: false
+  - source_column: PEIMSCDC_1
+    output_field: 2024 TSDS PEIMS Snapshot CDC Prior Year
+    keep: false
+  - source_column: P_CRISIS
+    output_field: 2025 TSDS PEIMS Snapshot Crisis Code
+    keep: false
+  - source_column: P_ATTRIBUTION
+    output_field: 2025 TSDS PEIMS Snapshot Attribution Code
+    keep: false
+  - source_column: P_PARENT_DENIAL
+    output_field: 2025 TSDS PEIMS Snapshot Parental Denial
+    keep: false
+  - source_column: P_HOMELESS
+    output_field: 2025 TSDS PEIMS Snapshot Homeless Status Code
+    keep: false
+  - source_column: P_UNACCOMPANIED
+    output_field: 2025 TSDS PEIMS Snapshot Unaccompanied Youth Status Code
+    keep: false
+  - source_column: P_FOSTER
+    output_field: 2025 TSDS PEIMS Snapshot Foster Care Indicator Code
+    keep: false
+  - source_column: P_DYSLEXIA
+    output_field: 2025 TSDS PEIMS Snapshot Dyslexia Indicator Code
+    keep: false
+  - source_column: PAC
+    output_field: Family Portal Unique Access Code
+    keep: false
+  - source_column: TSDS
+    output_field: TX Unique Student ID
+    keep: false
+  - source_column: P_TTT
+    output_field: TAKS/TAAS/TEAMS Tester Indicator
+    keep: false
+  - source_column: S2_DATE
+    output_field: 2025 Summer EOC - Administration Date
+    keep: false
+  - source_column: S2_UPD_IND
+    output_field: 2025 Summer EOC - Record Update Indicator
+    keep: false
+  - source_column: S2_A1_CAMPUS
+    output_field: 2025 Summer EOC - Algebra I - County District Campus Number
+    keep: false
+  - source_column: S2_A1_GRADE
+    output_field: 2025 Summer EOC - Algebra I - Enrolled Grade
+    keep: false
+  - source_column: S2_A1_TESTVER
+    output_field: 2025 Summer EOC - Algebra I - Test Version
+    keep: false
+  - source_column: S2_A1_SCODE
+    output_field: 2025 Summer EOC - Algebra I - Score Code
+    keep: false
+  - source_column: S2_A1_SCODE_D
+    output_field: 2025 Summer EOC - Algebra I - Score Code Default
+    keep: false
+  - source_column: S2_A1_TAI
+    output_field: 2025 Summer EOC - Algebra I - Test Administration Indicator
+    keep: false
+  - source_column: S2_A1_SSC
+    output_field: 2025 Summer EOC - Algebra I - Scale Score
+    keep: false
+  - source_column: S2_A1_LVL2_STU
+    output_field:
+      2025 Summer EOC - Algebra I - Approaches Grade Level at Student's
+      Standard
+    keep: false
+  - source_column: S2_A1_LVL2_REC
+    output_field: 2025 Summer EOC - Algebra I - Meets Grade Level
+    keep: false
+  - source_column: S2_A1_LVL3
+    output_field: 2025 Summer EOC - Algebra I - Masters Grade Level
+    keep: false
+  - source_column: S2_A1_RAW
+    output_field: 2025 Summer EOC - Algebra I - Raw Score
+    keep: false
+  - source_column: S2_A1_PM
+    output_field: 2025 Summer EOC - Algebra I - STAAR Progress Measure
+    keep: false
+  - source_column: S2_A1_EPM
+    output_field: 2025 Summer EOC - Algebra I - EL Performance Measure
+    keep: false
+  - source_column: S2_A1_PLI
+    output_field: 2025 Summer EOC - Algebra I - Performance Level Indicator
+    keep: false
+  - source_column: S2_A1_HSEP
+    output_field: 2025 Summer EOC - Algebra I - High School Equivalency Program HSEP
+    keep: false
+  - source_column: S2_A1_ACCOM
+    output_field: 2025 Summer EOC - Algebra I - Accommodations Used
+    keep: false
+  - source_column: S2_BI_CAMPUS
+    output_field: 2025 Summer EOC - Biology - County District Campus Number
+    keep: false
+  - source_column: S2_BI_GRADE
+    output_field: 2025 Summer EOC - Biology - Enrolled Grade
+    keep: false
+  - source_column: S2_BI_TESTVER
+    output_field: 2025 Summer EOC - Biology - Test Version
+    keep: false
+  - source_column: S2_BI_SCODE
+    output_field: 2025 Summer EOC - Biology - Score Code
+    keep: false
+  - source_column: S2_BI_SCODE_D
+    output_field: 2025 Summer EOC - Biology - Score Code Default
+    keep: false
+  - source_column: S2_BI_TAI
+    output_field: 2025 Summer EOC - Biology - Test Administration Indicator
+    keep: false
+  - source_column: S2_BI_SSC
+    output_field: 2025 Summer EOC - Biology - Scale Score
+    keep: false
+  - source_column: S2_BI_LVL2_STU
+    output_field: 2025 Summer EOC - Biology - Approaches Grade Level at Student's Standard
+    keep: false
+  - source_column: S2_BI_LVL2_REC
+    output_field: 2025 Summer EOC - Biology - Meets Grade Level
+    keep: false
+  - source_column: S2_BI_LVL3
+    output_field: 2025 Summer EOC - Biology - Masters Grade Level
+    keep: false
+  - source_column: S2_BI_EPM
+    output_field: 2025 Summer EOC - Biology - EL Performance Measure
+    keep: false
+  - source_column: S2_BI_HSEP
+    output_field: 2025 Summer EOC - Biology - High School Equivalency Program HSEP
+    keep: false
+  - source_column: S2_BI_ACCOM
+    output_field: 2025 Summer EOC - Biology - Accommodations Used
+    keep: false
+  - source_column: S2_BI_PLI
+    output_field: 2025 Summer EOC - Biology - Performance Level Indicator
+    keep: false
+  - source_column: S2_E1_CAMPUS
+    output_field: 2025 Summer EOC - English I - County District Campus Number
+    keep: false
+  - source_column: S2_E1_GRADE
+    output_field: 2025 Summer EOC - English I - Enrolled Grade
+    keep: false
+  - source_column: S2_E1_TESTVER
+    output_field: 2025 Summer EOC - English I - Test Version
+    keep: false
+  - source_column: S2_E1_SCODE
+    output_field: 2025 Summer EOC - English I - Score Code
+    keep: false
+  - source_column: S2_E1_SCODE_D
+    output_field: 2025 Summer EOC - English I - Score Code Default
+    keep: false
+  - source_column: S2_E1_TAI
+    output_field: 2025 Summer EOC - English I - Test Administration Indicator
+    keep: false
+  - source_column: S2_E1_SSC
+    output_field: 2025 Summer EOC - English I - Scale Score
+    keep: false
+  - source_column: S2_E1_LVL2_STU
+    output_field:
+      2025 Summer EOC - English I - Approaches Grade Level at Student's
+      Standard
+    keep: false
+  - source_column: S2_E1_LVL2_REC
+    output_field: 2025 Summer EOC - English I - Meets Grade Level
+    keep: false
+  - source_column: S2_E1_LVL3
+    output_field: 2025 Summer EOC - English I - Masters Grade Level
+    keep: false
+  - source_column: S2_E1_RAW
+    output_field: 2025 Summer EOC - English I - Raw Score
+    keep: false
+  - source_column: S2_E1_EPM
+    output_field: 2025 Summer EOC - English I - EL Performance Measure
+    keep: false
+  - source_column: S2_E1_PLI
+    output_field: 2025 Summer EOC - English I - Performance Level Indicator
+    keep: false
+  - source_column: S2_E1_HSEP
+    output_field: 2025 Summer EOC - English I - High School Equivalency Program HSEP
+    keep: false
+  - source_column: S2_E1_ACCOM
+    output_field: 2025 Summer EOC - English I - Accommodations Used
+    keep: false
+  - source_column: S2_E1_PM
+    output_field: 2025 Summer EOC - English I - STAAR Progress Measure
+    keep: false
+  - source_column: S2_E2_CAMPUS
+    output_field: 2025 Summer EOC - English II - County District Campus Number
+    keep: false
+  - source_column: S2_E2_GRADE
+    output_field: 2025 Summer EOC - English II - Enrolled Grade
+    keep: false
+  - source_column: S2_E2_TESTVER
+    output_field: 2025 Summer EOC - English II - Test Version
+    keep: false
+  - source_column: S2_E2_SCODE
+    output_field: 2025 Summer EOC - English II - Score Code
+    keep: false
+  - source_column: S2_E2_SCODE_D
+    output_field: 2025 Summer EOC - English II - Score Code Default
+    keep: false
+  - source_column: S2_E2_TAI
+    output_field: 2025 Summer EOC - English II - Test Administration Indicator
+    keep: false
+  - source_column: S2_E2_SSC
+    output_field: 2025 Summer EOC - English II - Scale Score
+    keep: false
+  - source_column: S2_E2_LVL2_STU
+    output_field:
+      2025 Summer EOC - English II - Approaches Grade Level at Student's
+      Standard
+    keep: false
+  - source_column: S2_E2_LVL2_REC
+    output_field: 2025 Summer EOC - English II - Meets Grade Level
+    keep: false
+  - source_column: S2_E2_LVL3
+    output_field: 2025 Summer EOC - English II - Masters Grade Level
+    keep: false
+  - source_column: S2_E2_RAW
+    output_field: 2025 Summer EOC - English II - Raw Score
+    keep: false
+  - source_column: S2_E2_PM
+    output_field: 2025 Summer EOC - English II - STAAR Progress Measure
+    keep: false
+  - source_column: S2_E2_EPM
+    output_field: 2025 Summer EOC - English II - EL Performance Measure
+    keep: false
+  - source_column: S2_E2_PLI
+    output_field: 2025 Summer EOC - English II - Performance Level Indicator
+    keep: false
+  - source_column: S2_E2_HSEP
+    output_field: 2025 Summer EOC - English II - High School Equivalency Program HSEP
+    keep: false
+  - source_column: S2_E2_ACCOM
+    output_field: 2025 Summer EOC - English II - Accommodations Used
+    keep: false
+  - source_column: S2_US_CAMPUS
+    output_field: 2025 Summer EOC - U.S. History - County District Campus Number
+    keep: false
+  - source_column: S2_US_GRADE
+    output_field: 2025 Summer EOC - U.S. History - Enrolled Grade
+    keep: false
+  - source_column: S2_US_TESTVER
+    output_field: 2025 Summer EOC - U.S. History - Test Version
+    keep: false
+  - source_column: S2_US_SCODE
+    output_field: 2025 Summer EOC - U.S. History - Score Code
+    keep: false
+  - source_column: S2_US_SCODE_D
+    output_field: 2025 Summer EOC - U.S. History - Score Code Default
+    keep: false
+  - source_column: S2_US_TAI
+    output_field: 2025 Summer EOC - U.S. History - Test Administration Indicator
+    keep: false
+  - source_column: S2_US_SSC
+    output_field: 2025 Summer EOC - U.S. History - Scale Score
+    keep: false
+  - source_column: S2_US_LVL2_STU
+    output_field:
+      2025 Summer EOC - U.S. History - Approaches Grade Level at Student's
+      Standard
+    keep: false
+  - source_column: S2_US_LVL2_REC
+    output_field: 2025 Summer EOC - U.S. History - Meets Grade Level
+    keep: false
+  - source_column: S2_US_LVL3
+    output_field: 2025 Summer EOC - U.S. History - Masters Grade Level
+    keep: false
+  - source_column: S2_US_EPM
+    output_field: 2025 Summer EOC - U.S. History - EL Performance Measure
+    keep: false
+  - source_column: S2_US_HSEP
+    output_field: 2025 Summer EOC - U.S. History - High School Equivalency Program HSEP
+    keep: false
+  - source_column: S2_US_ACCOM
+    output_field: 2025 Summer EOC - U.S. History - Accommodations Used
+    keep: false
+  - source_column: S2_US_PLI
+    output_field: 2025 Summer EOC - U.S. History - Performance Level Indicator
+    keep: false
+  - source_column: F2_DATE
+    output_field: 2025 Fall EOC - Administration Date
+    keep: false
+  - source_column: F2_UPD_IND
+    output_field: 2025 Fall EOC - Record Update Indicator
+    keep: false
+  - source_column: F2_A1_CAMPUS
+    output_field: 2025 Fall EOC - Algebra I - County District Campus Number
+    keep: false
+  - source_column: F2_A1_GRADE
+    output_field: 2025 Fall EOC - Algebra I - Enrolled Grade
+    keep: false
+  - source_column: F2_A1_TESTVER
+    output_field: 2025 Fall EOC - Algebra I - Test Version
+    keep: false
+  - source_column: F2_A1_SCODE
+    output_field: 2025 Fall EOC - Algebra I - Score Code
+    keep: false
+  - source_column: F2_A1_SCODE_D
+    output_field: 2025 Fall EOC - Algebra I - Score Code Default
+    keep: false
+  - source_column: F2_A1_TAI
+    output_field: 2025 Fall EOC - Algebra I - Test Administration Indicator
+    keep: false
+  - source_column: F2_A1_SSC
+    output_field: 2025 Fall EOC - Algebra I - Scale Score
+    keep: false
+  - source_column: F2_A1_LVL2_STU
+    output_field: 2025 Fall EOC - Algebra I - Approaches Grade Level at Student's Standard
+    keep: false
+  - source_column: F2_A1_LVL2_REC
+    output_field: 2025 Fall EOC - Algebra I - Meets Grade Level
+    keep: false
+  - source_column: F2_A1_LVL3
+    output_field: 2025 Fall EOC - Algebra I - Masters Grade Level
+    keep: false
+  - source_column: F2_A1_RAW
+    output_field: 2025 Fall EOC - Algebra I - Raw Score
+    keep: false
+  - source_column: F2_A1_PM
+    output_field: 2025 Fall EOC - Algebra I - STAAR Progress Measure
+    keep: false
+  - source_column: F2_A1_EPM
+    output_field: 2025 Fall EOC - Algebra I - EL Performance Measure
+    keep: false
+  - source_column: F2_A1_PLI
+    output_field: 2025 Fall EOC - Algebra I - Performance Level Indicator
+    keep: false
+  - source_column: F2_A1_HSEP
+    output_field: 2025 Fall EOC - Algebra I - High School Equivalency Program HSEP
+    keep: false
+  - source_column: F2_A1_ACCOM
+    output_field: 2025 Fall EOC - Algebra I - Accommodations Used
+    keep: false
+  - source_column: F2_BI_CAMPUS
+    output_field: 2025 Fall EOC - Biology - County District Campus Number
+    keep: false
+  - source_column: F2_BI_GRADE
+    output_field: 2025 Fall EOC - Biology - Enrolled Grade
+    keep: false
+  - source_column: F2_BI_TESTVER
+    output_field: 2025 Fall EOC - Biology - Test Version
+    keep: false
+  - source_column: F2_BI_SCODE
+    output_field: 2025 Fall EOC - Biology - Score Code
+    keep: false
+  - source_column: F2_BI_SCODE_D
+    output_field: 2025 Fall EOC - Biology - Score Code Default
+    keep: false
+  - source_column: F2_BI_TAI
+    output_field: 2025 Fall EOC - Biology - Test Administration Indicator
+    keep: false
+  - source_column: F2_BI_SSC
+    output_field: 2025 Fall EOC - Biology - Scale Score
+    keep: false
+  - source_column: F2_BI_LVL2_STU
+    output_field: 2025 Fall EOC - Biology - Approaches Grade Level at Student's Standard
+    keep: false
+  - source_column: F2_BI_LVL2_REC
+    output_field: 2025 Fall EOC - Biology - Meets Grade Level
+    keep: false
+  - source_column: F2_BI_LVL3
+    output_field: 2025 Fall EOC - Biology - Masters Grade Level
+    keep: false
+  - source_column: F2_BI_EPM
+    output_field: 2025 Fall EOC - Biology - EL Performance Measure
+    keep: false
+  - source_column: F2_BI_HSEP
+    output_field: 2025 Fall EOC - Biology - High School Equivalency Program HSEP
+    keep: false
+  - source_column: F2_BI_ACCOM
+    output_field: 2025 Fall EOC - Biology - Accommodations Used
+    keep: false
+  - source_column: F2_BI_PLI
+    output_field: 2025 Fall EOC - Biology - Performance Level Indicator
+    keep: false
+  - source_column: F2_E1_CAMPUS
+    output_field: 2025 Fall EOC - English I - County District Campus Number
+    keep: false
+  - source_column: F2_E1_GRADE
+    output_field: 2025 Fall EOC - English I - Enrolled Grade
+    keep: false
+  - source_column: F2_E1_TESTVER
+    output_field: 2025 Fall EOC - English I - Test Version
+    keep: false
+  - source_column: F2_E1_SCODE
+    output_field: 2025 Fall EOC - English I - Score Code
+    keep: false
+  - source_column: F2_E1_SCODE_D
+    output_field: 2025 Fall EOC - English I - Score Code Default
+    keep: false
+  - source_column: F2_E1_TAI
+    output_field: 2025 Fall EOC - English I - Test Administration Indicator
+    keep: false
+  - source_column: F2_E1_SSC
+    output_field: 2025 Fall EOC - English I - Scale Score
+    keep: false
+  - source_column: F2_E1_LVL2_STU
+    output_field: 2025 Fall EOC - English I - Approaches Grade Level at Student's Standard
+    keep: false
+  - source_column: F2_E1_LVL2_REC
+    output_field: 2025 Fall EOC - English I - Meets Grade Level
+    keep: false
+  - source_column: F2_E1_LVL3
+    output_field: 2025 Fall EOC - English I - Masters Grade Level
+    keep: false
+  - source_column: F2_E1_RAW
+    output_field: 2025 Fall EOC - English I - Raw Score
+    keep: false
+  - source_column: F2_E1_EPM
+    output_field: 2025 Fall EOC - English I - EL Performance Measure
+    keep: false
+  - source_column: F2_E1_PLI
+    output_field: 2025 Fall EOC - English I - Performance Level Indicator
+    keep: false
+  - source_column: F2_E1_HSEP
+    output_field: 2025 Fall EOC - English I - High School Equivalency Program HSEP
+    keep: false
+  - source_column: F2_E1_ACCOM
+    output_field: 2025 Fall EOC - English I - Accommodations Used
+    keep: false
+  - source_column: F2_E1_PM
+    output_field: 2025 Fall EOC - English I - STAAR Progress Measure
+    keep: false
+  - source_column: F2_E2_CAMPUS
+    output_field: 2025 Fall EOC - English II - County District Campus Number
+    keep: false
+  - source_column: F2_E2_GRADE
+    output_field: 2025 Fall EOC - English II - Enrolled Grade
+    keep: false
+  - source_column: F2_E2_TESTVER
+    output_field: 2025 Fall EOC - English II - Test Version
+    keep: false
+  - source_column: F2_E2_SCODE
+    output_field: 2025 Fall EOC - English II - Score Code
+    keep: false
+  - source_column: F2_E2_SCODE_D
+    output_field: 2025 Fall EOC - English II - Score Code Default
+    keep: false
+  - source_column: F2_E2_TAI
+    output_field: 2025 Fall EOC - English II - Test Administration Indicator
+    keep: false
+  - source_column: F2_E2_SSC
+    output_field: 2025 Fall EOC - English II - Scale Score
+    keep: false
+  - source_column: F2_E2_LVL2_STU
+    output_field: 2025 Fall EOC - English II - Approaches Grade Level at Student's Standard
+    keep: false
+  - source_column: F2_E2_LVL2_REC
+    output_field: 2025 Fall EOC - English II - Meets Grade Level
+    keep: false
+  - source_column: F2_E2_LVL3
+    output_field: 2025 Fall EOC - English II - Masters Grade Level
+    keep: false
+  - source_column: F2_E2_RAW
+    output_field: 2025 Fall EOC - English II - Raw Score
+    keep: false
+  - source_column: F2_E2_PM
+    output_field: 2025 Fall EOC - English II - STAAR Progress Measure
+    keep: false
+  - source_column: F2_E2_EPM
+    output_field: 2025 Fall EOC - English II - EL Performance Measure
+    keep: false
+  - source_column: F2_E2_PLI
+    output_field: 2025 Fall EOC - English II - Performance Level Indicator
+    keep: false
+  - source_column: F2_E2_HSEP
+    output_field: 2025 Fall EOC - English II - High School Equivalency Program HSEP
+    keep: false
+  - source_column: F2_E2_ACCOM
+    output_field: 2025 Fall EOC - English II - Accommodations Used
+    keep: false
+  - source_column: F2_US_CAMPUS
+    output_field: 2025 Fall EOC - U.S. History - County District Campus Number
+    keep: false
+  - source_column: F2_US_GRADE
+    output_field: 2025 Fall EOC - U.S. History - Enrolled Grade
+    keep: false
+  - source_column: F2_US_TESTVER
+    output_field: 2025 Fall EOC - U.S. History - Test Version
+    keep: false
+  - source_column: F2_US_SCODE
+    output_field: 2025 Fall EOC - U.S. History - Score Code
+    keep: false
+  - source_column: F2_US_SCODE_D
+    output_field: 2025 Fall EOC - U.S. History - Score Code Default
+    keep: false
+  - source_column: F2_US_TAI
+    output_field: 2025 Fall EOC - U.S. History - Test Administration Indicator
+    keep: false
+  - source_column: F2_US_SSC
+    output_field: 2025 Fall EOC - U.S. History - Scale Score
+    keep: false
+  - source_column: F2_US_LVL2_STU
+    output_field:
+      2025 Fall EOC - U.S. History - Approaches Grade Level at Student's
+      Standard
+    keep: false
+  - source_column: F2_US_LVL2_REC
+    output_field: 2025 Fall EOC - U.S. History - Meets Grade Level
+    keep: false
+  - source_column: F2_US_LVL3
+    output_field: 2025 Fall EOC - U.S. History - Masters Grade Level
+    keep: false
+  - source_column: F2_US_EPM
+    output_field: 2025 Fall EOC - U.S. History - EL Performance Measure
+    keep: false
+  - source_column: F2_US_HSEP
+    output_field: 2025 Fall EOC - U.S. History - High School Equivalency Program HSEP
+    keep: false
+  - source_column: F2_US_ACCOM
+    output_field: 2025 Fall EOC - U.S. History - Accommodations Used
+    keep: false
+  - source_column: F2_US_PLI
+    output_field: 2025 Fall EOC - U.S. History - Performance Level Indicator
+    keep: false
+  - source_column: P2_DATE
+    output_field: 2026 Spring EOC - Administration Date
+    keep: false
+  - source_column: P2_UPD_IND
+    output_field: 2026 Spring EOC - Record Update Indicator
+    keep: false
+  - source_column: P2_A1_CAMPUS
+    output_field: 2026 Spring EOC - Algebra I - County District Campus Number
+    keep: false
+  - source_column: P2_A1_GRADE
+    output_field: 2026 Spring EOC - Algebra I - Enrolled Grade
+    keep: false
+  - source_column: P2_A1_TESTVER
+    output_field: 2026 Spring EOC - Algebra I - Test Version
+    keep: false
+  - source_column: P2_A1_SCODE
+    output_field: 2026 Spring EOC - Algebra I - Score Code
+    keep: false
+  - source_column: P2_A1_SCODE_D
+    output_field: 2026 Spring EOC - Algebra I - Score Code Default
+    keep: false
+  - source_column: P2_A1_TAI
+    output_field: 2026 Spring EOC - Algebra I - Test Administration Indicator
+    keep: false
+  - source_column: P2_A1_SSC
+    output_field: 2026 Spring EOC - Algebra I - Scale Score
+    keep: false
+  - source_column: P2_A1_LVL2_STU
+    output_field:
+      "2026 Spring EOC - Algebra I - Approaches Grade Level at Student's
+      Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: P2_A1_LVL2_REC
+    output_field:
+      "2026 Spring EOC - Algebra I - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: P2_A1_LVL3
+    output_field:
+      "2026 Spring EOC - Algebra I - Masters Grade Level Level III: Accomplished
+      Academic Performance"
+    keep: false
+  - source_column: P2_A1_RAW
+    output_field: 2026 Spring EOC - Algebra I - Raw Score
+    keep: false
+  - source_column: P2_A1_PM
+    output_field: 2026 Spring EOC - Algebra I - STAAR Progress Measure
+    keep: false
+  - source_column: P2_A1_EPM
+    output_field: 2026 Spring EOC - Algebra I - EL Performance Measure
+    keep: false
+  - source_column: P2_A1_PLI
+    output_field: 2026 Spring EOC - Algebra I - Performance Level Indicator
+    keep: false
+  - source_column: P2_A1_HSEP
+    output_field: 2026 Spring EOC - Algebra I - High School Equivalency Program HSEP
+    keep: false
+  - source_column: P2_A1_ACCOM
+    output_field: 2026 Spring EOC - Algebra I - Accommodations Used
+    keep: false
+  - source_column: P2_BI_CAMPUS
+    output_field: 2026 Spring EOC - Biology - County District Campus Number
+    keep: false
+  - source_column: P2_BI_GRADE
+    output_field: 2026 Spring EOC - Biology - Enrolled Grade
+    keep: false
+  - source_column: P2_BI_TESTVER
+    output_field: 2026 Spring EOC - Biology - Test Version
+    keep: false
+  - source_column: P2_BI_SCODE
+    output_field: 2026 Spring EOC - Biology - Score Code
+    keep: false
+  - source_column: P2_BI_SCODE_D
+    output_field: 2026 Spring EOC - Biology - Score Code Default
+    keep: false
+  - source_column: P2_BI_TAI
+    output_field: 2026 Spring EOC - Biology - Test Administration Indicator
+    keep: false
+  - source_column: P2_BI_SSC
+    output_field: 2026 Spring EOC - Biology - Scale Score
+    keep: false
+  - source_column: P2_BI_LVL2_STU
+    output_field:
+      "2026 Spring EOC - Biology - Approaches Grade Level at Student's
+      Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: P2_BI_LVL2_REC
+    output_field:
+      "2026 Spring EOC - Biology - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: P2_BI_LVL3
+    output_field:
+      "2026 Spring EOC - Biology - Masters Grade Level Level III: Accomplished
+      Academic Performance"
+    keep: false
+  - source_column: P2_BI_EPM
+    output_field: 2026 Spring EOC - Biology - EL Performance Measure
+    keep: false
+  - source_column: P2_BI_HSEP
+    output_field: 2026 Spring EOC - Biology - High School Equivalency Program HSEP
+    keep: false
+  - source_column: P2_BI_ACCOM
+    output_field: 2026 Spring EOC - Biology - Accommodations Used
+    keep: false
+  - source_column: P2_BI_PLI
+    output_field: 2026 Spring EOC - Biology - Performance Level Indicator
+    keep: false
+  - source_column: P2_E1_CAMPUS
+    output_field: 2026 Spring EOC - English I - County District Campus Number
+    keep: false
+  - source_column: P2_E1_GRADE
+    output_field: 2026 Spring EOC - English I - Enrolled Grade
+    keep: false
+  - source_column: P2_E1_TESTVER
+    output_field: 2026 Spring EOC - English I - Test Version
+    keep: false
+  - source_column: P2_E1_SCODE
+    output_field: 2026 Spring EOC - English I - Score Code
+    keep: false
+  - source_column: P2_E1_SCODE_D
+    output_field: 2026 Spring EOC - English I - Score Code Default
+    keep: false
+  - source_column: P2_E1_TAI
+    output_field: 2026 Spring EOC - English I - Test Administration Indicator
+    keep: false
+  - source_column: P2_E1_SSC
+    output_field: 2026 Spring EOC - English I - Scale Score
+    keep: false
+  - source_column: P2_E1_LVL2_STU
+    output_field:
+      "2026 Spring EOC - English I - Approaches Grade Level at Student's
+      Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: P2_E1_LVL2_REC
+    output_field:
+      "2026 Spring EOC - English I - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: P2_E1_LVL3
+    output_field:
+      "2026 Spring EOC - English I - Masters Grade Level Level III: Accomplished
+      Academic Performance"
+    keep: false
+  - source_column: P2_E1_RAW
+    output_field: 2026 Spring EOC - English I - Raw Score
+    keep: false
+  - source_column: P2_E1_EPM
+    output_field: 2026 Spring EOC - English I - EL Performance Measure
+    keep: false
+  - source_column: P2_E1_FORM
+    output_field: 2026 Spring EOC - English I - Test Form Version
+    keep: false
+  - source_column: P2_E1_PLI
+    output_field: 2026 Spring EOC - English I - Performance Level Indicator
+    keep: false
+  - source_column: P2_E1_HSEP
+    output_field: 2026 Spring EOC - English I - High School Equivalency Program HSEP
+    keep: false
+  - source_column: P2_E1_ACCOM
+    output_field: 2026 Spring EOC - English I - Accommodations Used
+    keep: false
+  - source_column: P2_E1_PM
+    output_field: 2026 Spring EOC - English I - STAAR Progress Measure
+    keep: false
+  - source_column: P2_E2_CAMPUS
+    output_field: 2026 Spring EOC - English II - County District Campus Number
+    keep: false
+  - source_column: P2_E2_GRADE
+    output_field: 2026 Spring EOC - English II - Enrolled Grade
+    keep: false
+  - source_column: P2_E2_TESTVER
+    output_field: 2026 Spring EOC - English II - Test Version
+    keep: false
+  - source_column: P2_E2_SCODE
+    output_field: 2026 Spring EOC - English II - Score Code
+    keep: false
+  - source_column: P2_E2_SCODE_D
+    output_field: 2026 Spring EOC - English II - Score Code Default
+    keep: false
+  - source_column: P2_E2_TAI
+    output_field: 2026 Spring EOC - English II - Test Administration Indicator
+    keep: false
+  - source_column: P2_E2_SSC
+    output_field: 2026 Spring EOC - English II - Scale Score
+    keep: false
+  - source_column: P2_E2_LVL2_STU
+    output_field:
+      "2026 Spring EOC - English II - Approaches Grade Level at Student's
+      Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: P2_E2_LVL2_REC
+    output_field:
+      "2026 Spring EOC - English II - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: P2_E2_LVL3
+    output_field:
+      "2026 Spring EOC - English II - Masters Grade Level Level III: Accomplished
+      Academic Performance"
+    keep: false
+  - source_column: P2_E2_RAW
+    output_field: 2026 Spring EOC - English II - Raw Score
+    keep: false
+  - source_column: P2_E2_PM
+    output_field: 2026 Spring EOC - English II - STAAR Progress Measure
+    keep: false
+  - source_column: P2_E2_EPM
+    output_field: 2026 Spring EOC - English II - EL Performance Measure
+    keep: false
+  - source_column: P2_E2_PREV
+    output_field:
+      2026 Spring EOC - English II - Previous Year English I First time
+      Retester
+    keep: false
+  - source_column: P2_E2_FORM
+    output_field: 2026 Spring EOC - English II - Test Form Version
+    keep: false
+  - source_column: P2_E2_PLI
+    output_field: 2026 Spring EOC - English II - Performance Level Indicator
+    keep: false
+  - source_column: P2_E2_HSEP
+    output_field: 2026 Spring EOC - English II - High School Equivalency Program HSEP
+    keep: false
+  - source_column: P2_E2_ACCOM
+    output_field: 2026 Spring EOC - English II - Accommodations Used
+    keep: false
+  - source_column: P2_US_CAMPUS
+    output_field: 2026 Spring EOC - U.S. History - County District Campus Number
+    keep: false
+  - source_column: P2_US_GRADE
+    output_field: 2026 Spring EOC - U.S. History - Enrolled Grade
+    keep: false
+  - source_column: P2_US_TESTVER
+    output_field: 2026 Spring EOC - U.S. History - Test Version
+    keep: false
+  - source_column: P2_US_SCODE
+    output_field: 2026 Spring EOC - U.S. History - Score Code
+    keep: false
+  - source_column: P2_US_SCODE_D
+    output_field: 2026 Spring EOC - U.S. History - Score Code Default
+    keep: false
+  - source_column: P2_US_TAI
+    output_field: 2026 Spring EOC - U.S. History - Test Administration Indicator
+    keep: false
+  - source_column: P2_US_SSC
+    output_field: 2026 Spring EOC - U.S. History - Scale Score
+    keep: false
+  - source_column: P2_US_LVL2_STU
+    output_field:
+      "2026 Spring EOC - U.S. History - Approaches Grade Level at Student's
+      Standard/Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: P2_US_LVL2_REC
+    output_field:
+      "2026 Spring EOC - U.S. History - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: P2_US_LVL3
+    output_field:
+      "2026 Spring EOC - U.S. History - Masters Grade Level Level III: Accomplished
+      Academic Performance"
+    keep: false
+  - source_column: P2_US_EPM
+    output_field: 2026 Spring EOC - U.S. History - EL Performance Measure
+    keep: false
+  - source_column: P2_US_HSEP
+    output_field: 2026 Spring EOC - U.S. History - High School Equivalency Program HSEP
+    keep: false
+  - source_column: P2_US_ACCOM
+    output_field: 2026 Spring EOC - U.S. History - Accommodations Used
+    keep: false
+  - source_column: P2_US_PLI
+    output_field: 2026 Spring EOC - U.S. History - Performance Level Indicator
+    keep: false
+  - source_column: S1_DATE
+    output_field: 2024 Summer EOC - Administration Date
+    keep: false
+  - source_column: S1_A1_CAMPUS
+    output_field: 2024 Summer EOC - Algebra I - County District Campus Number
+    keep: false
+  - source_column: S1_A1_GRADE
+    output_field: 2024 Summer EOC - Algebra I - Enrolled Grade
+    keep: false
+  - source_column: S1_A1_TESTVER
+    output_field: 2024 Summer EOC - Algebra I - Test Version
+    keep: false
+  - source_column: S1_A1_SCODE
+    output_field: 2024 Summer EOC - Algebra I - Score Code
+    keep: false
+  - source_column: S1_A1_SCODE_D
+    output_field: 2024 Summer EOC - Algebra I - Score Code Default
+    keep: false
+  - source_column: S1_A1_SSC
+    output_field: 2024 Summer EOC - Algebra I - Scale Score
+    keep: false
+  - source_column: S1_A1_LVL2_STU
+    output_field:
+      2024 Summer EOC - Algebra I - Approaches Grade Level at Student's
+      Standard
+    keep: false
+  - source_column: S1_A1_LVL2_REC
+    output_field: 2024 Summer EOC - Algebra I - Meets Grade Level
+    keep: false
+  - source_column: S1_A1_LVL3
+    output_field: 2024 Summer EOC - Algebra I - Masters Grade Level
+    keep: false
+  - source_column: S1_A1_PLI
+    output_field: 2024 Summer EOC - Algebra I - Performance Level Indicator
+    keep: false
+  - source_column: S1_A1_RAW
+    output_field: 2024 Summer EOC - Algebra I - Raw Score
+    keep: false
+  - source_column: S1_A1_PM
+    output_field: 2024 Summer EOC - Algebra I - STAAR Progress Measure
+    keep: false
+  - source_column: S1_BI_CAMPUS
+    output_field: 2024 Summer EOC - Biology - County District Campus Number
+    keep: false
+  - source_column: S1_BI_GRADE
+    output_field: 2024 Summer EOC - Biology - Enrolled Grade
+    keep: false
+  - source_column: S1_BI_TESTVER
+    output_field: 2024 Summer EOC - Biology - Test Version
+    keep: false
+  - source_column: S1_BI_SCODE
+    output_field: 2024 Summer EOC - Biology - Score Code
+    keep: false
+  - source_column: S1_BI_SCODE_D
+    output_field: 2024 Summer EOC - Biology - Score Code Default
+    keep: false
+  - source_column: S1_BI_SSC
+    output_field: 2024 Summer EOC - Biology - Scale Score
+    keep: false
+  - source_column: S1_BI_LVL2_STU
+    output_field: 2024 Summer EOC - Biology - Approaches Grade Level at Student's Standard
+    keep: false
+  - source_column: S1_BI_LVL2_REC
+    output_field: 2024 Summer EOC - Biology - Meets Grade Level
+    keep: false
+  - source_column: S1_BI_LVL3
+    output_field: 2024 Summer EOC - Biology - Masters Grade Level
+    keep: false
+  - source_column: S1_BI_PLI
+    output_field: 2024 Summer EOC - Biology - Performance Level Indicator
+    keep: false
+  - source_column: S1_E1_CAMPUS
+    output_field: 2024 Summer EOC - English I - County District Campus Number
+    keep: false
+  - source_column: S1_E1_GRADE
+    output_field: 2024 Summer EOC - English I - Enrolled Grade
+    keep: false
+  - source_column: S1_E1_TESTVER
+    output_field: 2024 Summer EOC - English I - Test Version
+    keep: false
+  - source_column: S1_E1_SCODE
+    output_field: 2024 Summer EOC - English I - Score Code
+    keep: false
+  - source_column: S1_E1_SCODE_D
+    output_field: 2024 Summer EOC - English I - Score Code Default
+    keep: false
+  - source_column: S1_E1_SSC
+    output_field: 2024 Summer EOC - English I - Scale Score
+    keep: false
+  - source_column: S1_E1_LVL2_STU
+    output_field:
+      2024 Summer EOC - English I - Approaches Grade Level at Student's
+      Standard
+    keep: false
+  - source_column: S1_E1_LVL2_REC
+    output_field: 2024 Summer EOC - English I - Meets Grade Level
+    keep: false
+  - source_column: S1_E1_LVL3
+    output_field: 2024 Summer EOC - English I - Masters Grade Level
+    keep: false
+  - source_column: S1_E1_PLI
+    output_field: 2024 Summer EOC - English I - Performance Level Indicator
+    keep: false
+  - source_column: S1_E1_RAW
+    output_field: 2024 Summer EOC - English I - Raw Score
+    keep: false
+  - source_column: S1_E1_PM
+    output_field: 2024 Summer EOC - English I - STAAR Progress Measure
+    keep: false
+  - source_column: S1_E2_CAMPUS
+    output_field: 2024 Summer EOC - English II - County District Campus Number
+    keep: false
+  - source_column: S1_E2_GRADE
+    output_field: 2024 Summer EOC - English II - Enrolled Grade
+    keep: false
+  - source_column: S1_E2_TESTVER
+    output_field: 2024 Summer EOC - English II - Test Version
+    keep: false
+  - source_column: S1_E2_SCODE
+    output_field: 2024 Summer EOC - English II - Score Code
+    keep: false
+  - source_column: S1_E2_SCODE_D
+    output_field: 2024 Summer EOC - English II - Score Code Default
+    keep: false
+  - source_column: S1_E2_SSC
+    output_field: 2024 Summer EOC - English II - Scale Score
+    keep: false
+  - source_column: S1_E2_LVL2_STU
+    output_field:
+      2024 Summer EOC - English II - Approaches Grade Level at Student's
+      Standard
+    keep: false
+  - source_column: S1_E2_LVL2_REC
+    output_field: 2024 Summer EOC - English II - Meets Grade Level
+    keep: false
+  - source_column: S1_E2_LVL3
+    output_field: 2024 Summer EOC - English II - Masters Grade Level
+    keep: false
+  - source_column: S1_E2_PLI
+    output_field: 2024 Summer EOC - English II - Performance Level Indicator
+    keep: false
+  - source_column: S1_E2_RAW
+    output_field: 2024 Summer EOC - English II - Raw Score
+    keep: false
+  - source_column: S1_E2_PM
+    output_field: 2024 Summer EOC - English II - STAAR Progress Measure
+    keep: false
+  - source_column: S1_US_CAMPUS
+    output_field: 2024 Summer EOC - U.S. History - County District Campus Number
+    keep: false
+  - source_column: S1_US_GRADE
+    output_field: 2024 Summer EOC - U.S. History - Enrolled Grade
+    keep: false
+  - source_column: S1_US_TESTVER
+    output_field: 2024 Summer EOC - U.S. History - Test Version
+    keep: false
+  - source_column: S1_US_SCODE
+    output_field: 2024 Summer EOC - U.S. History - Score Code
+    keep: false
+  - source_column: S1_US_SCODE_D
+    output_field: 2024 Summer EOC - U.S. History - Score Code Default
+    keep: false
+  - source_column: S1_US_SSC
+    output_field: 2024 Summer EOC - U.S. History - Scale Score
+    keep: false
+  - source_column: S1_US_LVL2_STU
+    output_field:
+      2024 Summer EOC - U.S. History - Approaches Grade Level at Student's
+      Standard
+    keep: false
+  - source_column: S1_US_LVL2_REC
+    output_field: 2024 Summer EOC - U.S. History - Meets Grade Level
+    keep: false
+  - source_column: S1_US_LVL3
+    output_field: 2024 Summer EOC - U.S. History - Masters Grade Level
+    keep: false
+  - source_column: S1_US_PLI
+    output_field: 2024 Summer EOC - U.S. History - Performance Level Indicator
+    keep: false
+  - source_column: F1_DATE
+    output_field: 2024 Fall EOC - Administration Date
+    keep: false
+  - source_column: F1_A1_CAMPUS
+    output_field: 2024 Fall EOC - Algebra I - County District Campus Number
+    keep: false
+  - source_column: F1_A1_GRADE
+    output_field: 2024 Fall EOC - Algebra I - Enrolled Grade
+    keep: false
+  - source_column: F1_A1_TESTVER
+    output_field: 2024 Fall EOC - Algebra I - Test Version
+    keep: false
+  - source_column: F1_A1_SCODE
+    output_field: 2024 Fall EOC - Algebra I - Score Code
+    keep: false
+  - source_column: F1_A1_SCODE_D
+    output_field: 2024 Fall EOC - Algebra I - Score Code Default
+    keep: false
+  - source_column: F1_A1_SSC
+    output_field: 2024 Fall EOC - Algebra I - Scale Score
+    keep: false
+  - source_column: F1_A1_LVL2_STU
+    output_field: 2024 Fall EOC - Algebra I - Approaches Grade Level at Student's Standard
+    keep: false
+  - source_column: F1_A1_LVL2_REC
+    output_field: 2024 Fall EOC - Algebra I - Meets Grade Level
+    keep: false
+  - source_column: F1_A1_LVL3
+    output_field: 2024 Fall EOC - Algebra I - Masters Grade Level
+    keep: false
+  - source_column: F1_A1_PLI
+    output_field: 2024 Fall EOC - Algebra I - Performance Level Indicator
+    keep: false
+  - source_column: F1_A1_RAW
+    output_field: 2024 Fall EOC - Algebra I - Raw Score
+    keep: false
+  - source_column: F1_A1_PM
+    output_field: 2024 Fall EOC - Algebra I - STAAR Progress Measure
+    keep: false
+  - source_column: F1_BI_CAMPUS
+    output_field: 2024 Fall EOC - Biology - County District Campus Number
+    keep: false
+  - source_column: F1_BI_GRADE
+    output_field: 2024 Fall EOC - Biology - Enrolled Grade
+    keep: false
+  - source_column: F1_BI_TESTVER
+    output_field: 2024 Fall EOC - Biology - Test Version
+    keep: false
+  - source_column: F1_BI_SCODE
+    output_field: 2024 Fall EOC - Biology - Score Code
+    keep: false
+  - source_column: F1_BI_SCODE_D
+    output_field: 2024 Fall EOC - Biology - Score Code Default
+    keep: false
+  - source_column: F1_BI_SSC
+    output_field: 2024 Fall EOC - Biology - Scale Score
+    keep: false
+  - source_column: F1_BI_LVL2_STU
+    output_field: 2024 Fall EOC - Biology - Approaches Grade Level at Student's Standard
+    keep: false
+  - source_column: F1_BI_LVL2_REC
+    output_field: 2024 Fall EOC - Biology - Meets Grade Level
+    keep: false
+  - source_column: F1_BI_LVL3
+    output_field: 2024 Fall EOC - Biology - Masters Grade Level
+    keep: false
+  - source_column: F1_BI_PLI
+    output_field: 2024 Fall EOC - Biology - Performance Level Indicator
+    keep: false
+  - source_column: F1_E1_CAMPUS
+    output_field: 2024 Fall EOC - English I - County District Campus Number
+    keep: false
+  - source_column: F1_E1_GRADE
+    output_field: 2024 Fall EOC - English I - Enrolled Grade
+    keep: false
+  - source_column: F1_E1_TESTVER
+    output_field: 2024 Fall EOC - English I - Test Version
+    keep: false
+  - source_column: F1_E1_SCODE
+    output_field: 2024 Fall EOC - English I - Score Code
+    keep: false
+  - source_column: F1_E1_SCODE_D
+    output_field: 2024 Fall EOC - English I - Score Code Default
+    keep: false
+  - source_column: F1_E1_SSC
+    output_field: 2024 Fall EOC - English I - Scale Score
+    keep: false
+  - source_column: F1_E1_LVL2_STU
+    output_field: 2024 Fall EOC - English I - Approaches Grade Level at Student's Standard
+    keep: false
+  - source_column: F1_E1_LVL2_REC
+    output_field: 2024 Fall EOC - English I - Meets Grade Level
+    keep: false
+  - source_column: F1_E1_LVL3
+    output_field: 2024 Fall EOC - English I - Masters Grade Level
+    keep: false
+  - source_column: F1_E1_PLI
+    output_field: 2024 Fall EOC - English I - Performance Level Indicator
+    keep: false
+  - source_column: F1_E1_RAW
+    output_field: 2024 Fall EOC - English I - Raw Score
+    keep: false
+  - source_column: F1_E1_PM
+    output_field: 2024 Fall EOC - English I - STAAR Progress Measure
+    keep: false
+  - source_column: F1_E2_CAMPUS
+    output_field: 2024 Fall EOC - English II - County District Campus Number
+    keep: false
+  - source_column: F1_E2_GRADE
+    output_field: 2024 Fall EOC - English II - Enrolled Grade
+    keep: false
+  - source_column: F1_E2_TESTVER
+    output_field: 2024 Fall EOC - English II - Test Version
+    keep: false
+  - source_column: F1_E2_SCODE
+    output_field: 2024 Fall EOC - English II - Score Code
+    keep: false
+  - source_column: F1_E2_SCODE_D
+    output_field: 2024 Fall EOC - English II - Score Code Default
+    keep: false
+  - source_column: F1_E2_SSC
+    output_field: 2024 Fall EOC - English II - Scale Score
+    keep: false
+  - source_column: F1_E2_LVL2_STU
+    output_field: 2024 Fall EOC - English II - Approaches Grade Level at Student's Standard
+    keep: false
+  - source_column: F1_E2_LVL2_REC
+    output_field: 2024 Fall EOC - English II - Meets Grade Level
+    keep: false
+  - source_column: F1_E2_LVL3
+    output_field: 2024 Fall EOC - English II - Masters Grade Level
+    keep: false
+  - source_column: F1_E2_PLI
+    output_field: 2024 Fall EOC - English II - Performance Level Indicator
+    keep: false
+  - source_column: F1_E2_RAW
+    output_field: 2024 Fall EOC - English II - Raw Score
+    keep: false
+  - source_column: F1_E2_PM
+    output_field: 2024 Fall EOC - English II - STAAR Progress Measure
+    keep: false
+  - source_column: F1_US_CAMPUS
+    output_field: 2024 Fall EOC - U.S. History - County District Campus Number
+    keep: false
+  - source_column: F1_US_GRADE
+    output_field: 2024 Fall EOC - U.S. History - Enrolled Grade
+    keep: false
+  - source_column: F1_US_TESTVER
+    output_field: 2024 Fall EOC - U.S. History - Test Version
+    keep: false
+  - source_column: F1_US_SCODE
+    output_field: 2024 Fall EOC - U.S. History - Score Code
+    keep: false
+  - source_column: F1_US_SCODE_D
+    output_field: 2024 Fall EOC - U.S. History - Score Code Default
+    keep: false
+  - source_column: F1_US_SSC
+    output_field: 2024 Fall EOC - U.S. History - Scale Score
+    keep: false
+  - source_column: F1_US_LVL2_STU
+    output_field:
+      2024 Fall EOC - U.S. History - Approaches Grade Level at Student's
+      Standard
+    keep: false
+  - source_column: F1_US_LVL2_REC
+    output_field: 2024 Fall EOC - U.S. History - Meets Grade Level
+    keep: false
+  - source_column: F1_US_LVL3
+    output_field: 2024 Fall EOC - U.S. History - Masters Grade Level
+    keep: false
+  - source_column: F1_US_PLI
+    output_field: 2024 Fall EOC - U.S. History - Performance Level Indicator
+    keep: false
+  - source_column: P1_DATE
+    output_field: 2025 Spring EOC - Administration Date
+    keep: false
+  - source_column: P1_A1_CAMPUS
+    output_field: 2025 Spring EOC - Algebra I - County District Campus Number
+    keep: false
+  - source_column: P1_A1_GRADE
+    output_field: 2025 Spring EOC - Algebra I - Enrolled Grade
+    keep: false
+  - source_column: P1_A1_TESTVER
+    output_field: 2025 Spring EOC - Algebra I - Test Version
+    keep: false
+  - source_column: P1_A1_SCODE
+    output_field: 2025 Spring EOC - Algebra I - Score Code
+    keep: false
+  - source_column: P1_A1_SCODE_D
+    output_field: 2025 Spring EOC - Algebra I - Score Code Default
+    keep: false
+  - source_column: P1_A1_SSC
+    output_field: 2025 Spring EOC - Algebra I - Scale Score
+    keep: false
+  - source_column: P1_A1_LVL2_STU
+    output_field:
+      "2025 Spring EOC - Algebra I - Approaches Grade Level at Student's
+      Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: P1_A1_LVL2_REC
+    output_field:
+      "2025 Spring EOC - Algebra I - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: P1_A1_LVL3
+    output_field:
+      "2025 Spring EOC - Algebra I - Masters Grade Level Level III: Accomplished
+      Academic Performance"
+    keep: false
+  - source_column: P1_A1_PLI
+    output_field: 2025 Spring EOC - Algebra I - Performance Level Indicator
+    keep: false
+  - source_column: P1_A1_RAW
+    output_field: 2025 Spring EOC - Algebra I - Raw Score
+    keep: false
+  - source_column: P1_A1_PM
+    output_field: 2025 Spring EOC - Algebra I - STAAR Progress Measure
+    keep: false
+  - source_column: P1_BI_CAMPUS
+    output_field: 2025 Spring EOC - Biology - County District Campus Number
+    keep: false
+  - source_column: P1_BI_GRADE
+    output_field: 2025 Spring EOC - Biology - Enrolled Grade
+    keep: false
+  - source_column: P1_BI_TESTVER
+    output_field: 2025 Spring EOC - Biology - Test Version
+    keep: false
+  - source_column: P1_BI_SCODE
+    output_field: 2025 Spring EOC - Biology - Score Code
+    keep: false
+  - source_column: P1_BI_SCODE_D
+    output_field: 2025 Spring EOC - Biology - Score Code Default
+    keep: false
+  - source_column: P1_BI_SSC
+    output_field: 2025 Spring EOC - Biology - Scale Score
+    keep: false
+  - source_column: P1_BI_LVL2_STU
+    output_field:
+      "2025 Spring EOC - Biology - Approaches Grade Level at Student's
+      Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: P1_BI_LVL2_REC
+    output_field:
+      "2025 Spring EOC - Biology - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: P1_BI_LVL3
+    output_field:
+      "2025 Spring EOC - Biology - Masters Grade Level Level III: Accomplished
+      Academic Performance"
+    keep: false
+  - source_column: P1_BI_PLI
+    output_field: 2025 Spring EOC - Biology - Performance Level Indicator
+    keep: false
+  - source_column: P1_E1_CAMPUS
+    output_field: 2025 Spring EOC - English I - County District Campus Number
+    keep: false
+  - source_column: P1_E1_GRADE
+    output_field: 2025 Spring EOC - English I - Enrolled Grade
+    keep: false
+  - source_column: P1_E1_TESTVER
+    output_field: 2025 Spring EOC - English I - Test Version
+    keep: false
+  - source_column: P1_E1_SCODE
+    output_field: 2025 Spring EOC - English I - Score Code
+    keep: false
+  - source_column: P1_E1_SCODE_D
+    output_field: 2025 Spring EOC - English I - Score Code Default
+    keep: false
+  - source_column: P1_E1_SSC
+    output_field: 2025 Spring EOC - English I - Scale Score
+    keep: false
+  - source_column: P1_E1_LVL2_STU
+    output_field:
+      "2025 Spring EOC - English I - Approaches Grade Level at Student's
+      Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: P1_E1_LVL2_REC
+    output_field:
+      "2025 Spring EOC - English I - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: P1_E1_LVL3
+    output_field:
+      "2025 Spring EOC - English I - Masters Grade Level Level III: Accomplished
+      Academic Performance"
+    keep: false
+  - source_column: P1_E1_PLI
+    output_field: 2025 Spring EOC - English I - Performance Level Indicator
+    keep: false
+  - source_column: P1_E1_RAW
+    output_field: 2025 Spring EOC - English I - Raw Score
+    keep: false
+  - source_column: P1_E1_PM
+    output_field: 2025 Spring EOC - English I - STAAR Progress Measure
+    keep: false
+  - source_column: P1_E2_CAMPUS
+    output_field: 2025 Spring EOC - English II - County District Campus Number
+    keep: false
+  - source_column: P1_E2_GRADE
+    output_field: 2025 Spring EOC - English II - Enrolled Grade
+    keep: false
+  - source_column: P1_E2_TESTVER
+    output_field: 2025 Spring EOC - English II - Test Version
+    keep: false
+  - source_column: P1_E2_SCODE
+    output_field: 2025 Spring EOC - English II - Score Code
+    keep: false
+  - source_column: P1_E2_SCODE_D
+    output_field: 2025 Spring EOC - English II - Score Code Default
+    keep: false
+  - source_column: P1_E2_SSC
+    output_field: 2025 Spring EOC - English II - Scale Score
+    keep: false
+  - source_column: P1_E2_LVL2_STU
+    output_field:
+      "2025 Spring EOC - English II - Approaches Grade Level at Student's
+      Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: P1_E2_LVL2_REC
+    output_field:
+      "2025 Spring EOC - English II - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: P1_E2_LVL3
+    output_field:
+      "2025 Spring EOC - English II - Masters Grade Level Level III: Accomplished
+      Academic Performance"
+    keep: false
+  - source_column: P1_E2_PLI
+    output_field: 2025 Spring EOC - English II - Performance Level Indicator
+    keep: false
+  - source_column: P1_E2_RAW
+    output_field: 2025 Spring EOC - English II - Raw Score
+    keep: false
+  - source_column: P1_E2_PM
+    output_field: 2025 Spring EOC - English II - STAAR Progress Measure
+    keep: false
+  - source_column: P1_US_CAMPUS
+    output_field: 2025 Spring EOC - U.S. History - County District Campus Number
+    keep: false
+  - source_column: P1_US_GRADE
+    output_field: 2025 Spring EOC - U.S. History - Enrolled_Grade
+    keep: false
+  - source_column: P1_US_TESTVER
+    output_field: 2025 Spring EOC - U.S. History - Test Version
+    keep: false
+  - source_column: P1_US_SCODE
+    output_field: 2025 Spring EOC - U.S. History - Score Code
+    keep: false
+  - source_column: P1_US_SCODE_D
+    output_field: 2025 Spring EOC - U.S. History - Score Code Default
+    keep: false
+  - source_column: P1_US_SSC
+    output_field: 2025 Spring EOC - U.S. History - Scale Score
+    keep: false
+  - source_column: P1_US_LVL2_STU
+    output_field:
+      "2025 Spring EOC - U.S. History - Approaches Grade Level at Student's
+      Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: P1_US_LVL2_REC
+    output_field:
+      "2025 Spring EOC - U.S. History - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: P1_US_LVL3
+    output_field:
+      "2025 Spring EOC - U.S. History - Masters Grade Level Level III: Accomplished
+      Academic Performance"
+    keep: false
+  - source_column: P1_US_PLI
+    output_field: 2025 Spring EOC - U.S. History - Performance Level Indicator
+    keep: false
+  - source_column: CU_STU
+    output_field:
+      EOC Cumulative History - Student's Performance Standard for Level
+      II
+    keep: false
+  - source_column: CU_A1_1SUBMIT_DATE
+    output_field:
+      EOC Cumulative History - Algebra I First-Time Document Submitted -
+      Administration Date
+    keep: false
+  - source_column: CU_A1_1SUBMIT_TESTVER
+    output_field:
+      EOC Cumulative History - Algebra I First-Time Document Submitted -
+      Test Version
+    keep: false
+  - source_column: CU_A1_1SUBMIT_SCODE
+    output_field:
+      EOC Cumulative History - Algebra I First-Time Document Submitted -
+      Score Code
+    keep: false
+  - source_column: CU_A1_1SUBMIT_ALT
+    output_field:
+      EOC Cumulative History - Algebra I First-Time Document Submitted -
+      Alternate Assessment Category
+    keep: false
+  - source_column: CU_A1_1SUBMIT_SUB
+    output_field:
+      EOC Cumulative History - Algebra I First-Time Document Submitted -
+      Substitute Assessment
+    keep: false
+  - source_column: CU_A1_1SCORED_DATE
+    output_field:
+      EOC Cumulative History - Algebra I First-Time Document Scored - Administration
+      Date
+    keep: false
+  - source_column: CU_A1_1SCORED_TESTVER
+    output_field:
+      EOC Cumulative History - Algebra I First-Time Document Scored - Test
+      Version
+    keep: false
+  - source_column: CU_A1_1SUBMIT_SUB_DATE
+    output_field:
+      EOC Cumulative History - Algebra I First-Time Substitute Assessment
+      Submitted - Administration Date
+    keep: false
+  - source_column: CU_A1_1SUBMIT_SUB_CAMPUS
+    output_field:
+      EOC Cumulative History - Algebra I First-Time Substitute Assessment
+      Submitted - County District Campus Number
+    keep: false
+  - source_column: CU_A1_DATE
+    output_field:
+      EOC Cumulative History - Algebra I Cumulative History - Administration
+      Date
+    keep: false
+  - source_column: CU_A1_CAMPUS
+    output_field:
+      EOC Cumulative History - Algebra I Cumulative History - County District
+      Campus Number
+    keep: false
+  - source_column: CU_A1_TESTVER
+    output_field: EOC Cumulative History - Algebra I Cumulative History - Test Version
+    keep: false
+  - source_column: CU_A1_SCODE
+    output_field: EOC Cumulative History - Algebra I Cumulative History - Score Code
+    keep: false
+  - source_column: CU_A1_ALT
+    output_field:
+      EOC Cumulative History - Algebra I Cumulative History - Alternate
+      Assessment Category
+    keep: false
+  - source_column: CU_A1_LVL2_STU
+    output_field:
+      "EOC Cumulative History - Algebra I Cumulative History - Approaches
+      Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: CU_A1_LVL3
+    output_field:
+      "EOC Cumulative History - Algebra I Cumulative History - Masters Grade
+      Level Level III: Accomplished Academic Performance"
+    keep: false
+  - source_column: CU_A1_LVL2_REC
+    output_field:
+      "EOC Cumulative History - Algebra I Cumulative History - Meets Grade
+      Level Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: CU_A1_SSC
+    output_field: EOC Cumulative History - Algebra I Cumulative History - Scale Score
+    keep: false
+  - source_column: CU_A1_SUB
+    output_field:
+      EOC Cumulative History - Algebra I Cumulative History - Substitute
+      Assessment
+    keep: false
+  - source_column: CU_BI_1SUBMIT_DATE
+    output_field:
+      EOC Cumulative History - Biology First-Time Document Submitted - Administration
+      Date
+    keep: false
+  - source_column: CU_BI_1SUBMIT_TESTVER
+    output_field:
+      EOC Cumulative History - Biology First-Time Document Submitted - Test
+      Version
+    keep: false
+  - source_column: CU_BI_1SUBMIT_SCODE
+    output_field:
+      EOC Cumulative History - Biology First-Time Document Submitted - Score
+      Code
+    keep: false
+  - source_column: CU_BI_1SUBMIT_ALT
+    output_field:
+      EOC Cumulative History - Biology First-Time Document Submitted - Alternate
+      Assessment Category
+    keep: false
+  - source_column: CU_BI_1SUBMIT_SUB
+    output_field:
+      EOC Cumulative History - Biology First-Time Document Submitted - Substitute
+      Assessment
+    keep: false
+  - source_column: CU_BI_1SCORED_DATE
+    output_field:
+      EOC Cumulative History - Biology First-Time Document Scored - Administration
+      Date
+    keep: false
+  - source_column: CU_BI_1SCORED_TESTVER
+    output_field:
+      EOC Cumulative History - Biology First-Time Document Scored - Test
+      Version
+    keep: false
+  - source_column: CU_BI_1SUBMIT_SUB_DATE
+    output_field:
+      EOC Cumulative History - Biology First-Time Substitute Assessment
+      Submitted - Administration Date
+    keep: false
+  - source_column: CU_BI_1SUBMIT_SUB_CAMPUS
+    output_field:
+      EOC Cumulative History - Biology First-Time Substitute Assessment
+      Submitted - County District Campus Number
+    keep: false
+  - source_column: CU_BI_DATE
+    output_field:
+      EOC Cumulative History - Biology Cumulative History - Administration
+      Date
+    keep: false
+  - source_column: CU_BI_CAMPUS
+    output_field:
+      EOC Cumulative History - Biology Cumulative History - County District
+      Campus Number
+    keep: false
+  - source_column: CU_BI_TESTVER
+    output_field: EOC Cumulative History - Biology Cumulative History - Test Version
+    keep: false
+  - source_column: CU_BI_SCODE
+    output_field: EOC Cumulative History - Biology Cumulative History - Score Code
+    keep: false
+  - source_column: CU_BI_ALT
+    output_field:
+      EOC Cumulative History - Biology Cumulative History - Alternate Assessment
+      Category
+    keep: false
+  - source_column: CU_BI_LVL2_STU
+    output_field:
+      "EOC Cumulative History - Biology Cumulative History - Approaches
+      Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: CU_BI_LVL3
+    output_field:
+      "EOC Cumulative History - Biology Cumulative History - Masters Grade
+      Level Level III: Accomplished Academic Performance"
+    keep: false
+  - source_column: CU_BI_LVL2_REC
+    output_field:
+      "EOC Cumulative History - Biology Cumulative History - Meets Grade
+      Level Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: CU_BI_SSC
+    output_field: EOC Cumulative History - Biology Cumulative History - Scale Score
+    keep: false
+  - source_column: CU_BI_SUB
+    output_field: EOC Cumulative History - Biology Cumulative History - Substitute Assessment
+    keep: false
+  - source_column: CU_E1_1SUBMIT_DATE
+    output_field:
+      EOC Cumulative History - English I First Time Document Submitted -
+      Administration Date
+    keep: false
+  - source_column: CU_E1_1SUBMIT_TESTVER
+    output_field:
+      EOC Cumulative History - English I First Time Document Submitted -
+      Test Version
+    keep: false
+  - source_column: CU_E1_1SUBMIT_SCODE
+    output_field:
+      EOC Cumulative History - English I First Time Document Submitted -
+      Score Code
+    keep: false
+  - source_column: CU_E1_1SUBMIT_ALT
+    output_field:
+      EOC Cumulative History - English I First Time Document Submitted -
+      Alternate Assessment Category
+    keep: false
+  - source_column: CU_E1_1SUBMIT_SUB
+    output_field:
+      EOC Cumulative History - English I First Time Document Submitted -
+      Substitute Assessment
+    keep: false
+  - source_column: CU_E1_1SCORED_DATE
+    output_field:
+      EOC Cumulative History - English I First-Time Document Scored - Administration
+      Date
+    keep: false
+  - source_column: CU_E1_1SCORED_TESTVER
+    output_field:
+      EOC Cumulative History - English I First-Time Document Scored - Test
+      Version
+    keep: false
+  - source_column: CU_E1_1SUBMIT_SUB_DATE
+    output_field:
+      EOC Cumulative History - English I First-Time Substitute Assessment
+      Submitted - Administration Date
+    keep: false
+  - source_column: CU_E1_1SUBMIT_SUB_CAMPUS
+    output_field:
+      EOC Cumulative History - English I First-Time Substitute Assessment
+      Submitted - County District Campus Number
+    keep: false
+  - source_column: CU_E1_DATE
+    output_field:
+      EOC Cumulative History - English I Cumulative History - Administration
+      Date
+    keep: false
+  - source_column: CU_E1_CAMPUS
+    output_field:
+      EOC Cumulative History - English I Cumulative History - County District
+      Campus Number
+    keep: false
+  - source_column: CU_E1_TESTVER
+    output_field: EOC Cumulative History - English I Cumulative History - Test Version
+    keep: false
+  - source_column: CU_E1_SCODE
+    output_field: EOC Cumulative History - English I Cumulative History - Score Code
+    keep: false
+  - source_column: CU_E1_ALT
+    output_field:
+      EOC Cumulative History - English I Cumulative History - Alternate
+      Assessment Category
+    keep: false
+  - source_column: CU_E1_LVL2_STU
+    output_field:
+      "EOC Cumulative History - English I Cumulative History - Approaches
+      Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: CU_E1_LVL3
+    output_field:
+      "EOC Cumulative History - English I Cumulative History - Masters Grade
+      Level Level III: Accomplished Academic Performance"
+    keep: false
+  - source_column: CU_E1_LVL2_REC
+    output_field:
+      "EOC Cumulative History - English I Cumulative History - Meets Grade
+      Level Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: CU_E1_SSC
+    output_field: EOC Cumulative History - English I Cumulative History - Scale Score
+    keep: false
+  - source_column: CU_E1_SUB
+    output_field:
+      EOC Cumulative History - English I Cumulative History - Substitute
+      Assessment
+    keep: false
+  - source_column: CU_E2_1SUBMIT_DATE
+    output_field:
+      EOC Cumulative History - English II First-Time Document Submitted
+      - Administration Date
+    keep: false
+  - source_column: CU_E2_1SUBMIT_TESTVER
+    output_field:
+      EOC Cumulative History - English II First-Time Document Submitted
+      - Test Version
+    keep: false
+  - source_column: CU_E2_1SUBMIT_SCODE
+    output_field:
+      EOC Cumulative History - English II First-Time Document Submitted
+      - Score Code
+    keep: false
+  - source_column: CU_E2_1SUBMIT_ALT
+    output_field:
+      EOC Cumulative History - English II First-Time Document Submitted
+      - Alternate Assessment Category
+    keep: false
+  - source_column: CU_E2_1SUBMIT_SUB
+    output_field:
+      EOC Cumulative History - English II First-Time Document Submitted
+      - Substitute Assessment
+    keep: false
+  - source_column: CU_E2_1SCORED_DATE
+    output_field:
+      EOC Cumulative History - English II First Time Document Scored - Administration
+      Date
+    keep: false
+  - source_column: CU_E2_1SCORED_TESTVER
+    output_field:
+      EOC Cumulative History - English II First Time Document Scored - Test
+      Version
+    keep: false
+  - source_column: CU_E2_1SUBMIT_SUB_DATE
+    output_field:
+      EOC Cumulative History - English II First-Time Substitute Assessment
+      Submitted - Administration Date
+    keep: false
+  - source_column: CU_E2_1SUBMIT_SUB_CAMPUS
+    output_field:
+      EOC Cumulative History - English II First-Time Substitute Assessment
+      Submitted - County District Campus Number
+    keep: false
+  - source_column: CU_E2_DATE
+    output_field:
+      EOC Cumulative History - English II Cumulative History - Administration
+      Date
+    keep: false
+  - source_column: CU_E2_CAMPUS
+    output_field:
+      EOC Cumulative History - English II Cumulative History - County District
+      Campus Number
+    keep: false
+  - source_column: CU_E2_TESTVER
+    output_field: EOC Cumulative History - English II Cumulative History - Test Version
+    keep: false
+  - source_column: CU_E2_SCODE
+    output_field: EOC Cumulative History - English II Cumulative History - Score Code
+    keep: false
+  - source_column: CU_E2_ALT
+    output_field:
+      EOC Cumulative History - English II Cumulative History - Alternate
+      Assessment Category
+    keep: false
+  - source_column: CU_E2_LVL2_STU
+    output_field:
+      "EOC Cumulative History - English II Cumulative History - Approaches
+      Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: CU_E2_LVL3
+    output_field:
+      "EOC Cumulative History - English II Cumulative History - Masters
+      Grade Level Level III: Accomplished Academic Performance"
+    keep: false
+  - source_column: CU_E2_LVL2_REC
+    output_field:
+      "EOC Cumulative History - English II Cumulative History - Meets Grade
+      Level Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: CU_E2_SSC
+    output_field: EOC Cumulative History - English II Cumulative History - Scale Score
+    keep: false
+  - source_column: CU_E2_SUB
+    output_field:
+      EOC Cumulative History - English II Cumulative History - Substitute
+      Assessment
+    keep: false
+  - source_column: CU_US_1SUBMIT_DATE
+    output_field:
+      EOC Cumulative History - U.S. History First-Time Document Submitted
+      - Administration Date
+    keep: false
+  - source_column: CU_US_1SUBMIT_TESTVER
+    output_field:
+      EOC Cumulative History - U.S. History First-Time Document Submitted
+      - Test Version
+    keep: false
+  - source_column: CU_US_1SUBMIT_SCODE
+    output_field:
+      EOC Cumulative History - U.S. History First-Time Document Submitted
+      - Score Code
+    keep: false
+  - source_column: CU_US_1SUBMIT_ALT
+    output_field:
+      EOC Cumulative History - U.S. History First-Time Document Submitted
+      - Alternate Assessment Category
+    keep: false
+  - source_column: CU_US_1SUBMIT_SUB
+    output_field:
+      EOC Cumulative History - U.S. History First-Time Document Submitted
+      - Substitute Assessment
+    keep: false
+  - source_column: CU_US_1SCORED_DATE
+    output_field:
+      EOC Cumulative History - U.S. History First-Time Document Scored -
+      Administration Date
+    keep: false
+  - source_column: CU_US_1SCORED_TESTVER
+    output_field:
+      EOC Cumulative History - U.S. History First-Time Document Scored -
+      Test Version
+    keep: false
+  - source_column: CU_US_1SUBMIT_SUB_DATE
+    output_field:
+      EOC Cumulative History - U.S. History First-Time Substitute Assessment
+      Submitted - Administration Date
+    keep: false
+  - source_column: CU_US_1SUBMIT_SUB_CAMPUS
+    output_field:
+      EOC Cumulative History - U.S. History First-Time Substitute Assessment
+      Submitted - County District Campus Number
+    keep: false
+  - source_column: CU_US_DATE
+    output_field:
+      EOC Cumulative History - U.S. History Cumulative History - Administration
+      Date
+    keep: false
+  - source_column: CU_US_CAMPUS
+    output_field:
+      EOC Cumulative History - U.S. History Cumulative History - County
+      District Campus Number
+    keep: false
+  - source_column: CU_US_TESTVER
+    output_field: EOC Cumulative History - U.S. History Cumulative History - Test Version
+    keep: false
+  - source_column: CU_US_SCODE
+    output_field: EOC Cumulative History - U.S. History Cumulative History - Score Code
+    keep: false
+  - source_column: CU_US_ALT
+    output_field:
+      EOC Cumulative History - U.S. History Cumulative History - Alternate
+      Assessment Category
+    keep: false
+  - source_column: CU_US_LVL2_STU
+    output_field:
+      "EOC Cumulative History - U.S. History Cumulative History - Approaches
+      Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: CU_US_LVL3
+    output_field:
+      "EOC Cumulative History - U.S. History Cumulative History - Masters
+      Grade Level Level III: Accomplished Academic Performance"
+    keep: false
+  - source_column: CU_US_LVL2_REC
+    output_field:
+      "EOC Cumulative History - U.S. History Cumulative History - Meets
+      Grade Level Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: CU_US_SSC
+    output_field: EOC Cumulative History - U.S. History Cumulative History - Scale Score
+    keep: false
+  - source_column: CU_US_SUB
+    output_field:
+      EOC Cumulative History - U.S. History Cumulative History - Substitute
+      Assessment
+    keep: false
+  - source_column: CU_R1_1SUBMIT_DATE
+    output_field:
+      EOC Cumulative History - English I Reading First-Time Document Submitted
+      - Administration Date
+    keep: false
+  - source_column: CU_R1_1SUBMIT_TESTVER
+    output_field:
+      EOC Cumulative History - English I Reading First-Time Document Submitted
+      - Test Version
+    keep: false
+  - source_column: CU_R1_1SUBMIT_SCODE
+    output_field:
+      EOC Cumulative History - English I Reading First-Time Document Submitted
+      - Score Code
+    keep: false
+  - source_column: CU_R1_1SCORED_DATE
+    output_field:
+      EOC Cumulative History - English I Reading First-Time Document Scored
+      - Administration Date
+    keep: false
+  - source_column: CU_R1_1SCORED_TESTVER
+    output_field:
+      EOC Cumulative History - English I Reading First-Time Document Scored
+      - Test Version
+    keep: false
+  - source_column: CU_W1_1SUBMIT_DATE
+    output_field:
+      EOC Cumulative History - English I Writing First-Time Document Submitted
+      - Administration Date
+    keep: false
+  - source_column: CU_W1_1SUBMIT_TESTVER
+    output_field:
+      EOC Cumulative History - English I Writing First-Time Document Submitted
+      - Test Version
+    keep: false
+  - source_column: CU_W1_1SUBMIT_SCODE
+    output_field:
+      EOC Cumulative History - English I Writing First-Time Document Submitted
+      - Score Code
+    keep: false
+  - source_column: CU_W1_1SCORED_DATE
+    output_field:
+      EOC Cumulative History - English I Writing First-Time Document Scored
+      - Administration Date
+    keep: false
+  - source_column: CU_W1_1SCORED_TESTVER
+    output_field:
+      EOC Cumulative History - English I Writing First-Time Document Scored
+      - Test Version
+    keep: false
+  - source_column: CU_R2_1SUBMIT_DATE
+    output_field:
+      EOC Cumulative History - English II Reading First-Time Document Submitted
+      - Administration Date
+    keep: false
+  - source_column: CU_R2_1SUBMIT_TESTVER
+    output_field:
+      EOC Cumulative History - English II Reading First-Time Document Submitted
+      - Test Version
+    keep: false
+  - source_column: CU_R2_1SUBMIT_SCODE
+    output_field:
+      EOC Cumulative History - English II Reading First-Time Document Submitted
+      - Score Code
+    keep: false
+  - source_column: CU_R2_1SCORED_DATE
+    output_field:
+      EOC Cumulative History - English II Reading First-Time Document Scored
+      - Administration Date
+    keep: false
+  - source_column: CU_R2_1SCORED_TESTVER
+    output_field:
+      EOC Cumulative History - English II Reading First-Time Document Scored
+      - Test Version
+    keep: false
+  - source_column: CU_W2_1SUBMIT_DATE
+    output_field:
+      EOC Cumulative History - English II Writing First-Time Document Submitted
+      - Administration Date
+    keep: false
+  - source_column: CU_W2_1SUBMIT_TESTVER
+    output_field:
+      EOC Cumulative History - English II Writing First-Time Document Submitted
+      - Test Version
+    keep: false
+  - source_column: CU_W2_1SUBMIT_SCODE
+    output_field:
+      EOC Cumulative History - English II Writing First-Time Document Submitted
+      - Score Code
+    keep: false
+  - source_column: CU_W2_1SCORED_DATE
+    output_field:
+      EOC Cumulative History - English II Writing First-Time Document Scored
+      - Administration Date
+    keep: false
+  - source_column: CU_W2_1SCORED_TESTVER
+    output_field:
+      EOC Cumulative History - English II Writing First-Time Document Scored
+      - Test Version
+    keep: false
+  - source_column: A2_DATE
+    output_field: 2026 Grades 3-8 - Administration Date
+    keep: false
+  - source_column: A2_UPD_IND
+    output_field: 2026 Grades 3-8 - Record Update Indicator
+    keep: false
+  - source_column: A2_RE_CAMPUS
+    output_field: 2026 Grades 3-8 - Reading Language Arts - County District Campus Number
+    keep: false
+  - source_column: A2_RE_GRADE
+    output_field: 2026 Grades 3-8 - Reading Language Arts - Tested Grade
+    keep: false
+  - source_column: A2_RE_TESTVER
+    output_field: 2026 Grades 3-8 - Reading Language Arts - Test Version
+    keep: false
+  - source_column: A2_RE_TESTLANG
+    output_field: 2026 Grades 3-8 - Reading Language Arts - Language
+    keep: false
+  - source_column: A2_RE_SCODE
+    output_field: 2026 Grades 3-8 - Reading Language Arts - Score Code
+    keep: false
+  - source_column: A2_RE_SCODE_D
+    output_field: 2026 Grades 3-8 - Reading Language Arts - Score Code Default
+    keep: false
+  - source_column: A2_RE_TAI
+    output_field: 2026 Grades 3-8 - Reading Language Arts - Test Administration Indicator
+    keep: false
+  - source_column: A2_RE_SSC
+    output_field: 2026 Grades 3-8 - Reading Language Arts - Scale Score
+    keep: false
+  - source_column: A2_RE_LVL2_STU
+    output_field:
+      "2026 Grades 3-8 - Reading Language Arts - Approaches Grade Level
+      at Student's Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: A2_RE_LVL2_REC
+    output_field:
+      "2026 Grades 3-8 - Reading Language Arts - Meets Grade Level Level
+      II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: A2_RE_LVL3
+    output_field:
+      "2026 Grades 3-8 - Reading Language Arts - Masters Grade Level Level
+      III: Accomplished Academic Performance"
+    keep: false
+  - source_column: A2_RE_ENR_GRADE
+    output_field: 2026 Grades 3-8 - Reading Language Arts - Enrolled Grade
+    keep: false
+  - source_column: A2_RE_ABOVE_GRADE
+    output_field: 2026 Grades 3-8 - Reading Language Arts - Above Grade
+    keep: false
+  - source_column: A2_RE_RAW
+    output_field: 2026 Grades 3-8 - Reading Language Arts - Raw Score
+    keep: false
+  - source_column: A2_RE_PM
+    output_field: 2026 Grades 3-8 - Reading Language Arts - STAAR Progress Measure
+    keep: false
+  - source_column: A2_RE_EPM
+    output_field: 2026 Grades 3-8 - Reading Language Arts - EL Performance Measure
+    keep: false
+  - source_column: A2_RE_ACCOM
+    output_field: 2026 Grades 3-8 - Reading Language Arts - Accommodations Used
+    keep: false
+  - source_column: A2_RE_PLI
+    output_field: 2026 Grades 3-8 - Reading Language Arts - Performance Level Indicator
+    keep: false
+  - source_column: A2_MA_CAMPUS
+    output_field: 2026 Grades 3-8 - Mathematics - County District Campus Number
+    keep: false
+  - source_column: A2_MA_GRADE
+    output_field: 2026 Grades 3-8 - Mathematics - Tested Grade
+    keep: false
+  - source_column: A2_MA_TESTVER
+    output_field: 2026 Grades 3-8 - Mathematics - Test Version
+    keep: false
+  - source_column: A2_MA_TESTLANG
+    output_field: 2026 Grades 3-8 - Mathematics - Language
+    keep: false
+  - source_column: A2_MA_SCODE
+    output_field: 2026 Grades 3-8 - Mathematics - Score Code
+    keep: false
+  - source_column: A2_MA_SCODE_D
+    output_field: 2026 Grades 3-8 - Mathematics - Score Code Default
+    keep: false
+  - source_column: A2_MA_TAI
+    output_field: 2026 Grades 3-8 - Mathematics - Test Administration Indicator
+    keep: false
+  - source_column: A2_MA_SSC
+    output_field: 2026 Grades 3-8 - Mathematics - Scale Score
+    keep: false
+  - source_column: A2_MA_LVL2_STU
+    output_field:
+      "2026 Grades 3-8 - Mathematics - Approaches Grade Level at Student's
+      Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: A2_MA_LVL2_REC
+    output_field:
+      "2026 Grades 3-8 - Mathematics - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: A2_MA_LVL3
+    output_field:
+      2026 Grades 3-8 - Mathematics - Masters Grade Level Accomplished Academic
+      Performance
+    keep: false
+  - source_column: A2_MA_ENR_GRADE
+    output_field: 2026 Grades 3-8 - Mathematics - Enrolled Grade
+    keep: false
+  - source_column: A2_MA_ABOVE_GRADE
+    output_field: 2026 Grades 3-8 - Mathematics - Above Grade
+    keep: false
+  - source_column: A2_MA_RAW
+    output_field: 2026 Grades 3-8 - Mathematics - Raw Score
+    keep: false
+  - source_column: A2_MA_PM
+    output_field: 2026 Grades 3-8 - Mathematics - STAAR Progress Measure
+    keep: false
+  - source_column: A2_MA_EPM
+    output_field: 2026 Grades 3-8 - Mathematics - EL Performance Measure
+    keep: false
+  - source_column: A2_MA_ACCOM
+    output_field: 2026 Grades 3-8 - Mathematics - Accommodations Used
+    keep: false
+  - source_column: A2_MA_PLI
+    output_field: 2026 Grades 3-8 - Mathematics - Performance Level Indicator
+    keep: false
+  - source_column: A2_MA_BADGE
+    output_field: 2026 Grades 3-8 - Mathematics Badge Indicator
+    keep: false
+  - source_column: A2_SS_CAMPUS
+    output_field: 2026 Grades 3-8 - Social Studies - County District Campus Number
+    keep: false
+  - source_column: A2_SS_GRADE
+    output_field: 2026 Grades 3-8 - Social Studies - Tested Grade
+    keep: false
+  - source_column: A2_SS_TESTVER
+    output_field: 2026 Grades 3-8 - Social Studies - Test Version
+    keep: false
+  - source_column: A2_SS_TESTLANG
+    output_field: 2026 Grades 3-8 - Social Studies - Language
+    keep: false
+  - source_column: A2_SS_SCODE
+    output_field: 2026 Grades 3-8 - Social Studies - Score Code
+    keep: false
+  - source_column: A2_SS_SCODE_D
+    output_field: 2026 Grades 3-8 - Social Studies - Score Code Default
+    keep: false
+  - source_column: A2_SS_TAI
+    output_field: 2026 Grades 3-8 - Social Studies - Test Administration Indicator
+    keep: false
+  - source_column: A2_SS_SSC
+    output_field: 2026 Grades 3-8 - Social Studies - Scale Score
+    keep: false
+  - source_column: A2_SS_LVL2_STU
+    output_field:
+      "2026 Grades 3-8 - Social Studies - Approaches Grade Level at Student's
+      Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: A2_SS_LVL2_REC
+    output_field:
+      "2026 Grades 3-8 - Social Studies - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: A2_SS_LVL3
+    output_field:
+      "2026 Grades 3-8 - Social Studies - Masters Grade Level Level III:
+      Accomplished Academic Performance"
+    keep: false
+  - source_column: A2_SS_ENR_GRADE
+    output_field: 2026 Grades 3-8 - Social Studies - Enrolled Grade
+    keep: false
+  - source_column: A2_SS_ABOVE_GRADE
+    output_field: 2026 Grades 3-8 - Social Studies - Above Grade
+    keep: false
+  - source_column: A2_SS_EPM
+    output_field: 2026 Grades 3-8 - Social Studies - EL Performance Measure
+    keep: false
+  - source_column: A2_SS_ACCOM
+    output_field: 2026 Grades 3-8 - Social Studies - Accommodations Used
+    keep: false
+  - source_column: A2_SS_PLI
+    output_field: 2026 Grades 3-8 - Social Studies - Performance Level Indicator
+    keep: false
+  - source_column: A2_SC_CAMPUS
+    output_field: 2026 Grades 3-8 - Science - County District Campus Number
+    keep: false
+  - source_column: A2_SC_GRADE
+    output_field: 2026 Grades 3-8 - Science - Tested Grade
+    keep: false
+  - source_column: A2_SC_TESTVER
+    output_field: 2026 Grades 3-8 - Science - Test Version
+    keep: false
+  - source_column: A2_SC_TESTLANG
+    output_field: 2026 Grades 3-8 - Science - Language
+    keep: false
+  - source_column: A2_SC_SCODE
+    output_field: 2026 Grades 3-8 - Science - Score Code
+    keep: false
+  - source_column: A2_SC_SCODE_D
+    output_field: 2026 Grades 3-8 - Science - Score Code Default
+    keep: false
+  - source_column: A2_SC_TAI
+    output_field: 2026 Grades 3-8 - Science - Test Administration Indicator
+    keep: false
+  - source_column: A2_SC_SSC
+    output_field: 2026 Grades 3-8 - Science - Scale Score
+    keep: false
+  - source_column: A2_SC_LVL2_STU
+    output_field:
+      "2026 Grades 3-8 - Science - Approaches Grade Level at Student's
+      Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: A2_SC_LVL2_REC
+    output_field:
+      "2026 Grades 3-8 - Science - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: A2_SC_LVL3
+    output_field:
+      "2026 Grades 3-8 - Science - Masters Grade Level Level III: Accomplished
+      Academic Performance"
+    keep: false
+  - source_column: A2_SC_ENR_GRADE
+    output_field: 2026 Grades 3-8 - Science - Enrolled Grade
+    keep: false
+  - source_column: A2_SC_ABOVE_GRADE
+    output_field: 2026 Grades 3-8 - Science - Above Grade
+    keep: false
+  - source_column: A2_SC_EPM
+    output_field: 2026 Grades 3-8 - Science - EL Performance Measure
+    keep: false
+  - source_column: A2_SC_ACCOM
+    output_field: 2026 Grades 3-8 - Science - Accommodations Used
+    keep: false
+  - source_column: A2_SC_PLI
+    output_field: 2026 Grades 3-8 - Science - Performance Level Indicator
+    keep: false
+  - source_column: A1_DATE
+    output_field: 2025 Grades 3-8 - Administration Date
+    keep: false
+  - source_column: A1_RE_CAMPUS
+    output_field: 2025 Grades 3-8 - Reading Language Arts - County District Campus Number
+    keep: false
+  - source_column: A1_RE_ENR_GRADE
+    output_field: 2025 Grades 3-8 - Reading Language Arts - Enrolled Grade
+    keep: false
+  - source_column: A1_RE_GRADE
+    output_field: 2025 Grades 3-8 - Reading Language Arts - Tested Grade
+    keep: false
+  - source_column: A1_RE_TESTVER
+    output_field: 2025 Grades 3-8 - Reading Language Arts - Test Version
+    keep: false
+  - source_column: A1_RE_TESTLANG
+    output_field: 2025 Grades 3-8 - Reading Language Arts - Language
+    keep: false
+  - source_column: A1_RE_SCODE
+    output_field: 2025 Grades 3-8 - Reading Language Arts - Score Code
+    keep: false
+  - source_column: A1_RE_SSC
+    output_field: 2025 Grades 3-8 - Reading Language Arts - Scale Score
+    keep: false
+  - source_column: A1_RE_LVL2_STU
+    output_field:
+      "2025 Grades 3-8 - Reading Language Arts - Approaches Grade Level
+      at Student's Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: A1_RE_LVL2_REC
+    output_field:
+      "2025 Grades 3-8 - Reading Language Arts - Meets Grade Level Level
+      II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: A1_RE_LVL3
+    output_field:
+      "2025 Grades 3-8 - Reading Language Arts - Masters Grade Level Level
+      III: Accomplished Academic Performance"
+    keep: false
+  - source_column: A1_RE_PLI
+    output_field: 2025 Grades 3-8 - Reading Language Arts - Performance Level Indicator
+    keep: false
+  - source_column: A1_RE_RAW
+    output_field: 2025 Grades 3-8 - Reading Language Arts - Raw Score
+    keep: false
+  - source_column: A1_RE_PM
+    output_field: 2025 Grades 3-8 - Reading Language Arts - STAAR Progress Measure
+    keep: false
+  - source_column: A1_MA_CAMPUS
+    output_field: 2025 Grades 3-8 - Mathematics - County District Campus Number
+    keep: false
+  - source_column: A1_MA_ENR_GRADE
+    output_field: 2025 Grades 3-8 - Mathematics - Enrolled Grade
+    keep: false
+  - source_column: A1_MA_GRADE
+    output_field: 2025 Grades 3-8 - Mathematics - Tested Grade
+    keep: false
+  - source_column: A1_MA_TESTVER
+    output_field: 2025 Grades 3-8 - Mathematics - Test Version
+    keep: false
+  - source_column: A1_MA_TESTLANG
+    output_field: 2025 Grades 3-8 - Mathematics - Language
+    keep: false
+  - source_column: A1_MA_SCODE
+    output_field: 2025 Grades 3-8 - Mathematics - Score Code
+    keep: false
+  - source_column: A1_MA_SSC
+    output_field: 2025 Grades 3-8 - Mathematics - Scale Score
+    keep: false
+  - source_column: A1_MA_LVL2_STU
+    output_field:
+      "2025 Grades 3-8 - Mathematics - Approaches Grade Level at Student's
+      Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: A1_MA_LVL2_REC
+    output_field:
+      "2025 Grades 3-8 - Mathematics - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: A1_MA_LVL3
+    output_field:
+      "2025 Grades 3-8 - Mathematics - Masters Grade Level Level III: Accomplished
+      Academic Performance"
+    keep: false
+  - source_column: A1_MA_PLI
+    output_field: 2025 Grades 3-8 - Mathematics - Performance Level Indicator
+    keep: false
+  - source_column: A1_MA_RAW
+    output_field: 2025 Grades 3-8 - Mathematics - Raw Score
+    keep: false
+  - source_column: A1_MA_PM
+    output_field: 2025 Grades 3-8 - Mathematics - STAAR Progress Measure
+    keep: false
+  - source_column: S0_A1_SCODE
+    output_field: Algebra I Summer 2023 Score Code
+    keep: false
+  - source_column: F0_A1_SCODE
+    output_field: Algebra I Fall 2023 Score Code
+    keep: false
+  - source_column: P0_A1_SCODE
+    output_field: Algebra I Spring 2024 Score Code
+    keep: false
+  - source_column: S0_E1_SCODE
+    output_field: English I Summer 2023 Score Code
+    keep: false
+  - source_column: F0_E1_SCODE
+    output_field: English I Fall 2023 Score Code
+    keep: false
+  - source_column: P0_E1_SCODE
+    output_field: English I Spring 2024 Score Code
+    keep: false
+  - source_column: S0_E2_SCODE
+    output_field: English II Summer 2023 Score Code
+    keep: false
+  - source_column: F0_E2_SCODE
+    output_field: English II Fall 2023 Score Code
+    keep: false
+  - source_column: P0_E2_SCODE
+    output_field: English II Spring 2024 Score Code
+    keep: false
+  - source_column: A0_DATE
+    output_field: 2024 Grades 3-8 - Administration Date
+    keep: false
+  - source_column: A0_RE_CAMPUS
+    output_field: 2024 Grades 3-8 - Reading - County District Campus Number
+    keep: false
+  - source_column: A0_RE_ENR_GRADE
+    output_field: 2024 Grades 3-8 - Reading - Enrolled Grade
+    keep: false
+  - source_column: A0_RE_GRADE
+    output_field: 2024 Grades 3-8 - Reading - Tested Grade
+    keep: false
+  - source_column: A0_RE_TESTVER
+    output_field: 2024 Grades 3-8 - Reading - Test Version
+    keep: false
+  - source_column: A0_RE_TESTLANG
+    output_field: 2024 Grades 3-8 - Reading - Language
+    keep: false
+  - source_column: A0_RE_SCODE
+    output_field: 2024 Grades 3-8 - Reading - Score Code
+    keep: false
+  - source_column: A0_RE_SSC
+    output_field: 2024 Grades 3-8 - Reading - Scale Score
+    keep: false
+  - source_column: A0_RE_LVL2_STU
+    output_field:
+      "2024 Grades 3-8 - Reading - Approaches Grade Level at Student's
+      Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: A0_RE_LVL2_REC
+    output_field:
+      "2024 Grades 3-8 - Reading - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: A0_RE_LVL3
+    output_field:
+      "2024 Grades 3-8 - Reading - Masters Grade Level Level III: Accomplished
+      Academic Performance"
+    keep: false
+  - source_column: A0_RE_PLI
+    output_field: 2024 Grades 3-8 - Reading - Performance Level Indicator
+    keep: false
+  - source_column: A0_RE_RAW
+    output_field: 2024 Grades 3-8 - Reading - Raw Score
+    keep: false
+  - source_column: A0_MA_CAMPUS
+    output_field: 2024 Grades 3-8 - Mathematics - County District Campus Number
+    keep: false
+  - source_column: A0_MA_ENR_GRADE
+    output_field: 2024 Grades 3-8 - Mathematics - Enrolled Grade
+    keep: false
+  - source_column: A0_MA_GRADE
+    output_field: 2024 Grades 3-8 - Mathematics - Tested Grade
+    keep: false
+  - source_column: A0_MA_TESTVER
+    output_field: 2024 Grades 3-8 - Mathematics - Test Version
+    keep: false
+  - source_column: A0_MA_TESTLANG
+    output_field: 2024 Grades 3-8 - Mathematics - Language
+    keep: false
+  - source_column: A0_MA_SCODE
+    output_field: 2024 Grades 3-8 - Mathematics - Score Code
+    keep: false
+  - source_column: A0_MA_SSC
+    output_field: 2024 Grades 3-8 - Mathematics - Scale Score
+    keep: false
+  - source_column: A0_MA_LVL2_STU
+    output_field:
+      "2024 Grades 3-8 - Mathematics - Approaches Grade Level at Student's
+      Standard Level II: Satisfactory Academic Performance"
+    keep: false
+  - source_column: A0_MA_LVL2_REC
+    output_field:
+      "2024 Grades 3-8 - Mathematics - Meets Grade Level Level II: Satisfactory
+      Academic Performance"
+    keep: false
+  - source_column: A0_MA_LVL3
+    output_field:
+      "2024 Grades 3-8 - Mathematics - Masters Grade Level Level III: Accomplished
+      Academic Performance"
+    keep: false
+  - source_column: A0_MA_PLI
+    output_field: 2024 Grades 3-8 - Mathematics - Performance Level Indicator
+    keep: false
+  - source_column: A0_MA_RAW
+    output_field: 2024 Grades 3-8 - Mathematics - Raw Score
+    keep: false
+  - source_column: T2_DATE
+    output_field: 2026 TELPAS - Administration Date
+    keep: false
+  - source_column: T2_UPD_IND
+    output_field: 2026 TELPAS - Record Update Indicator
+    keep: false
+  - source_column: ASYREF
+    output_field: 2026 TELPAS - Unschooled Asylee Refugee
+    keep: false
+  - source_column: SIFE
+    output_field: 2026 TELPAS - Students with Interrupted Formal Education SIFE
+    keep: false
+  - source_column: YEARS_IN_US
+    output_field: 2026 TELPAS - Years in U.S. Schools
+    keep: false
+  - source_column: PARENT_DENIAL
+    output_field: 2026 TELPAS - Parental Denial
+    keep: false
+  - source_column: T2_TESTVER
+    output_field: 2026 TELPAS - Test Version
+    keep: false
+  - source_column: T2_RE_SCODE
+    output_field: 2026 TELPAS - Reading - Score Code
+    keep: false
+  - source_column: T2_RE_PROF
+    output_field: 2026 TELPAS - Reading - Proficiency Level
+    keep: false
+  - source_column: T2_RE_GRADE
+    output_field: 2026 TELPAS - Reading - Grade
+    keep: false
+  - source_column: T2_RE_SSC
+    output_field: 2026 TELPAS - Reading - Scale Score
+    keep: false
+  - source_column: T2_RE_TESTED_GRADE
+    output_field: 2026 TELPAS - Reading Tested Grade
+    keep: false
+  - source_column: T2_WR_SCODE
+    output_field: 2026 TELPAS - Writing - Score Code
+    keep: false
+  - source_column: T2_WR_PROF
+    output_field: 2026 TELPAS - Writing - Proficiency Level
+    keep: false
+  - source_column: T2_WR_GRADE
+    output_field: 2026 TELPAS - Writing - Grade
+    keep: false
+  - source_column: T2_WR_SSC
+    output_field: 2026 TELPAS - Writing - Scale Score
+    keep: false
+  - source_column: T2_WR_TESTED_GRADE
+    output_field: 2026 TELPAS - Writing Tested Grade
+    keep: false
+  - source_column: T2_LI_SCODE
+    output_field: 2026 TELPAS - Listening - Score Code
+    keep: false
+  - source_column: T2_LI_PROF
+    output_field: 2026 TELPAS - Listening - Proficiency Level
+    keep: false
+  - source_column: T2_LI_GRADE
+    output_field: 2026 TELPAS - Listening - Grade
+    keep: false
+  - source_column: T2_LI_SSC
+    output_field: 2026 TELPAS - Listening - Scale Score
+    keep: false
+  - source_column: T2_LI_TESTED_GRADE
+    output_field: 2026 TELPAS - Listening Tested Grade
+    keep: false
+  - source_column: T2_SP_SCODE
+    output_field: 2026 TELPAS - Speaking - Score Code
+    keep: false
+  - source_column: T2_SP_PROF
+    output_field: 2026 TELPAS - Speaking - Proficiency Level
+    keep: false
+  - source_column: T2_SP_GRADE
+    output_field: 2026 TELPAS - Speaking - Grade
+    keep: false
+  - source_column: T2_SP_SSC
+    output_field: 2026 TELPAS - Speaking - Scale Score
+    keep: false
+  - source_column: T2_SP_TESTED_GRADE
+    output_field: 2026 TELPAS - Speaking Tested Grade
+    keep: false
+  - source_column: T2_COMPO_SCORE
+    output_field: 2026 TELPAS - Composite Information - Composite Score
+    keep: false
+  - source_column: T2_RATING
+    output_field: 2026 TELPAS - Composite Information - Composite Rating
+    keep: false
+  - source_column: T2_CAMPUS
+    output_field: 2026 TELPAS - Composite Information - County District Campus Number
+    keep: false
+  - source_column: T1_DATE
+    output_field: 2025 TELPAS - Administration Date
+    keep: false
+  - source_column: T1_TESTVER
+    output_field: 2025 TELPAS - Test Version
+    keep: false
+  - source_column: T1_RE_SCODE
+    output_field: 2025 TELPAS - Reading - Score Code
+    keep: false
+  - source_column: T1_RE_PROF
+    output_field: 2025 TELPAS - Reading - Proficiency Level
+    keep: false
+  - source_column: T1_RE_GRADE
+    output_field: 2025 TELPAS - Reading - Grade
+    keep: false
+  - source_column: T1_RE_SSC
+    output_field: 2025 TELPAS - Reading - Scale Score
+    keep: false
+  - source_column: T1_RE_TESTED_GRADE
+    output_field: 2025 TELPAS - Reading Tested Grade
+    keep: false
+  - source_column: T1_WR_SCODE
+    output_field: 2025 TELPAS - Writing - Score Code
+    keep: false
+  - source_column: T1_WR_PROF
+    output_field: 2025 TELPAS - Writing - Proficiency Level
+    keep: false
+  - source_column: T1_WR_GRADE
+    output_field: 2025 TELPAS - Writing - Grade
+    keep: false
+  - source_column: T1_WR_SSC
+    output_field: 2025 TELPAS - Writing - Scale Score
+    keep: false
+  - source_column: T1_WR_TESTED_GRADE
+    output_field: 2025 TELPAS - Writing Tested Grade
+    keep: false
+  - source_column: T1_LI_SCODE
+    output_field: 2025 TELPAS - Listening - Score Code
+    keep: false
+  - source_column: T1_LI_PROF
+    output_field: 2025 TELPAS - Listening - Proficiency Level
+    keep: false
+  - source_column: T1_LI_GRADE
+    output_field: 2025 TELPAS - Listening - Grade
+    keep: false
+  - source_column: T1_LI_SSC
+    output_field: 2025 TELPAS - Listening - Scale Score
+    keep: false
+  - source_column: T1_LI_TESTED_GRADE
+    output_field: 2025 TELPAS - Listening Tested Grade
+    keep: false
+  - source_column: T1_SP_SCODE
+    output_field: 2025 TELPAS - Speaking - Score Code
+    keep: false
+  - source_column: T1_SP_PROF
+    output_field: 2025 TELPAS - Speaking - Proficiency Level
+    keep: false
+  - source_column: T1_SP_GRADE
+    output_field: 2025 TELPAS - Speaking - Grade
+    keep: false
+  - source_column: T1_SP_SSC
+    output_field: 2025 TELPAS - Speaking - Scale Score
+    keep: false
+  - source_column: T1_SP_TESTED_GRADE
+    output_field: 2025 TELPAS - Speaking Tested Grade
+    keep: false
+  - source_column: T1_COMPO_SCORE
+    output_field: 2025 TELPAS - Composite Information - Composite Score
+    keep: false
+  - source_column: T1_RATING
+    output_field: 2025 TELPAS - Composite Information - Composite Rating
+    keep: false
+  - source_column: T1_CAMPUS
+    output_field: 2025 TELPAS - Composite Information - County District Campus Number
+    keep: false
+  - source_column: PM_ELL_PLAN
+    output_field:
+      EL Performance Measure Plan - EL Performance Measure Plan (non English
+      I II)
+    keep: false
+  - source_column: PM_ELL_PLAN_E1E2
+    output_field:
+      EL Performance Measure Plan - EL Performance Measure Plan (English
+      I II)
+    keep: false
+  - source_column: PM_ELL_YEAR
+    output_field: EL Performance Measure Plan - Year ELPM Plan Determined
+    keep: false
+  - source_column: PM_ELL_RATING
+    output_field: EL Performance Measure Plan - Plan Year TELPAS Composite Rating
+    keep: false
+  - source_column: EOF
+    output_field: EOF
+    keep: false
