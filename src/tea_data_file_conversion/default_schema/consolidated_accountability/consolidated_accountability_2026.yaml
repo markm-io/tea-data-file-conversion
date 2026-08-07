@@ -225,9 +225,7 @@ fields:
     output_field: 2025 Summer EOC - Algebra I - Scale Score
     keep: false
   - source_column: S2_A1_LVL2_STU
-    output_field:
-      2025 Summer EOC - Algebra I - Approaches Grade Level at Student's
-      Standard
+    output_field: 2025 Summer EOC - Algebra I - Approaches Grade Level at Student's Standard
     keep: false
   - source_column: S2_A1_LVL2_REC
     output_field: 2025 Summer EOC - Algebra I - Meets Grade Level
@@ -317,9 +315,7 @@ fields:
     output_field: 2025 Summer EOC - English I - Scale Score
     keep: false
   - source_column: S2_E1_LVL2_STU
-    output_field:
-      2025 Summer EOC - English I - Approaches Grade Level at Student's
-      Standard
+    output_field: 2025 Summer EOC - English I - Approaches Grade Level at Student's Standard
     keep: false
   - source_column: S2_E1_LVL2_REC
     output_field: 2025 Summer EOC - English I - Meets Grade Level
@@ -367,9 +363,7 @@ fields:
     output_field: 2025 Summer EOC - English II - Scale Score
     keep: false
   - source_column: S2_E2_LVL2_STU
-    output_field:
-      2025 Summer EOC - English II - Approaches Grade Level at Student's
-      Standard
+    output_field: 2025 Summer EOC - English II - Approaches Grade Level at Student's Standard
     keep: false
   - source_column: S2_E2_LVL2_REC
     output_field: 2025 Summer EOC - English II - Meets Grade Level
@@ -417,9 +411,7 @@ fields:
     output_field: 2025 Summer EOC - U.S. History - Scale Score
     keep: false
   - source_column: S2_US_LVL2_STU
-    output_field:
-      2025 Summer EOC - U.S. History - Approaches Grade Level at Student's
-      Standard
+    output_field: 2025 Summer EOC - U.S. History - Approaches Grade Level at Student's Standard
     keep: false
   - source_column: S2_US_LVL2_REC
     output_field: 2025 Summer EOC - U.S. History - Meets Grade Level
@@ -653,9 +645,7 @@ fields:
     output_field: 2025 Fall EOC - U.S. History - Scale Score
     keep: false
   - source_column: F2_US_LVL2_STU
-    output_field:
-      2025 Fall EOC - U.S. History - Approaches Grade Level at Student's
-      Standard
+    output_field: 2025 Fall EOC - U.S. History - Approaches Grade Level at Student's Standard
     keep: false
   - source_column: F2_US_LVL2_REC
     output_field: 2025 Fall EOC - U.S. History - Meets Grade Level
@@ -703,19 +693,13 @@ fields:
     output_field: 2026 Spring EOC - Algebra I - Scale Score
     keep: false
   - source_column: P2_A1_LVL2_STU
-    output_field:
-      "2026 Spring EOC - Algebra I - Approaches Grade Level at Student's
-      Standard Level II: Satisfactory Academic Performance"
+    output_field: "2026 Spring EOC - Algebra I - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P2_A1_LVL2_REC
-    output_field:
-      "2026 Spring EOC - Algebra I - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2026 Spring EOC - Algebra I - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P2_A1_LVL3
-    output_field:
-      "2026 Spring EOC - Algebra I - Masters Grade Level Level III: Accomplished
-      Academic Performance"
+    output_field: "2026 Spring EOC - Algebra I - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: P2_A1_RAW
     output_field: 2026 Spring EOC - Algebra I - Raw Score
@@ -757,19 +741,13 @@ fields:
     output_field: 2026 Spring EOC - Biology - Scale Score
     keep: false
   - source_column: P2_BI_LVL2_STU
-    output_field:
-      "2026 Spring EOC - Biology - Approaches Grade Level at Student's
-      Standard Level II: Satisfactory Academic Performance"
+    output_field: "2026 Spring EOC - Biology - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P2_BI_LVL2_REC
-    output_field:
-      "2026 Spring EOC - Biology - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2026 Spring EOC - Biology - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P2_BI_LVL3
-    output_field:
-      "2026 Spring EOC - Biology - Masters Grade Level Level III: Accomplished
-      Academic Performance"
+    output_field: "2026 Spring EOC - Biology - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: P2_BI_EPM
     output_field: 2026 Spring EOC - Biology - EL Performance Measure
@@ -805,19 +783,13 @@ fields:
     output_field: 2026 Spring EOC - English I - Scale Score
     keep: false
   - source_column: P2_E1_LVL2_STU
-    output_field:
-      "2026 Spring EOC - English I - Approaches Grade Level at Student's
-      Standard Level II: Satisfactory Academic Performance"
+    output_field: "2026 Spring EOC - English I - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P2_E1_LVL2_REC
-    output_field:
-      "2026 Spring EOC - English I - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2026 Spring EOC - English I - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P2_E1_LVL3
-    output_field:
-      "2026 Spring EOC - English I - Masters Grade Level Level III: Accomplished
-      Academic Performance"
+    output_field: "2026 Spring EOC - English I - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: P2_E1_RAW
     output_field: 2026 Spring EOC - English I - Raw Score
@@ -862,19 +834,13 @@ fields:
     output_field: 2026 Spring EOC - English II - Scale Score
     keep: false
   - source_column: P2_E2_LVL2_STU
-    output_field:
-      "2026 Spring EOC - English II - Approaches Grade Level at Student's
-      Standard Level II: Satisfactory Academic Performance"
+    output_field: "2026 Spring EOC - English II - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P2_E2_LVL2_REC
-    output_field:
-      "2026 Spring EOC - English II - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2026 Spring EOC - English II - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P2_E2_LVL3
-    output_field:
-      "2026 Spring EOC - English II - Masters Grade Level Level III: Accomplished
-      Academic Performance"
+    output_field: "2026 Spring EOC - English II - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: P2_E2_RAW
     output_field: 2026 Spring EOC - English II - Raw Score
@@ -886,9 +852,7 @@ fields:
     output_field: 2026 Spring EOC - English II - EL Performance Measure
     keep: false
   - source_column: P2_E2_PREV
-    output_field:
-      2026 Spring EOC - English II - Previous Year English I First time
-      Retester
+    output_field: 2026 Spring EOC - English II - Previous Year English I First time Retester
     keep: false
   - source_column: P2_E2_FORM
     output_field: 2026 Spring EOC - English II - Test Form Version
@@ -924,19 +888,13 @@ fields:
     output_field: 2026 Spring EOC - U.S. History - Scale Score
     keep: false
   - source_column: P2_US_LVL2_STU
-    output_field:
-      "2026 Spring EOC - U.S. History - Approaches Grade Level at Student's
-      Standard/Level II: Satisfactory Academic Performance"
+    output_field: "2026 Spring EOC - U.S. History - Approaches Grade Level at Student's Standard/Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P2_US_LVL2_REC
-    output_field:
-      "2026 Spring EOC - U.S. History - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2026 Spring EOC - U.S. History - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P2_US_LVL3
-    output_field:
-      "2026 Spring EOC - U.S. History - Masters Grade Level Level III: Accomplished
-      Academic Performance"
+    output_field: "2026 Spring EOC - U.S. History - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: P2_US_EPM
     output_field: 2026 Spring EOC - U.S. History - EL Performance Measure
@@ -972,9 +930,7 @@ fields:
     output_field: 2024 Summer EOC - Algebra I - Scale Score
     keep: false
   - source_column: S1_A1_LVL2_STU
-    output_field:
-      2024 Summer EOC - Algebra I - Approaches Grade Level at Student's
-      Standard
+    output_field: 2024 Summer EOC - Algebra I - Approaches Grade Level at Student's Standard
     keep: false
   - source_column: S1_A1_LVL2_REC
     output_field: 2024 Summer EOC - Algebra I - Meets Grade Level
@@ -1040,9 +996,7 @@ fields:
     output_field: 2024 Summer EOC - English I - Scale Score
     keep: false
   - source_column: S1_E1_LVL2_STU
-    output_field:
-      2024 Summer EOC - English I - Approaches Grade Level at Student's
-      Standard
+    output_field: 2024 Summer EOC - English I - Approaches Grade Level at Student's Standard
     keep: false
   - source_column: S1_E1_LVL2_REC
     output_field: 2024 Summer EOC - English I - Meets Grade Level
@@ -1078,9 +1032,7 @@ fields:
     output_field: 2024 Summer EOC - English II - Scale Score
     keep: false
   - source_column: S1_E2_LVL2_STU
-    output_field:
-      2024 Summer EOC - English II - Approaches Grade Level at Student's
-      Standard
+    output_field: 2024 Summer EOC - English II - Approaches Grade Level at Student's Standard
     keep: false
   - source_column: S1_E2_LVL2_REC
     output_field: 2024 Summer EOC - English II - Meets Grade Level
@@ -1116,9 +1068,7 @@ fields:
     output_field: 2024 Summer EOC - U.S. History - Scale Score
     keep: false
   - source_column: S1_US_LVL2_STU
-    output_field:
-      2024 Summer EOC - U.S. History - Approaches Grade Level at Student's
-      Standard
+    output_field: 2024 Summer EOC - U.S. History - Approaches Grade Level at Student's Standard
     keep: false
   - source_column: S1_US_LVL2_REC
     output_field: 2024 Summer EOC - U.S. History - Meets Grade Level
@@ -1289,9 +1239,7 @@ fields:
     output_field: 2024 Fall EOC - U.S. History - Scale Score
     keep: false
   - source_column: F1_US_LVL2_STU
-    output_field:
-      2024 Fall EOC - U.S. History - Approaches Grade Level at Student's
-      Standard
+    output_field: 2024 Fall EOC - U.S. History - Approaches Grade Level at Student's Standard
     keep: false
   - source_column: F1_US_LVL2_REC
     output_field: 2024 Fall EOC - U.S. History - Meets Grade Level
@@ -1324,19 +1272,13 @@ fields:
     output_field: 2025 Spring EOC - Algebra I - Scale Score
     keep: false
   - source_column: P1_A1_LVL2_STU
-    output_field:
-      "2025 Spring EOC - Algebra I - Approaches Grade Level at Student's
-      Standard Level II: Satisfactory Academic Performance"
+    output_field: "2025 Spring EOC - Algebra I - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P1_A1_LVL2_REC
-    output_field:
-      "2025 Spring EOC - Algebra I - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2025 Spring EOC - Algebra I - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P1_A1_LVL3
-    output_field:
-      "2025 Spring EOC - Algebra I - Masters Grade Level Level III: Accomplished
-      Academic Performance"
+    output_field: "2025 Spring EOC - Algebra I - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: P1_A1_PLI
     output_field: 2025 Spring EOC - Algebra I - Performance Level Indicator
@@ -1366,19 +1308,13 @@ fields:
     output_field: 2025 Spring EOC - Biology - Scale Score
     keep: false
   - source_column: P1_BI_LVL2_STU
-    output_field:
-      "2025 Spring EOC - Biology - Approaches Grade Level at Student's
-      Standard Level II: Satisfactory Academic Performance"
+    output_field: "2025 Spring EOC - Biology - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P1_BI_LVL2_REC
-    output_field:
-      "2025 Spring EOC - Biology - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2025 Spring EOC - Biology - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P1_BI_LVL3
-    output_field:
-      "2025 Spring EOC - Biology - Masters Grade Level Level III: Accomplished
-      Academic Performance"
+    output_field: "2025 Spring EOC - Biology - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: P1_BI_PLI
     output_field: 2025 Spring EOC - Biology - Performance Level Indicator
@@ -1402,19 +1338,13 @@ fields:
     output_field: 2025 Spring EOC - English I - Scale Score
     keep: false
   - source_column: P1_E1_LVL2_STU
-    output_field:
-      "2025 Spring EOC - English I - Approaches Grade Level at Student's
-      Standard Level II: Satisfactory Academic Performance"
+    output_field: "2025 Spring EOC - English I - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P1_E1_LVL2_REC
-    output_field:
-      "2025 Spring EOC - English I - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2025 Spring EOC - English I - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P1_E1_LVL3
-    output_field:
-      "2025 Spring EOC - English I - Masters Grade Level Level III: Accomplished
-      Academic Performance"
+    output_field: "2025 Spring EOC - English I - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: P1_E1_PLI
     output_field: 2025 Spring EOC - English I - Performance Level Indicator
@@ -1444,19 +1374,13 @@ fields:
     output_field: 2025 Spring EOC - English II - Scale Score
     keep: false
   - source_column: P1_E2_LVL2_STU
-    output_field:
-      "2025 Spring EOC - English II - Approaches Grade Level at Student's
-      Standard Level II: Satisfactory Academic Performance"
+    output_field: "2025 Spring EOC - English II - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P1_E2_LVL2_REC
-    output_field:
-      "2025 Spring EOC - English II - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2025 Spring EOC - English II - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P1_E2_LVL3
-    output_field:
-      "2025 Spring EOC - English II - Masters Grade Level Level III: Accomplished
-      Academic Performance"
+    output_field: "2025 Spring EOC - English II - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: P1_E2_PLI
     output_field: 2025 Spring EOC - English II - Performance Level Indicator
@@ -1486,82 +1410,52 @@ fields:
     output_field: 2025 Spring EOC - U.S. History - Scale Score
     keep: false
   - source_column: P1_US_LVL2_STU
-    output_field:
-      "2025 Spring EOC - U.S. History - Approaches Grade Level at Student's
-      Standard Level II: Satisfactory Academic Performance"
+    output_field: "2025 Spring EOC - U.S. History - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P1_US_LVL2_REC
-    output_field:
-      "2025 Spring EOC - U.S. History - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2025 Spring EOC - U.S. History - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: P1_US_LVL3
-    output_field:
-      "2025 Spring EOC - U.S. History - Masters Grade Level Level III: Accomplished
-      Academic Performance"
+    output_field: "2025 Spring EOC - U.S. History - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: P1_US_PLI
     output_field: 2025 Spring EOC - U.S. History - Performance Level Indicator
     keep: false
   - source_column: CU_STU
-    output_field:
-      EOC Cumulative History - Student's Performance Standard for Level
-      II
+    output_field: EOC Cumulative History - Student's Performance Standard for Level II
     keep: false
   - source_column: CU_A1_1SUBMIT_DATE
-    output_field:
-      EOC Cumulative History - Algebra I First-Time Document Submitted -
-      Administration Date
+    output_field: EOC Cumulative History - Algebra I First-Time Document Submitted - Administration Date
     keep: false
   - source_column: CU_A1_1SUBMIT_TESTVER
-    output_field:
-      EOC Cumulative History - Algebra I First-Time Document Submitted -
-      Test Version
+    output_field: EOC Cumulative History - Algebra I First-Time Document Submitted - Test Version
     keep: false
   - source_column: CU_A1_1SUBMIT_SCODE
-    output_field:
-      EOC Cumulative History - Algebra I First-Time Document Submitted -
-      Score Code
+    output_field: EOC Cumulative History - Algebra I First-Time Document Submitted - Score Code
     keep: false
   - source_column: CU_A1_1SUBMIT_ALT
-    output_field:
-      EOC Cumulative History - Algebra I First-Time Document Submitted -
-      Alternate Assessment Category
+    output_field: EOC Cumulative History - Algebra I First-Time Document Submitted - Alternate Assessment Category
     keep: false
   - source_column: CU_A1_1SUBMIT_SUB
-    output_field:
-      EOC Cumulative History - Algebra I First-Time Document Submitted -
-      Substitute Assessment
+    output_field: EOC Cumulative History - Algebra I First-Time Document Submitted - Substitute Assessment
     keep: false
   - source_column: CU_A1_1SCORED_DATE
-    output_field:
-      EOC Cumulative History - Algebra I First-Time Document Scored - Administration
-      Date
+    output_field: EOC Cumulative History - Algebra I First-Time Document Scored - Administration Date
     keep: false
   - source_column: CU_A1_1SCORED_TESTVER
-    output_field:
-      EOC Cumulative History - Algebra I First-Time Document Scored - Test
-      Version
+    output_field: EOC Cumulative History - Algebra I First-Time Document Scored - Test Version
     keep: false
   - source_column: CU_A1_1SUBMIT_SUB_DATE
-    output_field:
-      EOC Cumulative History - Algebra I First-Time Substitute Assessment
-      Submitted - Administration Date
+    output_field: EOC Cumulative History - Algebra I First-Time Substitute Assessment Submitted - Administration Date
     keep: false
   - source_column: CU_A1_1SUBMIT_SUB_CAMPUS
-    output_field:
-      EOC Cumulative History - Algebra I First-Time Substitute Assessment
-      Submitted - County District Campus Number
+    output_field: EOC Cumulative History - Algebra I First-Time Substitute Assessment Submitted - County District Campus Number
     keep: false
   - source_column: CU_A1_DATE
-    output_field:
-      EOC Cumulative History - Algebra I Cumulative History - Administration
-      Date
+    output_field: EOC Cumulative History - Algebra I Cumulative History - Administration Date
     keep: false
   - source_column: CU_A1_CAMPUS
-    output_field:
-      EOC Cumulative History - Algebra I Cumulative History - County District
-      Campus Number
+    output_field: EOC Cumulative History - Algebra I Cumulative History - County District Campus Number
     keep: false
   - source_column: CU_A1_TESTVER
     output_field: EOC Cumulative History - Algebra I Cumulative History - Test Version
@@ -1570,87 +1464,55 @@ fields:
     output_field: EOC Cumulative History - Algebra I Cumulative History - Score Code
     keep: false
   - source_column: CU_A1_ALT
-    output_field:
-      EOC Cumulative History - Algebra I Cumulative History - Alternate
-      Assessment Category
+    output_field: EOC Cumulative History - Algebra I Cumulative History - Alternate Assessment Category
     keep: false
   - source_column: CU_A1_LVL2_STU
-    output_field:
-      "EOC Cumulative History - Algebra I Cumulative History - Approaches
-      Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
+    output_field: "EOC Cumulative History - Algebra I Cumulative History - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: CU_A1_LVL3
-    output_field:
-      "EOC Cumulative History - Algebra I Cumulative History - Masters Grade
-      Level Level III: Accomplished Academic Performance"
+    output_field: "EOC Cumulative History - Algebra I Cumulative History - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: CU_A1_LVL2_REC
-    output_field:
-      "EOC Cumulative History - Algebra I Cumulative History - Meets Grade
-      Level Level II: Satisfactory Academic Performance"
+    output_field: "EOC Cumulative History - Algebra I Cumulative History - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: CU_A1_SSC
     output_field: EOC Cumulative History - Algebra I Cumulative History - Scale Score
     keep: false
   - source_column: CU_A1_SUB
-    output_field:
-      EOC Cumulative History - Algebra I Cumulative History - Substitute
-      Assessment
+    output_field: EOC Cumulative History - Algebra I Cumulative History - Substitute Assessment
     keep: false
   - source_column: CU_BI_1SUBMIT_DATE
-    output_field:
-      EOC Cumulative History - Biology First-Time Document Submitted - Administration
-      Date
+    output_field: EOC Cumulative History - Biology First-Time Document Submitted - Administration Date
     keep: false
   - source_column: CU_BI_1SUBMIT_TESTVER
-    output_field:
-      EOC Cumulative History - Biology First-Time Document Submitted - Test
-      Version
+    output_field: EOC Cumulative History - Biology First-Time Document Submitted - Test Version
     keep: false
   - source_column: CU_BI_1SUBMIT_SCODE
-    output_field:
-      EOC Cumulative History - Biology First-Time Document Submitted - Score
-      Code
+    output_field: EOC Cumulative History - Biology First-Time Document Submitted - Score Code
     keep: false
   - source_column: CU_BI_1SUBMIT_ALT
-    output_field:
-      EOC Cumulative History - Biology First-Time Document Submitted - Alternate
-      Assessment Category
+    output_field: EOC Cumulative History - Biology First-Time Document Submitted - Alternate Assessment Category
     keep: false
   - source_column: CU_BI_1SUBMIT_SUB
-    output_field:
-      EOC Cumulative History - Biology First-Time Document Submitted - Substitute
-      Assessment
+    output_field: EOC Cumulative History - Biology First-Time Document Submitted - Substitute Assessment
     keep: false
   - source_column: CU_BI_1SCORED_DATE
-    output_field:
-      EOC Cumulative History - Biology First-Time Document Scored - Administration
-      Date
+    output_field: EOC Cumulative History - Biology First-Time Document Scored - Administration Date
     keep: false
   - source_column: CU_BI_1SCORED_TESTVER
-    output_field:
-      EOC Cumulative History - Biology First-Time Document Scored - Test
-      Version
+    output_field: EOC Cumulative History - Biology First-Time Document Scored - Test Version
     keep: false
   - source_column: CU_BI_1SUBMIT_SUB_DATE
-    output_field:
-      EOC Cumulative History - Biology First-Time Substitute Assessment
-      Submitted - Administration Date
+    output_field: EOC Cumulative History - Biology First-Time Substitute Assessment Submitted - Administration Date
     keep: false
   - source_column: CU_BI_1SUBMIT_SUB_CAMPUS
-    output_field:
-      EOC Cumulative History - Biology First-Time Substitute Assessment
-      Submitted - County District Campus Number
+    output_field: EOC Cumulative History - Biology First-Time Substitute Assessment Submitted - County District Campus Number
     keep: false
   - source_column: CU_BI_DATE
-    output_field:
-      EOC Cumulative History - Biology Cumulative History - Administration
-      Date
+    output_field: EOC Cumulative History - Biology Cumulative History - Administration Date
     keep: false
   - source_column: CU_BI_CAMPUS
-    output_field:
-      EOC Cumulative History - Biology Cumulative History - County District
-      Campus Number
+    output_field: EOC Cumulative History - Biology Cumulative History - County District Campus Number
     keep: false
   - source_column: CU_BI_TESTVER
     output_field: EOC Cumulative History - Biology Cumulative History - Test Version
@@ -1659,24 +1521,16 @@ fields:
     output_field: EOC Cumulative History - Biology Cumulative History - Score Code
     keep: false
   - source_column: CU_BI_ALT
-    output_field:
-      EOC Cumulative History - Biology Cumulative History - Alternate Assessment
-      Category
+    output_field: EOC Cumulative History - Biology Cumulative History - Alternate Assessment Category
     keep: false
   - source_column: CU_BI_LVL2_STU
-    output_field:
-      "EOC Cumulative History - Biology Cumulative History - Approaches
-      Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
+    output_field: "EOC Cumulative History - Biology Cumulative History - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: CU_BI_LVL3
-    output_field:
-      "EOC Cumulative History - Biology Cumulative History - Masters Grade
-      Level Level III: Accomplished Academic Performance"
+    output_field: "EOC Cumulative History - Biology Cumulative History - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: CU_BI_LVL2_REC
-    output_field:
-      "EOC Cumulative History - Biology Cumulative History - Meets Grade
-      Level Level II: Satisfactory Academic Performance"
+    output_field: "EOC Cumulative History - Biology Cumulative History - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: CU_BI_SSC
     output_field: EOC Cumulative History - Biology Cumulative History - Scale Score
@@ -1685,59 +1539,37 @@ fields:
     output_field: EOC Cumulative History - Biology Cumulative History - Substitute Assessment
     keep: false
   - source_column: CU_E1_1SUBMIT_DATE
-    output_field:
-      EOC Cumulative History - English I First Time Document Submitted -
-      Administration Date
+    output_field: EOC Cumulative History - English I First Time Document Submitted - Administration Date
     keep: false
   - source_column: CU_E1_1SUBMIT_TESTVER
-    output_field:
-      EOC Cumulative History - English I First Time Document Submitted -
-      Test Version
+    output_field: EOC Cumulative History - English I First Time Document Submitted - Test Version
     keep: false
   - source_column: CU_E1_1SUBMIT_SCODE
-    output_field:
-      EOC Cumulative History - English I First Time Document Submitted -
-      Score Code
+    output_field: EOC Cumulative History - English I First Time Document Submitted - Score Code
     keep: false
   - source_column: CU_E1_1SUBMIT_ALT
-    output_field:
-      EOC Cumulative History - English I First Time Document Submitted -
-      Alternate Assessment Category
+    output_field: EOC Cumulative History - English I First Time Document Submitted - Alternate Assessment Category
     keep: false
   - source_column: CU_E1_1SUBMIT_SUB
-    output_field:
-      EOC Cumulative History - English I First Time Document Submitted -
-      Substitute Assessment
+    output_field: EOC Cumulative History - English I First Time Document Submitted - Substitute Assessment
     keep: false
   - source_column: CU_E1_1SCORED_DATE
-    output_field:
-      EOC Cumulative History - English I First-Time Document Scored - Administration
-      Date
+    output_field: EOC Cumulative History - English I First-Time Document Scored - Administration Date
     keep: false
   - source_column: CU_E1_1SCORED_TESTVER
-    output_field:
-      EOC Cumulative History - English I First-Time Document Scored - Test
-      Version
+    output_field: EOC Cumulative History - English I First-Time Document Scored - Test Version
     keep: false
   - source_column: CU_E1_1SUBMIT_SUB_DATE
-    output_field:
-      EOC Cumulative History - English I First-Time Substitute Assessment
-      Submitted - Administration Date
+    output_field: EOC Cumulative History - English I First-Time Substitute Assessment Submitted - Administration Date
     keep: false
   - source_column: CU_E1_1SUBMIT_SUB_CAMPUS
-    output_field:
-      EOC Cumulative History - English I First-Time Substitute Assessment
-      Submitted - County District Campus Number
+    output_field: EOC Cumulative History - English I First-Time Substitute Assessment Submitted - County District Campus Number
     keep: false
   - source_column: CU_E1_DATE
-    output_field:
-      EOC Cumulative History - English I Cumulative History - Administration
-      Date
+    output_field: EOC Cumulative History - English I Cumulative History - Administration Date
     keep: false
   - source_column: CU_E1_CAMPUS
-    output_field:
-      EOC Cumulative History - English I Cumulative History - County District
-      Campus Number
+    output_field: EOC Cumulative History - English I Cumulative History - County District Campus Number
     keep: false
   - source_column: CU_E1_TESTVER
     output_field: EOC Cumulative History - English I Cumulative History - Test Version
@@ -1746,87 +1578,55 @@ fields:
     output_field: EOC Cumulative History - English I Cumulative History - Score Code
     keep: false
   - source_column: CU_E1_ALT
-    output_field:
-      EOC Cumulative History - English I Cumulative History - Alternate
-      Assessment Category
+    output_field: EOC Cumulative History - English I Cumulative History - Alternate Assessment Category
     keep: false
   - source_column: CU_E1_LVL2_STU
-    output_field:
-      "EOC Cumulative History - English I Cumulative History - Approaches
-      Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
+    output_field: "EOC Cumulative History - English I Cumulative History - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: CU_E1_LVL3
-    output_field:
-      "EOC Cumulative History - English I Cumulative History - Masters Grade
-      Level Level III: Accomplished Academic Performance"
+    output_field: "EOC Cumulative History - English I Cumulative History - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: CU_E1_LVL2_REC
-    output_field:
-      "EOC Cumulative History - English I Cumulative History - Meets Grade
-      Level Level II: Satisfactory Academic Performance"
+    output_field: "EOC Cumulative History - English I Cumulative History - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: CU_E1_SSC
     output_field: EOC Cumulative History - English I Cumulative History - Scale Score
     keep: false
   - source_column: CU_E1_SUB
-    output_field:
-      EOC Cumulative History - English I Cumulative History - Substitute
-      Assessment
+    output_field: EOC Cumulative History - English I Cumulative History - Substitute Assessment
     keep: false
   - source_column: CU_E2_1SUBMIT_DATE
-    output_field:
-      EOC Cumulative History - English II First-Time Document Submitted
-      - Administration Date
+    output_field: EOC Cumulative History - English II First-Time Document Submitted - Administration Date
     keep: false
   - source_column: CU_E2_1SUBMIT_TESTVER
-    output_field:
-      EOC Cumulative History - English II First-Time Document Submitted
-      - Test Version
+    output_field: EOC Cumulative History - English II First-Time Document Submitted - Test Version
     keep: false
   - source_column: CU_E2_1SUBMIT_SCODE
-    output_field:
-      EOC Cumulative History - English II First-Time Document Submitted
-      - Score Code
+    output_field: EOC Cumulative History - English II First-Time Document Submitted - Score Code
     keep: false
   - source_column: CU_E2_1SUBMIT_ALT
-    output_field:
-      EOC Cumulative History - English II First-Time Document Submitted
-      - Alternate Assessment Category
+    output_field: EOC Cumulative History - English II First-Time Document Submitted - Alternate Assessment Category
     keep: false
   - source_column: CU_E2_1SUBMIT_SUB
-    output_field:
-      EOC Cumulative History - English II First-Time Document Submitted
-      - Substitute Assessment
+    output_field: EOC Cumulative History - English II First-Time Document Submitted - Substitute Assessment
     keep: false
   - source_column: CU_E2_1SCORED_DATE
-    output_field:
-      EOC Cumulative History - English II First Time Document Scored - Administration
-      Date
+    output_field: EOC Cumulative History - English II First Time Document Scored - Administration Date
     keep: false
   - source_column: CU_E2_1SCORED_TESTVER
-    output_field:
-      EOC Cumulative History - English II First Time Document Scored - Test
-      Version
+    output_field: EOC Cumulative History - English II First Time Document Scored - Test Version
     keep: false
   - source_column: CU_E2_1SUBMIT_SUB_DATE
-    output_field:
-      EOC Cumulative History - English II First-Time Substitute Assessment
-      Submitted - Administration Date
+    output_field: EOC Cumulative History - English II First-Time Substitute Assessment Submitted - Administration Date
     keep: false
   - source_column: CU_E2_1SUBMIT_SUB_CAMPUS
-    output_field:
-      EOC Cumulative History - English II First-Time Substitute Assessment
-      Submitted - County District Campus Number
+    output_field: EOC Cumulative History - English II First-Time Substitute Assessment Submitted - County District Campus Number
     keep: false
   - source_column: CU_E2_DATE
-    output_field:
-      EOC Cumulative History - English II Cumulative History - Administration
-      Date
+    output_field: EOC Cumulative History - English II Cumulative History - Administration Date
     keep: false
   - source_column: CU_E2_CAMPUS
-    output_field:
-      EOC Cumulative History - English II Cumulative History - County District
-      Campus Number
+    output_field: EOC Cumulative History - English II Cumulative History - County District Campus Number
     keep: false
   - source_column: CU_E2_TESTVER
     output_field: EOC Cumulative History - English II Cumulative History - Test Version
@@ -1835,87 +1635,55 @@ fields:
     output_field: EOC Cumulative History - English II Cumulative History - Score Code
     keep: false
   - source_column: CU_E2_ALT
-    output_field:
-      EOC Cumulative History - English II Cumulative History - Alternate
-      Assessment Category
+    output_field: EOC Cumulative History - English II Cumulative History - Alternate Assessment Category
     keep: false
   - source_column: CU_E2_LVL2_STU
-    output_field:
-      "EOC Cumulative History - English II Cumulative History - Approaches
-      Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
+    output_field: "EOC Cumulative History - English II Cumulative History - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: CU_E2_LVL3
-    output_field:
-      "EOC Cumulative History - English II Cumulative History - Masters
-      Grade Level Level III: Accomplished Academic Performance"
+    output_field: "EOC Cumulative History - English II Cumulative History - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: CU_E2_LVL2_REC
-    output_field:
-      "EOC Cumulative History - English II Cumulative History - Meets Grade
-      Level Level II: Satisfactory Academic Performance"
+    output_field: "EOC Cumulative History - English II Cumulative History - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: CU_E2_SSC
     output_field: EOC Cumulative History - English II Cumulative History - Scale Score
     keep: false
   - source_column: CU_E2_SUB
-    output_field:
-      EOC Cumulative History - English II Cumulative History - Substitute
-      Assessment
+    output_field: EOC Cumulative History - English II Cumulative History - Substitute Assessment
     keep: false
   - source_column: CU_US_1SUBMIT_DATE
-    output_field:
-      EOC Cumulative History - U.S. History First-Time Document Submitted
-      - Administration Date
+    output_field: EOC Cumulative History - U.S. History First-Time Document Submitted - Administration Date
     keep: false
   - source_column: CU_US_1SUBMIT_TESTVER
-    output_field:
-      EOC Cumulative History - U.S. History First-Time Document Submitted
-      - Test Version
+    output_field: EOC Cumulative History - U.S. History First-Time Document Submitted - Test Version
     keep: false
   - source_column: CU_US_1SUBMIT_SCODE
-    output_field:
-      EOC Cumulative History - U.S. History First-Time Document Submitted
-      - Score Code
+    output_field: EOC Cumulative History - U.S. History First-Time Document Submitted - Score Code
     keep: false
   - source_column: CU_US_1SUBMIT_ALT
-    output_field:
-      EOC Cumulative History - U.S. History First-Time Document Submitted
-      - Alternate Assessment Category
+    output_field: EOC Cumulative History - U.S. History First-Time Document Submitted - Alternate Assessment Category
     keep: false
   - source_column: CU_US_1SUBMIT_SUB
-    output_field:
-      EOC Cumulative History - U.S. History First-Time Document Submitted
-      - Substitute Assessment
+    output_field: EOC Cumulative History - U.S. History First-Time Document Submitted - Substitute Assessment
     keep: false
   - source_column: CU_US_1SCORED_DATE
-    output_field:
-      EOC Cumulative History - U.S. History First-Time Document Scored -
-      Administration Date
+    output_field: EOC Cumulative History - U.S. History First-Time Document Scored - Administration Date
     keep: false
   - source_column: CU_US_1SCORED_TESTVER
-    output_field:
-      EOC Cumulative History - U.S. History First-Time Document Scored -
-      Test Version
+    output_field: EOC Cumulative History - U.S. History First-Time Document Scored - Test Version
     keep: false
   - source_column: CU_US_1SUBMIT_SUB_DATE
-    output_field:
-      EOC Cumulative History - U.S. History First-Time Substitute Assessment
-      Submitted - Administration Date
+    output_field: EOC Cumulative History - U.S. History First-Time Substitute Assessment Submitted - Administration Date
     keep: false
   - source_column: CU_US_1SUBMIT_SUB_CAMPUS
-    output_field:
-      EOC Cumulative History - U.S. History First-Time Substitute Assessment
-      Submitted - County District Campus Number
+    output_field: EOC Cumulative History - U.S. History First-Time Substitute Assessment Submitted - County District Campus Number
     keep: false
   - source_column: CU_US_DATE
-    output_field:
-      EOC Cumulative History - U.S. History Cumulative History - Administration
-      Date
+    output_field: EOC Cumulative History - U.S. History Cumulative History - Administration Date
     keep: false
   - source_column: CU_US_CAMPUS
-    output_field:
-      EOC Cumulative History - U.S. History Cumulative History - County
-      District Campus Number
+    output_field: EOC Cumulative History - U.S. History Cumulative History - County District Campus Number
     keep: false
   - source_column: CU_US_TESTVER
     output_field: EOC Cumulative History - U.S. History Cumulative History - Test Version
@@ -1924,132 +1692,82 @@ fields:
     output_field: EOC Cumulative History - U.S. History Cumulative History - Score Code
     keep: false
   - source_column: CU_US_ALT
-    output_field:
-      EOC Cumulative History - U.S. History Cumulative History - Alternate
-      Assessment Category
+    output_field: EOC Cumulative History - U.S. History Cumulative History - Alternate Assessment Category
     keep: false
   - source_column: CU_US_LVL2_STU
-    output_field:
-      "EOC Cumulative History - U.S. History Cumulative History - Approaches
-      Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
+    output_field: "EOC Cumulative History - U.S. History Cumulative History - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: CU_US_LVL3
-    output_field:
-      "EOC Cumulative History - U.S. History Cumulative History - Masters
-      Grade Level Level III: Accomplished Academic Performance"
+    output_field: "EOC Cumulative History - U.S. History Cumulative History - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: CU_US_LVL2_REC
-    output_field:
-      "EOC Cumulative History - U.S. History Cumulative History - Meets
-      Grade Level Level II: Satisfactory Academic Performance"
+    output_field: "EOC Cumulative History - U.S. History Cumulative History - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: CU_US_SSC
     output_field: EOC Cumulative History - U.S. History Cumulative History - Scale Score
     keep: false
   - source_column: CU_US_SUB
-    output_field:
-      EOC Cumulative History - U.S. History Cumulative History - Substitute
-      Assessment
+    output_field: EOC Cumulative History - U.S. History Cumulative History - Substitute Assessment
     keep: false
   - source_column: CU_R1_1SUBMIT_DATE
-    output_field:
-      EOC Cumulative History - English I Reading First-Time Document Submitted
-      - Administration Date
+    output_field: EOC Cumulative History - English I Reading First-Time Document Submitted - Administration Date
     keep: false
   - source_column: CU_R1_1SUBMIT_TESTVER
-    output_field:
-      EOC Cumulative History - English I Reading First-Time Document Submitted
-      - Test Version
+    output_field: EOC Cumulative History - English I Reading First-Time Document Submitted - Test Version
     keep: false
   - source_column: CU_R1_1SUBMIT_SCODE
-    output_field:
-      EOC Cumulative History - English I Reading First-Time Document Submitted
-      - Score Code
+    output_field: EOC Cumulative History - English I Reading First-Time Document Submitted - Score Code
     keep: false
   - source_column: CU_R1_1SCORED_DATE
-    output_field:
-      EOC Cumulative History - English I Reading First-Time Document Scored
-      - Administration Date
+    output_field: EOC Cumulative History - English I Reading First-Time Document Scored - Administration Date
     keep: false
   - source_column: CU_R1_1SCORED_TESTVER
-    output_field:
-      EOC Cumulative History - English I Reading First-Time Document Scored
-      - Test Version
+    output_field: EOC Cumulative History - English I Reading First-Time Document Scored - Test Version
     keep: false
   - source_column: CU_W1_1SUBMIT_DATE
-    output_field:
-      EOC Cumulative History - English I Writing First-Time Document Submitted
-      - Administration Date
+    output_field: EOC Cumulative History - English I Writing First-Time Document Submitted - Administration Date
     keep: false
   - source_column: CU_W1_1SUBMIT_TESTVER
-    output_field:
-      EOC Cumulative History - English I Writing First-Time Document Submitted
-      - Test Version
+    output_field: EOC Cumulative History - English I Writing First-Time Document Submitted - Test Version
     keep: false
   - source_column: CU_W1_1SUBMIT_SCODE
-    output_field:
-      EOC Cumulative History - English I Writing First-Time Document Submitted
-      - Score Code
+    output_field: EOC Cumulative History - English I Writing First-Time Document Submitted - Score Code
     keep: false
   - source_column: CU_W1_1SCORED_DATE
-    output_field:
-      EOC Cumulative History - English I Writing First-Time Document Scored
-      - Administration Date
+    output_field: EOC Cumulative History - English I Writing First-Time Document Scored - Administration Date
     keep: false
   - source_column: CU_W1_1SCORED_TESTVER
-    output_field:
-      EOC Cumulative History - English I Writing First-Time Document Scored
-      - Test Version
+    output_field: EOC Cumulative History - English I Writing First-Time Document Scored - Test Version
     keep: false
   - source_column: CU_R2_1SUBMIT_DATE
-    output_field:
-      EOC Cumulative History - English II Reading First-Time Document Submitted
-      - Administration Date
+    output_field: EOC Cumulative History - English II Reading First-Time Document Submitted - Administration Date
     keep: false
   - source_column: CU_R2_1SUBMIT_TESTVER
-    output_field:
-      EOC Cumulative History - English II Reading First-Time Document Submitted
-      - Test Version
+    output_field: EOC Cumulative History - English II Reading First-Time Document Submitted - Test Version
     keep: false
   - source_column: CU_R2_1SUBMIT_SCODE
-    output_field:
-      EOC Cumulative History - English II Reading First-Time Document Submitted
-      - Score Code
+    output_field: EOC Cumulative History - English II Reading First-Time Document Submitted - Score Code
     keep: false
   - source_column: CU_R2_1SCORED_DATE
-    output_field:
-      EOC Cumulative History - English II Reading First-Time Document Scored
-      - Administration Date
+    output_field: EOC Cumulative History - English II Reading First-Time Document Scored - Administration Date
     keep: false
   - source_column: CU_R2_1SCORED_TESTVER
-    output_field:
-      EOC Cumulative History - English II Reading First-Time Document Scored
-      - Test Version
+    output_field: EOC Cumulative History - English II Reading First-Time Document Scored - Test Version
     keep: false
   - source_column: CU_W2_1SUBMIT_DATE
-    output_field:
-      EOC Cumulative History - English II Writing First-Time Document Submitted
-      - Administration Date
+    output_field: EOC Cumulative History - English II Writing First-Time Document Submitted - Administration Date
     keep: false
   - source_column: CU_W2_1SUBMIT_TESTVER
-    output_field:
-      EOC Cumulative History - English II Writing First-Time Document Submitted
-      - Test Version
+    output_field: EOC Cumulative History - English II Writing First-Time Document Submitted - Test Version
     keep: false
   - source_column: CU_W2_1SUBMIT_SCODE
-    output_field:
-      EOC Cumulative History - English II Writing First-Time Document Submitted
-      - Score Code
+    output_field: EOC Cumulative History - English II Writing First-Time Document Submitted - Score Code
     keep: false
   - source_column: CU_W2_1SCORED_DATE
-    output_field:
-      EOC Cumulative History - English II Writing First-Time Document Scored
-      - Administration Date
+    output_field: EOC Cumulative History - English II Writing First-Time Document Scored - Administration Date
     keep: false
   - source_column: CU_W2_1SCORED_TESTVER
-    output_field:
-      EOC Cumulative History - English II Writing First-Time Document Scored
-      - Test Version
+    output_field: EOC Cumulative History - English II Writing First-Time Document Scored - Test Version
     keep: false
   - source_column: A2_DATE
     output_field: 2026 Grades 3-8 - Administration Date
@@ -2082,19 +1800,13 @@ fields:
     output_field: 2026 Grades 3-8 - Reading Language Arts - Scale Score
     keep: false
   - source_column: A2_RE_LVL2_STU
-    output_field:
-      "2026 Grades 3-8 - Reading Language Arts - Approaches Grade Level
-      at Student's Standard Level II: Satisfactory Academic Performance"
+    output_field: "2026 Grades 3-8 - Reading Language Arts - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A2_RE_LVL2_REC
-    output_field:
-      "2026 Grades 3-8 - Reading Language Arts - Meets Grade Level Level
-      II: Satisfactory Academic Performance"
+    output_field: "2026 Grades 3-8 - Reading Language Arts - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A2_RE_LVL3
-    output_field:
-      "2026 Grades 3-8 - Reading Language Arts - Masters Grade Level Level
-      III: Accomplished Academic Performance"
+    output_field: "2026 Grades 3-8 - Reading Language Arts - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: A2_RE_ENR_GRADE
     output_field: 2026 Grades 3-8 - Reading Language Arts - Enrolled Grade
@@ -2142,19 +1854,13 @@ fields:
     output_field: 2026 Grades 3-8 - Mathematics - Scale Score
     keep: false
   - source_column: A2_MA_LVL2_STU
-    output_field:
-      "2026 Grades 3-8 - Mathematics - Approaches Grade Level at Student's
-      Standard Level II: Satisfactory Academic Performance"
+    output_field: "2026 Grades 3-8 - Mathematics - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A2_MA_LVL2_REC
-    output_field:
-      "2026 Grades 3-8 - Mathematics - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2026 Grades 3-8 - Mathematics - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A2_MA_LVL3
-    output_field:
-      2026 Grades 3-8 - Mathematics - Masters Grade Level Accomplished Academic
-      Performance
+    output_field: 2026 Grades 3-8 - Mathematics - Masters Grade Level Accomplished Academic Performance
     keep: false
   - source_column: A2_MA_ENR_GRADE
     output_field: 2026 Grades 3-8 - Mathematics - Enrolled Grade
@@ -2205,19 +1911,13 @@ fields:
     output_field: 2026 Grades 3-8 - Social Studies - Scale Score
     keep: false
   - source_column: A2_SS_LVL2_STU
-    output_field:
-      "2026 Grades 3-8 - Social Studies - Approaches Grade Level at Student's
-      Standard Level II: Satisfactory Academic Performance"
+    output_field: "2026 Grades 3-8 - Social Studies - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A2_SS_LVL2_REC
-    output_field:
-      "2026 Grades 3-8 - Social Studies - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2026 Grades 3-8 - Social Studies - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A2_SS_LVL3
-    output_field:
-      "2026 Grades 3-8 - Social Studies - Masters Grade Level Level III:
-      Accomplished Academic Performance"
+    output_field: "2026 Grades 3-8 - Social Studies - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: A2_SS_ENR_GRADE
     output_field: 2026 Grades 3-8 - Social Studies - Enrolled Grade
@@ -2259,19 +1959,13 @@ fields:
     output_field: 2026 Grades 3-8 - Science - Scale Score
     keep: false
   - source_column: A2_SC_LVL2_STU
-    output_field:
-      "2026 Grades 3-8 - Science - Approaches Grade Level at Student's
-      Standard Level II: Satisfactory Academic Performance"
+    output_field: "2026 Grades 3-8 - Science - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A2_SC_LVL2_REC
-    output_field:
-      "2026 Grades 3-8 - Science - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2026 Grades 3-8 - Science - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A2_SC_LVL3
-    output_field:
-      "2026 Grades 3-8 - Science - Masters Grade Level Level III: Accomplished
-      Academic Performance"
+    output_field: "2026 Grades 3-8 - Science - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: A2_SC_ENR_GRADE
     output_field: 2026 Grades 3-8 - Science - Enrolled Grade
@@ -2313,19 +2007,13 @@ fields:
     output_field: 2025 Grades 3-8 - Reading Language Arts - Scale Score
     keep: false
   - source_column: A1_RE_LVL2_STU
-    output_field:
-      "2025 Grades 3-8 - Reading Language Arts - Approaches Grade Level
-      at Student's Standard Level II: Satisfactory Academic Performance"
+    output_field: "2025 Grades 3-8 - Reading Language Arts - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A1_RE_LVL2_REC
-    output_field:
-      "2025 Grades 3-8 - Reading Language Arts - Meets Grade Level Level
-      II: Satisfactory Academic Performance"
+    output_field: "2025 Grades 3-8 - Reading Language Arts - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A1_RE_LVL3
-    output_field:
-      "2025 Grades 3-8 - Reading Language Arts - Masters Grade Level Level
-      III: Accomplished Academic Performance"
+    output_field: "2025 Grades 3-8 - Reading Language Arts - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: A1_RE_PLI
     output_field: 2025 Grades 3-8 - Reading Language Arts - Performance Level Indicator
@@ -2358,19 +2046,13 @@ fields:
     output_field: 2025 Grades 3-8 - Mathematics - Scale Score
     keep: false
   - source_column: A1_MA_LVL2_STU
-    output_field:
-      "2025 Grades 3-8 - Mathematics - Approaches Grade Level at Student's
-      Standard Level II: Satisfactory Academic Performance"
+    output_field: "2025 Grades 3-8 - Mathematics - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A1_MA_LVL2_REC
-    output_field:
-      "2025 Grades 3-8 - Mathematics - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2025 Grades 3-8 - Mathematics - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A1_MA_LVL3
-    output_field:
-      "2025 Grades 3-8 - Mathematics - Masters Grade Level Level III: Accomplished
-      Academic Performance"
+    output_field: "2025 Grades 3-8 - Mathematics - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: A1_MA_PLI
     output_field: 2025 Grades 3-8 - Mathematics - Performance Level Indicator
@@ -2433,19 +2115,13 @@ fields:
     output_field: 2024 Grades 3-8 - Reading - Scale Score
     keep: false
   - source_column: A0_RE_LVL2_STU
-    output_field:
-      "2024 Grades 3-8 - Reading - Approaches Grade Level at Student's
-      Standard Level II: Satisfactory Academic Performance"
+    output_field: "2024 Grades 3-8 - Reading - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A0_RE_LVL2_REC
-    output_field:
-      "2024 Grades 3-8 - Reading - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2024 Grades 3-8 - Reading - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A0_RE_LVL3
-    output_field:
-      "2024 Grades 3-8 - Reading - Masters Grade Level Level III: Accomplished
-      Academic Performance"
+    output_field: "2024 Grades 3-8 - Reading - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: A0_RE_PLI
     output_field: 2024 Grades 3-8 - Reading - Performance Level Indicator
@@ -2475,19 +2151,13 @@ fields:
     output_field: 2024 Grades 3-8 - Mathematics - Scale Score
     keep: false
   - source_column: A0_MA_LVL2_STU
-    output_field:
-      "2024 Grades 3-8 - Mathematics - Approaches Grade Level at Student's
-      Standard Level II: Satisfactory Academic Performance"
+    output_field: "2024 Grades 3-8 - Mathematics - Approaches Grade Level at Student's Standard Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A0_MA_LVL2_REC
-    output_field:
-      "2024 Grades 3-8 - Mathematics - Meets Grade Level Level II: Satisfactory
-      Academic Performance"
+    output_field: "2024 Grades 3-8 - Mathematics - Meets Grade Level Level II: Satisfactory Academic Performance"
     keep: false
   - source_column: A0_MA_LVL3
-    output_field:
-      "2024 Grades 3-8 - Mathematics - Masters Grade Level Level III: Accomplished
-      Academic Performance"
+    output_field: "2024 Grades 3-8 - Mathematics - Masters Grade Level Level III: Accomplished Academic Performance"
     keep: false
   - source_column: A0_MA_PLI
     output_field: 2024 Grades 3-8 - Mathematics - Performance Level Indicator
@@ -2661,14 +2331,10 @@ fields:
     output_field: 2025 TELPAS - Composite Information - County District Campus Number
     keep: false
   - source_column: PM_ELL_PLAN
-    output_field:
-      EL Performance Measure Plan - EL Performance Measure Plan (non English
-      I II)
+    output_field: EL Performance Measure Plan - EL Performance Measure Plan (non English I II)
     keep: false
   - source_column: PM_ELL_PLAN_E1E2
-    output_field:
-      EL Performance Measure Plan - EL Performance Measure Plan (English
-      I II)
+    output_field: EL Performance Measure Plan - EL Performance Measure Plan (English I II)
     keep: false
   - source_column: PM_ELL_YEAR
     output_field: EL Performance Measure Plan - Year ELPM Plan Determined
