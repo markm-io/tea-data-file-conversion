@@ -222,6 +222,56 @@ def process_fixed_width_file(input_file, schema_config, skip_header=False, filte
     return df
 
 
+WARN_NAME_LIMIT = 20  # Most column names to name individually in a warning.
+
+
+def _format_column_list(columns):
+    """
+    Render a column-name list for a warning, truncated to WARN_NAME_LIMIT names.
+
+    Parameters
+    ----------
+    columns : list of str
+        Column names to render.
+
+    Returns
+    -------
+    str
+        Comma-separated names, with a trailing count if the list was truncated.
+    """
+    shown = ", ".join(columns[:WARN_NAME_LIMIT])
+    if len(columns) > WARN_NAME_LIMIT:
+        shown += f", ... ({len(columns) - WARN_NAME_LIMIT} more)"
+    return shown
+
+
+def _warn_column_mismatch(unknown, missing):
+    """
+    Report columns that the schema and the input file disagree about.
+
+    TEA's format documents drift from the files they describe, so a mismatch is
+    reported rather than treated as fatal.
+
+    Parameters
+    ----------
+    unknown : list of str
+        Columns present in the file but absent from the schema.
+    missing : list of str
+        Columns present in the schema but absent from the file.
+    """
+    if unknown:
+        print(
+            f"WARNING: {len(unknown)} column(s) in the file are not in the schema; "
+            f"emitted with their original names: {_format_column_list(unknown)}",
+            file=sys.stderr,
+        )
+    if missing:
+        print(
+            f"WARNING: {len(missing)} schema column(s) are not in the file; skipped: {_format_column_list(missing)}",
+            file=sys.stderr,
+        )
+
+
 def process_delimited_file(input_file, schema_config, filter_columns=False):
     """
     Process a delimited (CSV) file using the provided YAML schema configuration.
@@ -261,6 +311,11 @@ def process_delimited_file(input_file, schema_config, filter_columns=False):
     # dtype=str matches the fixed-width path. keep_default_na=False stops pandas
     # from converting blanks to NaN and coercing literal TEA codes such as "NA".
     df = pd.read_csv(input_file, dtype=str, keep_default_na=False)
+
+    file_columns = list(df.columns)
+    unknown = [column for column in file_columns if column not in rename_map]
+    missing = [column for column in rename_map if column not in file_columns]
+    _warn_column_mismatch(unknown, missing)
 
     df = df.rename(columns=rename_map)
 

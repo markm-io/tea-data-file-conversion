@@ -395,3 +395,84 @@ def test_process_delimited_file_filter_columns(tmp_path):
     # File order: LNAME, MIGSTA; Schema order: MIGSTA, LNAME.
     # Output must match file order, not schema order.
     assert list(df.columns) == ["Last Name", "migrant_code"]
+
+
+def test_process_delimited_file_passes_through_unknown_columns(tmp_path, capsys):
+    """A file column the schema does not know keeps its original name and warns."""
+    input_file = tmp_path / "test.csv"
+    input_file.write_text('"YEAR","P_PARENT_DENIAL"\n"2026","1"\n')
+
+    config = {
+        "fields": [
+            {"source_column": "YEAR", "output_field": "Year"},
+            {"source_column": "P_PARENTAL_DENIAL", "output_field": "TSDS PEIMS - Parental Denial"},
+        ]
+    }
+
+    df = process_delimited_file(str(input_file), config)
+    # Every file column is emitted; the unmatched one keeps its TEA code.
+    assert list(df.columns) == ["Year", "P_PARENT_DENIAL"]
+
+    stderr = capsys.readouterr().err
+    assert "P_PARENT_DENIAL" in stderr
+    assert "P_PARENTAL_DENIAL" in stderr
+
+
+def test_process_delimited_file_skips_schema_columns_absent_from_file(tmp_path, capsys):
+    """A schema column the file lacks is skipped, not fabricated as an empty column."""
+    input_file = tmp_path / "test.csv"
+    input_file.write_text('"YEAR"\n"2026"\n')
+
+    config = {
+        "fields": [
+            {"source_column": "YEAR", "output_field": "Year"},
+            {"source_column": "MIGSTA", "output_field": "Migrant Code"},
+        ]
+    }
+
+    df = process_delimited_file(str(input_file), config)
+    assert list(df.columns) == ["Year"]
+    assert "MIGSTA" in capsys.readouterr().err
+
+
+def test_process_delimited_file_silent_when_columns_match(tmp_path, capsys):
+    """No warnings when the file and schema agree."""
+    input_file = tmp_path / "test.csv"
+    input_file.write_text('"YEAR"\n"2026"\n')
+    config = {"fields": [{"source_column": "YEAR", "output_field": "Year"}]}
+
+    process_delimited_file(str(input_file), config)
+    assert capsys.readouterr().err == ""
+
+
+def test_process_delimited_file_caps_warning_length(tmp_path, capsys):
+    """A wholesale mismatch reports a count and the first 20 names, not all of them."""
+    columns = [f"COL{i:03d}" for i in range(50)]
+    input_file = tmp_path / "test.csv"
+    input_file.write_text(",".join(columns) + "\n" + ",".join(["x"] * 50) + "\n")
+
+    config = {"fields": [{"source_column": "YEAR", "output_field": "Year"}]}
+
+    process_delimited_file(str(input_file), config)
+    stderr = capsys.readouterr().err
+    assert "50 column(s) in the file are not in the schema" in stderr
+    assert "COL000" in stderr
+    assert "COL019" in stderr
+    assert "COL020" not in stderr
+    assert "30 more" in stderr
+
+
+def test_process_delimited_file_filter_columns_tolerates_missing(tmp_path):
+    """filter_columns only returns keep-columns that are actually in the file."""
+    input_file = tmp_path / "test.csv"
+    input_file.write_text('"LNAME"\n"SMITH"\n')
+
+    config = {
+        "fields": [
+            {"source_column": "LNAME", "output_field": "Last Name", "keep": True},
+            {"source_column": "MIGSTA", "output_field": "Migrant Code", "keep": True},
+        ]
+    }
+
+    df = process_delimited_file(str(input_file), config, filter_columns=True)
+    assert list(df.columns) == ["Last Name"]
