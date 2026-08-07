@@ -265,7 +265,8 @@ def process_delimited_file(input_file, schema_config, filter_columns=False):
     df = df.rename(columns=rename_map)
 
     if filter_columns:
-        df = df[keep_columns]
+        keep = set(keep_columns)
+        df = df[[column for column in df.columns if column in keep]]
 
     return df
 

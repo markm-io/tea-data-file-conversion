@@ -372,13 +372,15 @@ def test_process_delimited_file_preserves_strings_and_blanks(tmp_path):
 
 
 def test_process_delimited_file_filter_columns(tmp_path):
-    """filter_columns keeps only keep:true fields, using mapped_field_name when present."""
+    """filter_columns keeps only keep:true fields, using mapped_field_name when present.
+
+    Output columns stay in file order (LNAME, MIGSTA), not schema order (MIGSTA, LNAME).
+    """
     input_file = tmp_path / "test.csv"
-    input_file.write_text('"YEAR","MIGSTA","LNAME"\n"2026","1","SMITH"\n')
+    input_file.write_text('"LNAME","MIGSTA"\n"SMITH","1"\n')
 
     config = {
         "fields": [
-            {"source_column": "YEAR", "output_field": "Year", "keep": False},
             {
                 "source_column": "MIGSTA",
                 "output_field": "Migrant Code",
@@ -390,4 +392,6 @@ def test_process_delimited_file_filter_columns(tmp_path):
     }
 
     df = process_delimited_file(str(input_file), config, filter_columns=True)
-    assert list(df.columns) == ["migrant_code", "Last Name"]
+    # File order: LNAME, MIGSTA; Schema order: MIGSTA, LNAME.
+    # Output must match file order, not schema order.
+    assert list(df.columns) == ["Last Name", "migrant_code"]
