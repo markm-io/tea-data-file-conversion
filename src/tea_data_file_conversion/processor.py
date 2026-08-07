@@ -1,10 +1,10 @@
 # file: src/tea_data_file_conversion/processor.py
 
-r"""Processor module for fixed\-width file conversion.
+r"""Processor module for fixed\-width and delimited (CSV) file conversion.
 
 This module provides functions to:
-  \- Load and validate YAML schema configurations.
-  \- Process fixed\-width files into structured DataFrame objects.
+  \- Load and validate YAML schema configurations for either format.
+  \- Process fixed\-width or delimited files into structured DataFrame objects.
   \- Export template YAML schema files.
   \- Convert CSV files into YAML schema files interactively.
 """
@@ -12,6 +12,7 @@ This module provides functions to:
 import os
 import shutil
 import sys
+from collections import Counter
 
 import importlib_resources  # Used to locate package data.
 import pandas as pd
@@ -96,7 +97,12 @@ def validate_yaml_config(config, file_path):
     The configuration must be a dictionary containing a key 'fields' mapping to a
     non-empty list. Every field must contain 'output_field', plus either
     'source_column' (delimited schemas) or both 'start' and 'end' (fixed-width
-    schemas). A single schema must use one shape throughout.
+    schemas). A single schema must use one shape throughout. Delimited schemas
+    must additionally have unique 'output_field' values: process_delimited_file
+    renames columns by this name, and a duplicate silently fans a single source
+    column out into every column sharing that name. Fixed-width schemas are exempt
+    because process_fixed_width_file de-duplicates output names itself at runtime,
+    and shipped schemas rely on that behavior.
 
     Parameters
     ----------
@@ -154,6 +160,18 @@ def validate_yaml_config(config, file_path):
             f"YAML file {file_path} mixes fixed-width fields ('start'/'end') and delimited fields "
             f"('{DELIMITED_FIELD_KEY}'); a schema must use one shape throughout."
         )
+
+    # Delimited schemas have no runtime de-duplication of output_field the way
+    # process_fixed_width_file does, so a collision here would silently fan a
+    # single source column out into every column sharing its output name.
+    if shapes == {"delimited"}:
+        output_fields = [field["output_field"] for field in config["fields"]]
+        duplicates = sorted(name for name, count in Counter(output_fields).items() if count > 1)
+        if duplicates:
+            raise ValueError(
+                f"YAML file {file_path} has duplicate 'output_field' values, which is not allowed in a "
+                f"delimited schema: {', '.join(duplicates)}."
+            )
 
 
 def process_fixed_width_file(input_file, schema_config, skip_header=False, filter_columns=False):
@@ -379,8 +397,14 @@ def _identify_fixed_width_file(input_file):
 
     # Extract test month and abbreviated school year from header.
     header = header_line[:4]
-    test_month = int(header[:2])
-    full_school_year = 2000 + int(header[2:4])
+    try:
+        test_month = int(header[:2])
+        full_school_year = 2000 + int(header[2:4])
+    except ValueError as ve:
+        raise ValueError(
+            f"The first 4 characters of {input_file} ({header!r}) are not a month/year header. "
+            f"If this is a delimited file, it must have a .csv extension to be read as one."
+        ) from ve
 
     # Filename-based detection runs first so files whose headers would otherwise
     # collide still route correctly.
@@ -424,15 +448,15 @@ def _identify_delimited_file(input_file):
         )
 
     # Only the first data row is needed, so the rest of the file is not read.
-    header = pd.read_csv(input_file, nrows=1, dtype=str, keep_default_na=False)
-    if "YEAR" not in header.columns:
+    first_row = pd.read_csv(input_file, nrows=1, dtype=str, keep_default_na=False)
+    if "YEAR" not in first_row.columns:
         raise ValueError(
             f"Delimited file {input_file} has no 'YEAR' column, so its accountability year cannot be determined."
         )
-    if header.empty:
+    if first_row.empty:
         raise ValueError(f"Delimited file {input_file} has a header row but no data rows.")
 
-    year_value = header.loc[0, "YEAR"]
+    year_value = first_row.loc[0, "YEAR"]
     try:
         full_school_year = int(year_value)
     except (TypeError, ValueError) as ve:
@@ -485,12 +509,12 @@ def process_file(input_file, output_file=None, schema_folder=None, filter_column
     # Compose the path to the expected YAML schema file.
     base_folder = schema_folder if schema_folder is not None else "default_schema"
     schema_config_file = os.path.join(base_folder, test_name, f"{test_name}_{full_school_year}.yaml")
-    print(f"Loading schema config: {schema_config_file}")
 
     if not os.path.isfile(schema_config_file):
         raise FileNotFoundError(
             f"No schema found for {test_name} {full_school_year}; expected it at {schema_config_file}."
         )
+    print(f"Loading schema config: {schema_config_file}")
 
     # Load and validate the YAML configuration.
     schema_config = load_yaml_config(schema_config_file)
@@ -504,9 +528,9 @@ def process_file(input_file, output_file=None, schema_folder=None, filter_column
     expected_shape = "delimited" if is_delimited else "fixed_width"
     if schema_shape(schema_config) != expected_shape:
         raise ValueError(
-            f"Input file {input_file} is {expected_shape}, but schema {schema_config_file} is not. "
-            f"A .csv input needs a schema whose fields use 'source_column'; any other input needs "
-            f"a schema whose fields use 'start' and 'end'."
+            f"Input file {input_file} is {expected_shape}, but schema {schema_config_file} is not "
+            f"{expected_shape}. A .csv input needs a schema whose fields use 'source_column'; any "
+            f"other input needs a schema whose fields use 'start' and 'end'."
         )
 
     # Process the file using the loaded schema.

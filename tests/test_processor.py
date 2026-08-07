@@ -6,6 +6,7 @@ import pandas as pd
 import pytest
 
 from tea_data_file_conversion.processor import (
+    _identify_fixed_width_file,
     csv_to_schema_yaml,
     load_yaml_config,
     process_delimited_file,
@@ -689,3 +690,88 @@ def test_process_file_reports_missing_schema_path(tmp_path):
 
     with pytest.raises(FileNotFoundError, match=r"consolidated_accountability_2099.yaml"):
         process_file(str(input_file), str(tmp_path / "out.csv"), schema_folder=str(tmp_path))
+
+
+def test_process_file_delimited_content_without_csv_extension_raises_clear_error(tmp_path):
+    """A delimited file not named .csv is routed to the fixed-width path.
+
+    Without a guard, int() on the quoted CSV header ('"Y') raises a bare
+    ValueError -- the exact crash this branch set out to eliminate. The
+    delivered file is named '..._dlm.csv', where 'dlm' signals delimited
+    content, but nothing stops a future delivery from arriving as
+    '..._dlm.txt'; the error must say plainly that a .csv extension is
+    required to be read as delimited.
+    """
+    input_file = tmp_path / "DF_26_101902_Accountability_V01_dlm.txt"
+    input_file.write_text('"YEAR","MIGSTA"\n"2026","1"\n')
+
+    with pytest.raises(ValueError, match=r"\.csv") as exc_info:
+        process_file(str(input_file), str(tmp_path / "out.csv"), schema_folder=str(tmp_path))
+    # Must not be the bare int() ValueError this fix replaces.
+    assert "base 10" not in str(exc_info.value)
+
+
+def test_validate_yaml_config_rejects_duplicate_output_field_in_delimited_schema():
+    """Duplicate output_field values on a delimited schema silently multiply
+    columns via df.rename + df[[...]], so validation must reject them."""
+    config = {
+        "fields": [
+            {"source_column": "A", "output_field": "Same"},
+            {"source_column": "B", "output_field": "Same"},
+            {"source_column": "C", "output_field": "Other"},
+        ]
+    }
+    with pytest.raises(ValueError, match="duplicate"):
+        validate_yaml_config(config, "test.yaml")
+
+
+def test_validate_yaml_config_allows_duplicate_output_field_in_fixed_width_schema():
+    """The fixed-width path absorbs duplicate output_field values at runtime via
+    process_fixed_width_file's uniquifier (shipped schemas rely on this: staar_2026
+    has 43 duplicate slots, telpas_2026 33, staar_eoc_2026 19), so validation must
+    not reject them -- the uniqueness rule is scoped to delimited schemas only."""
+    config = {
+        "fields": [
+            {"start": 1, "end": 2, "output_field": "Same"},
+            {"start": 3, "end": 4, "output_field": "Same"},
+        ]
+    }
+    validate_yaml_config(config, "test.yaml")  # Should not raise.
+
+
+def test_process_file_delimited_requires_data_rows(tmp_path):
+    """A delimited file with only a header row (no data) cannot supply a YEAR value."""
+    input_file = tmp_path / "DF_26_101902_Accountability_V01.csv"
+    input_file.write_text('"YEAR"\n')
+
+    with pytest.raises(ValueError, match="no data rows"):
+        process_file(str(input_file), str(tmp_path / "out.csv"), schema_folder=str(tmp_path))
+
+
+def test_process_file_delimited_requires_numeric_year(tmp_path):
+    """A YEAR value that isn't a year raises clearly rather than propagating a bare int() error."""
+    input_file = tmp_path / "DF_26_101902_Accountability_V01.csv"
+    input_file.write_text('"YEAR"\n"abcd"\n')
+
+    with pytest.raises(ValueError, match="not a year"):
+        process_file(str(input_file), str(tmp_path / "out.csv"), schema_folder=str(tmp_path))
+
+
+@pytest.mark.parametrize(
+    ("month", "expected_test_name", "expected_year"),
+    [
+        ("09", "staar", 2026),
+        ("10", "staar_eoc", 2027),
+        ("14", "staar_eoc", 2027),
+        ("15", "staar_eoc", 2026),
+        ("20", "staar_eoc", 2026),
+    ],
+)
+def test_identify_fixed_width_file_staar_eoc_month_year_asymmetry(tmp_path, month, expected_test_name, expected_year):
+    """staar_eoc is selected for every header month >= 10, but the year only
+    increments for months 10-14. Months 15+ keep the header year as-is -- a
+    subtle asymmetry with no prior test coverage that, if regressed, silently
+    selects the wrong schema year for real EOC files."""
+    input_file = tmp_path / "test.txt"
+    input_file.write_text(f"{month}26XYZ\n")
+    assert _identify_fixed_width_file(str(input_file)) == (expected_test_name, expected_year)
