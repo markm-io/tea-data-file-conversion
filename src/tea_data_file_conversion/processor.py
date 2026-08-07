@@ -326,19 +326,137 @@ def process_delimited_file(input_file, schema_config, filter_columns=False):
     return df
 
 
+def _test_name_from_filename(input_file):
+    """
+    Determine the test type from the input filename.
+
+    TELPAS shares STAAR's spring month range and the consolidated accountability
+    file uses a year where a month is expected, so neither can be distinguished
+    by header content alone.
+
+    Parameters
+    ----------
+    input_file : str
+        Path to the input file.
+
+    Returns
+    -------
+    str or None
+        The test name, or None if the filename implies no particular type.
+    """
+    basename_upper = os.path.basename(input_file).upper()
+    if "TELPAS" in basename_upper:
+        return "telpas"
+    if "ACCOUNTABILITY" in basename_upper:
+        return "consolidated_accountability"
+    return None
+
+
+def _identify_fixed_width_file(input_file):
+    """
+    Determine the test type and school year for a fixed-width input file.
+
+    Parameters
+    ----------
+    input_file : str
+        Path to the fixed-width input file.
+
+    Returns
+    -------
+    tuple of (str, int)
+        The test name and the full school year.
+
+    Raises
+    ------
+    ValueError
+        If the header line is too short to identify.
+    """
+    with open(input_file) as f:
+        header_line = f.readline().strip()
+
+    if len(header_line) < 4:
+        raise ValueError("The header line must contain at least 4 characters.")
+
+    # Extract test month and abbreviated school year from header.
+    header = header_line[:4]
+    test_month = int(header[:2])
+    full_school_year = 2000 + int(header[2:4])
+
+    # Filename-based detection runs first so files whose headers would otherwise
+    # collide still route correctly.
+    test_name = _test_name_from_filename(input_file)
+    if test_name is not None:
+        return test_name, full_school_year
+    if test_month < 10:
+        return "staar", full_school_year
+    if test_month < 15:
+        full_school_year += 1
+    return "staar_eoc", full_school_year
+
+
+def _identify_delimited_file(input_file):
+    """
+    Determine the test type and school year for a delimited input file.
+
+    The year comes from the file's own YEAR column rather than from the header
+    or the filename.
+
+    Parameters
+    ----------
+    input_file : str
+        Path to the delimited input file.
+
+    Returns
+    -------
+    tuple of (str, int)
+        The test name and the full school year.
+
+    Raises
+    ------
+    ValueError
+        If the test type cannot be determined, or the YEAR column is absent,
+        empty, or not a year.
+    """
+    test_name = _test_name_from_filename(input_file)
+    if test_name is None:
+        raise ValueError(
+            f"Cannot determine the test type for {input_file}; the filename must contain 'TELPAS' or 'ACCOUNTABILITY'."
+        )
+
+    # Only the first data row is needed, so the rest of the file is not read.
+    header = pd.read_csv(input_file, nrows=1, dtype=str, keep_default_na=False)
+    if "YEAR" not in header.columns:
+        raise ValueError(
+            f"Delimited file {input_file} has no 'YEAR' column, so its accountability year cannot be determined."
+        )
+    if header.empty:
+        raise ValueError(f"Delimited file {input_file} has a header row but no data rows.")
+
+    year_value = header.loc[0, "YEAR"]
+    try:
+        full_school_year = int(year_value)
+    except (TypeError, ValueError) as ve:
+        raise ValueError(
+            f"Delimited file {input_file} has a 'YEAR' value of {year_value!r}, which is not a year."
+        ) from ve
+
+    return test_name, full_school_year
+
+
 def process_file(input_file, output_file=None, schema_folder=None, filter_columns=False):
     r"""
-    Process an input fixed\-width file and output a CSV file.
+    Process an input fixed\-width or delimited file and output a CSV file.
 
     The function:
-      \- Determines the appropriate YAML schema based on header info.
-      \- Loads and validates the schema.
+      \- Infers the input format (fixed-width or delimited) from the input file extension.
+      \- Determines the appropriate YAML schema based on the file's format-specific identification.
+      \- Loads and validates the schema, and confirms its shape matches the input format.
       \- Processes the input file and writes the output DataFrame to CSV.
 
     Parameters
     ----------
     input_file : str
-        The path to the fixed\-width input file.
+        The path to the fixed\-width or delimited input file.
     output_file : str, optional
         File path for the output CSV. Defaults to input file name with '_output.csv' appended.
     schema_folder : str, optional
@@ -356,41 +474,23 @@ def process_file(input_file, output_file=None, schema_folder=None, filter_column
         base, _ = os.path.splitext(input_file)
         output_file = f"{base}_output.csv"
 
-    # Read and validate the header line.
-    with open(input_file) as f:
-        header_line = f.readline().strip()
-
-    if len(header_line) < 4:
-        raise ValueError("The header line must contain at least 4 characters.")
-
-    # Extract test month and abbreviated school year from header.
-    header = header_line[:4]
-    test_month = int(header[:2])
-    school_year_abbr = int(header[2:4])
-    full_school_year = 2000 + school_year_abbr
-
-    # Determine test type and adjust school year if necessary.
-    # TELPAS shares STAAR's spring month range, so it cannot be distinguished by
-    # header month alone; detect it from the input filename instead.
-    # The consolidated accountability data file uses "2025" (year) as its header,
-    # which would otherwise misroute via the month-based fallback (test_month=20
-    # falls into the staar_eoc branch); detect it from the filename instead.
-    basename_upper = os.path.basename(input_file).upper()
-    if "TELPAS" in basename_upper:
-        test_name = "telpas"
-    elif "ACCOUNTABILITY" in basename_upper:
-        test_name = "consolidated_accountability"
-    elif test_month < 10:
-        test_name = "staar"
+    # Format is inferred from the extension; identification must not assume
+    # fixed-width, because a CSV header line has no month/year to parse.
+    is_delimited = input_file.lower().endswith(".csv")
+    if is_delimited:
+        test_name, full_school_year = _identify_delimited_file(input_file)
     else:
-        test_name = "staar_eoc"
-        if test_month < 15:
-            full_school_year += 1
+        test_name, full_school_year = _identify_fixed_width_file(input_file)
 
     # Compose the path to the expected YAML schema file.
     base_folder = schema_folder if schema_folder is not None else "default_schema"
     schema_config_file = os.path.join(base_folder, test_name, f"{test_name}_{full_school_year}.yaml")
     print(f"Loading schema config: {schema_config_file}")
+
+    if not os.path.isfile(schema_config_file):
+        raise FileNotFoundError(
+            f"No schema found for {test_name} {full_school_year}; expected it at {schema_config_file}."
+        )
 
     # Load and validate the YAML configuration.
     schema_config = load_yaml_config(schema_config_file)
@@ -400,8 +500,20 @@ def process_file(input_file, output_file=None, schema_folder=None, filter_column
         print(f"YAML validation error: {ve}")
         sys.exit(1)
 
+    # The schema's shape must match the input's format, or parsing fails obscurely.
+    expected_shape = "delimited" if is_delimited else "fixed_width"
+    if schema_shape(schema_config) != expected_shape:
+        raise ValueError(
+            f"Input file {input_file} is {expected_shape}, but schema {schema_config_file} is not. "
+            f"A .csv input needs a schema whose fields use 'source_column'; any other input needs "
+            f"a schema whose fields use 'start' and 'end'."
+        )
+
     # Process the file using the loaded schema.
-    df = process_fixed_width_file(input_file, schema_config, skip_header=True, filter_columns=filter_columns)
+    if is_delimited:
+        df = process_delimited_file(input_file, schema_config, filter_columns=filter_columns)
+    else:
+        df = process_fixed_width_file(input_file, schema_config, skip_header=True, filter_columns=filter_columns)
 
     # Write the processed data to a CSV file.
     df.to_csv(output_file, index=False)

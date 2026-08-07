@@ -476,3 +476,79 @@ def test_process_delimited_file_filter_columns_tolerates_missing(tmp_path):
 
     df = process_delimited_file(str(input_file), config, filter_columns=True)
     assert list(df.columns) == ["Last Name"]
+
+
+def test_process_file_routes_csv_to_delimited_path(tmp_path):
+    """A .csv input uses the delimited path and takes its year from the YEAR column."""
+    input_file = tmp_path / "DF_26_101902_Accountability_V01_07282026_dlm.csv"
+    input_file.write_text('"YEAR","MIGSTA"\n"2026","1"\n')
+
+    schema_folder = tmp_path / "schemas"
+    accountability_folder = schema_folder / "consolidated_accountability"
+    accountability_folder.mkdir(parents=True)
+    (accountability_folder / "consolidated_accountability_2026.yaml").write_text(
+        """
+        fields:
+          - source_column: YEAR
+            output_field: "Year"
+            keep: false
+          - source_column: MIGSTA
+            output_field: "Migrant Code"
+            keep: false
+        """
+    )
+
+    output_file = tmp_path / "output.csv"
+    df = process_file(str(input_file), str(output_file), schema_folder=str(schema_folder))
+
+    assert os.path.exists(output_file)
+    assert list(df.columns) == ["Year", "Migrant Code"]
+    assert df.loc[0, "Migrant Code"] == "1"
+
+
+def test_process_file_delimited_requires_year_column(tmp_path):
+    """Without a YEAR column the accountability year cannot be determined."""
+    input_file = tmp_path / "DF_26_101902_Accountability_V01.csv"
+    input_file.write_text('"REGION"\n"04"\n')
+
+    with pytest.raises(ValueError, match="YEAR"):
+        process_file(str(input_file), str(tmp_path / "out.csv"), schema_folder=str(tmp_path))
+
+
+def test_process_file_delimited_requires_known_test_type(tmp_path):
+    """A delimited filename with no recognized test type is an error, not a guess."""
+    input_file = tmp_path / "mystery_file.csv"
+    input_file.write_text('"YEAR"\n"2026"\n')
+
+    with pytest.raises(ValueError, match="TELPAS"):
+        process_file(str(input_file), str(tmp_path / "out.csv"), schema_folder=str(tmp_path))
+
+
+def test_process_file_rejects_schema_shape_mismatch(tmp_path):
+    """A fixed-width schema paired with a .csv input fails with a clear message."""
+    input_file = tmp_path / "DF_26_101902_Accountability_V01.csv"
+    input_file.write_text('"YEAR"\n"2026"\n')
+
+    schema_folder = tmp_path / "schemas"
+    accountability_folder = schema_folder / "consolidated_accountability"
+    accountability_folder.mkdir(parents=True)
+    (accountability_folder / "consolidated_accountability_2026.yaml").write_text(
+        """
+        fields:
+          - start: 1
+            end: 4
+            output_field: "Year"
+        """
+    )
+
+    with pytest.raises(ValueError, match="source_column"):
+        process_file(str(input_file), str(tmp_path / "out.csv"), schema_folder=str(schema_folder))
+
+
+def test_process_file_reports_missing_schema_path(tmp_path):
+    """A missing schema names the path that was searched."""
+    input_file = tmp_path / "DF_26_101902_Accountability_V01.csv"
+    input_file.write_text('"YEAR"\n"2099"\n')
+
+    with pytest.raises(FileNotFoundError, match=r"consolidated_accountability_2099.yaml"):
+        process_file(str(input_file), str(tmp_path / "out.csv"), schema_folder=str(tmp_path))
