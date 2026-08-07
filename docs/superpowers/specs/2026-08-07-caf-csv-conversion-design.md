@@ -255,6 +255,12 @@ coverage. Discrepancies are reported rather than silently overwritten.
 Because only `output_field` values change, the 2025 _data_ output is provably unchanged —
 identical `colspecs` produce identical values. Only the header row moves.
 
+The 874 fields currently collapse to just 106 distinct names, so 825 of them collide. 93 are
+`Blank` filler, which has no administration or subject to draw on and so cannot take a name
+under the rules above. Those become `Blank <start>-<end>` — for example `Blank 71-90` —
+which is unique, self-describing, and removes the last source of runtime `_1` suffixes. The
+filler columns are still emitted, so the output's column count and order are unaffected.
+
 ## Error handling
 
 - `validate_yaml_config` branches on schema shape. `output_field` is always required; then
