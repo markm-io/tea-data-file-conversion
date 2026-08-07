@@ -1,4 +1,5 @@
 import os
+from collections import Counter
 from itertools import pairwise
 
 import pandas as pd
@@ -205,6 +206,41 @@ def test_consolidated_accountability_default_schema_is_valid():
         assert prev["end"] + 1 == curr["start"], (
             f"Gap or overlap between fields ending at {prev['end']} and starting at {curr['start']}"
         )
+
+
+def test_consolidated_accountability_2025_output_fields_are_unique():
+    """After the naming retrofit every 2024-2025 field has a distinct name, so
+    process_fixed_width_file never appends a _1 suffix at runtime."""
+    schema_path = os.path.join(
+        os.path.dirname(os.path.dirname(__file__)),
+        "src",
+        "tea_data_file_conversion",
+        "default_schema",
+        "consolidated_accountability",
+        "consolidated_accountability_2025.yaml",
+    )
+    config = load_yaml_config(schema_path)
+    fields = config["fields"]
+    assert len(fields) == 874
+
+    output_fields = [field["output_field"] for field in fields]
+    counts = Counter(output_fields)
+    duplicates = sorted(name for name, count in counts.items() if count > 1)
+    assert duplicates == [], f"duplicate output_field values: {duplicates}"
+
+    # Naming anchors matching the 2026 convention.
+    by_position = {(field["start"], field["end"]): field["output_field"] for field in fields}
+    assert by_position[(1, 4)] == "Year"
+    assert by_position[(71, 90)] == "Blank 71-90"
+    # Administration and subject levels, joined by " - ".
+    assert by_position[(295, 303)] == "2024 Summer EOC - Biology - County-District-Campus Number"
+    assert by_position[(1243, 1246)] == (
+        "EOC Cumulative History - Algebra I First-Time Document Submitted - Administration Date"
+    )
+    # Rule 4: the subject level is dropped when the description already names it.
+    assert by_position[(2027, 2028)] == "2025 TELPAS - Reading Tested Grade"
+    # Rule 4: the administration level is dropped when the description carries season and year.
+    assert by_position[(1929, 1929)] == "Algebra I Summer 2022 Score Code"
 
 
 def test_process_fixed_width_file_preserves_strings(tmp_path):
