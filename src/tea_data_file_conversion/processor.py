@@ -46,12 +46,57 @@ def load_yaml_config(file_path):
         raise ValueError(f"Error parsing YAML file {file_path}: {ye}") from ye
 
 
+DELIMITED_FIELD_KEY = "source_column"
+FIXED_WIDTH_FIELD_KEYS = ("start", "end")
+
+
+def _field_shape(field):
+    """
+    Determine which schema shape a single field entry uses.
+
+    Parameters
+    ----------
+    field : dict
+        A single entry from a schema's 'fields' list.
+
+    Returns
+    -------
+    str or None
+        "delimited" if the field names a source column, "fixed_width" if it
+        gives both boundaries, otherwise None.
+    """
+    if DELIMITED_FIELD_KEY in field:
+        return "delimited"
+    if all(key in field for key in FIXED_WIDTH_FIELD_KEYS):
+        return "fixed_width"
+    return None
+
+
+def schema_shape(config):
+    """
+    Report the shape of a schema that has already passed validation.
+
+    Parameters
+    ----------
+    config : dict
+        A validated schema configuration.
+
+    Returns
+    -------
+    str
+        Either "delimited" or "fixed_width".
+    """
+    return _field_shape(config["fields"][0])
+
+
 def validate_yaml_config(config, file_path):
     """
     Validate the structure of the YAML configuration.
 
-    The configuration must be a dictionary containing a key 'fields' mapping to a list.
-    Each field in the list must contain 'start', 'end', and 'output_field' keys.
+    The configuration must be a dictionary containing a key 'fields' mapping to a
+    non-empty list. Every field must contain 'output_field', plus either
+    'source_column' (delimited schemas) or both 'start' and 'end' (fixed-width
+    schemas). A single schema must use one shape throughout.
 
     Parameters
     ----------
@@ -71,21 +116,44 @@ def validate_yaml_config(config, file_path):
         raise ValueError(f"YAML file {file_path} is missing the required key 'fields'.")
     if not isinstance(config["fields"], list):
         raise ValueError(f"YAML file {file_path} key 'fields' should be a list.")
+    if not config["fields"]:
+        raise ValueError(f"YAML file {file_path} key 'fields' must not be empty.")
 
+    shapes = set()
     for index, field in enumerate(config["fields"]):
         if not isinstance(field, dict):
             raise ValueError(f"YAML file {file_path}, field at index {index} is not a dictionary.")
-        for key in ["start", "end", "output_field"]:
-            if key not in field:
-                raise ValueError(f"YAML file {file_path}, field at index {index} is missing required key '{key}'.")
-        if not isinstance(field["start"], int):
-            raise ValueError(f"YAML file {file_path}, field at index {index} key 'start' must be an integer.")
-        if not isinstance(field["end"], int):
-            raise ValueError(f"YAML file {file_path}, field at index {index} key 'end' must be an integer.")
+
+        shape = _field_shape(field)
+        if shape is None:
+            raise ValueError(
+                f"YAML file {file_path}, field at index {index} must define either "
+                f"'{DELIMITED_FIELD_KEY}' (delimited) or both 'start' and 'end' (fixed width)."
+            )
+        shapes.add(shape)
+
+        if "output_field" not in field:
+            raise ValueError(f"YAML file {file_path}, field at index {index} is missing required key 'output_field'.")
         if not isinstance(field["output_field"], str):
             raise ValueError(f"YAML file {file_path}, field at index {index} key 'output_field' must be a string.")
+
+        if shape == "fixed_width":
+            for key in FIXED_WIDTH_FIELD_KEYS:
+                if not isinstance(field[key], int):
+                    raise ValueError(f"YAML file {file_path}, field at index {index} key '{key}' must be an integer.")
+        elif not isinstance(field[DELIMITED_FIELD_KEY], str):
+            raise ValueError(
+                f"YAML file {file_path}, field at index {index} key '{DELIMITED_FIELD_KEY}' must be a string."
+            )
+
         if "keep" in field and not isinstance(field["keep"], bool):
             raise ValueError(f"YAML file {file_path}, field at index {index} key 'keep' must be a boolean.")
+
+    if len(shapes) > 1:
+        raise ValueError(
+            f"YAML file {file_path} mixes fixed-width fields ('start'/'end') and delimited fields "
+            f"('{DELIMITED_FIELD_KEY}'); a schema must use one shape throughout."
+        )
 
 
 def process_fixed_width_file(input_file, schema_config, skip_header=False, filter_columns=False):

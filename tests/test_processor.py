@@ -9,6 +9,7 @@ from tea_data_file_conversion.processor import (
     load_yaml_config,
     process_file,
     process_fixed_width_file,
+    schema_shape,
     validate_yaml_config,
 )
 
@@ -285,3 +286,41 @@ def test_telpas_2026_default_schema_is_valid():
         "Agency Use: TELPAS Composite Rating",
     }
     assert kept == expected_kept
+
+
+def test_validate_yaml_config_accepts_delimited_shape():
+    """A delimited schema uses source_column instead of start/end."""
+    config = {"fields": [{"source_column": "MIGSTA", "output_field": "Migrant Code", "keep": False}]}
+    validate_yaml_config(config, "test.yaml")  # Should not raise.
+
+
+def test_validate_yaml_config_rejects_mixed_shapes():
+    """A schema must use one field shape throughout, not both."""
+    config = {
+        "fields": [
+            {"start": 1, "end": 4, "output_field": "Year"},
+            {"source_column": "MIGSTA", "output_field": "Migrant Code"},
+        ]
+    }
+    with pytest.raises(ValueError, match="one shape throughout"):
+        validate_yaml_config(config, "test.yaml")
+
+
+def test_validate_yaml_config_delimited_invalid_cases():
+    cases = [
+        ({"fields": [{"source_column": 1, "output_field": "field1"}]}, "source_column not str"),
+        ({"fields": [{"source_column": "A"}]}, "missing output_field"),
+        ({"fields": [{"source_column": "A", "output_field": 1}]}, "output_field not str"),
+        ({"fields": [{"source_column": "A", "output_field": "f", "keep": "true"}]}, "keep not bool"),
+        ({"fields": []}, "empty fields list"),
+    ]
+    for config, _ in cases:
+        with pytest.raises(ValueError):
+            validate_yaml_config(config, "test.yaml")
+
+
+def test_schema_shape_reports_the_declared_shape():
+    fixed = {"fields": [{"start": 1, "end": 4, "output_field": "Year"}]}
+    delimited = {"fields": [{"source_column": "YEAR", "output_field": "Year"}]}
+    assert schema_shape(fixed) == "fixed_width"
+    assert schema_shape(delimited) == "delimited"
