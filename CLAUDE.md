@@ -46,9 +46,10 @@ uv run pytest --cov=tea_data_file_conversion
 ### Code Quality
 
 ```bash
-# Run linting and formatting
-uv run ruff check --fix --line-length=120
-uv run ruff format --line-length=120
+# Run linting and formatting (scoped to source and tests — running unscoped
+# from the repo root rewrites code fences inside docs/superpowers/plans/*.md)
+uv run ruff check --fix --line-length=120 src tests
+uv run ruff format --line-length=120 src tests
 
 # Run type checking
 uv run mypy
@@ -91,11 +92,26 @@ The system determines test type and year from the header:
 **Currently implemented test types:** `processor.process_file` selects:
 
 - `telpas` when "TELPAS" appears in the input filename (case-insensitive)
-- `consolidated_accountability` when "ACCOUNTABILITY" appears in the input filename (case-insensitive); schemas live under `default_schema/consolidated_accountability/`
+- `consolidated_accountability` when "ACCOUNTABILITY" appears in the input filename (case-insensitive); schemas live under `default_schema/consolidated_accountability/`. Covers both the 2024-2025 fixed-width file (`consolidated_accountability_2025.yaml`) and the 2025-2026 delimited `.csv` file (`consolidated_accountability_2026.yaml`)
 - `staar` when the header month is < 10
 - `staar_eoc` otherwise
 
 Filename-based detection runs before month-based detection, so files whose headers would otherwise collide (TELPAS spring months overlap STAAR; accountability files use the year `2025` as their header which parses as month 20) still route correctly. The `crs/` and `staar_alt/` folders under `default_schema/` ship schemas but have no detection branch — adding support requires editing `processor.py:201`.
+
+**File format detection:** the input file's extension selects the parsing path.
+A `.csv` input is read as delimited (`processor.process_delimited_file`); anything
+else is read as fixed-width (`processor.process_fixed_width_file`). For delimited
+files the school year comes from the `YEAR` column of the first data row rather
+than from a header prefix, and the filename must identify the test type. The
+schema's field shape must match the input's format — `process_file` raises if a
+`.csv` is paired with a `start`/`end` schema or vice versa.
+
+Columns that the schema and the delimited file disagree about are reported on
+stderr and processing continues: file columns absent from the schema are emitted
+under their original TEA code, and schema columns absent from the file are
+skipped. TEA's format documents drift from the files they describe — the
+2025-2026 document specifies `P_PARENTAL_DENIAL` where the file has
+`P_PARENT_DENIAL`.
 
 ## Known Gotchas
 
@@ -105,13 +121,29 @@ Filename-based detection runs before month-based detection, so files whose heade
 
 ## Schema Structure
 
-YAML schemas must contain a `fields` array with objects having:
+YAML schemas must contain a `fields` array. A schema is either fixed-width or
+delimited and cannot mix the two shapes.
+
+Fixed-width fields:
 
 - `start`: 1-based starting position
 - `end`: Ending position
 - `output_field`: Column name in output CSV
 - `keep`: (optional) Boolean to filter columns
 - `mapped_field_name`: (optional) Alternative field name for filtering
+
+Delimited fields:
+
+- `source_column`: Column name as it appears in the input file's header
+- `output_field`: Column name in output CSV
+- `keep`: (optional) Boolean to filter columns
+- `mapped_field_name`: (optional) Alternative field name for filtering
+
+Consolidated accountability schemas name their output fields
+`<administration> - <subject> - <field description>`, for example
+`2026 Spring EOC - Algebra I - Scale Score`. See
+`docs/superpowers/specs/2026-08-07-caf-csv-conversion-design.md` for the
+naming rules.
 
 ## Configuration Notes
 
