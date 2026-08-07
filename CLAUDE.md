@@ -18,7 +18,7 @@ The codebase follows a simple, focused architecture:
 ### Key Components
 
 1. **Schema-Based Processing**: The system automatically detects the test type and year — from the first 4 characters of the input for fixed-width files, or from the filename and a `YEAR` column for delimited files — and selects the appropriate YAML schema
-2. **Dynamic Field Mapping**: YAML schemas define field boundaries, output names, and filtering rules for fixed-width files
+2. **Dynamic Field Mapping**: YAML schemas define field boundaries (fixed-width) or source columns (delimited), output names, and filtering rules
 3. **Template Export**: Built-in capability to export default schema templates for customization
 
 ## Development Commands

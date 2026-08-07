@@ -1,9 +1,10 @@
 # file: src/tea_data_file_conversion/cli.py
 
-r"""Command-line interface for fixed\-width file processing.
+r"""Command-line interface for fixed\-width and delimited file processing.
 
-This module provides an entry point to either process a fixed\-width file
-into CSV format using a dynamic YAML schema or export default YAML templates.
+This module provides an entry point to either process a fixed\-width or
+delimited (CSV) file into CSV format using a dynamic YAML schema, or export
+default YAML templates.
 """
 
 import argparse
@@ -15,15 +16,16 @@ def main():
     r"""Parse command\-line arguments and execute the corresponding action.
 
     Options:
-      \- Process a fixed\-width file to CSV.
+      \- Process a fixed\-width or delimited (CSV) file to CSV.
       \- Export YAML template files if the --export_templates flag is set.
     """
     # Set up the argument parser.
     parser = argparse.ArgumentParser(
-        description=r"Process a fixed\-width file and output a CSV based on dynamic YAML schema."
+        description=r"Process a fixed\-width or delimited (CSV) file and output a CSV based on dynamic YAML schema."
     )
-    # Input file (required).
-    parser.add_argument("input_file", help=r"Path to the input fixed\-width file.")
+    # Input file (required). Format is inferred from the extension: .csv is
+    # delimited, anything else is fixed-width.
+    parser.add_argument("input_file", help=r"Path to the input fixed\-width or delimited (.csv) file.")
     # Optional output file.
     parser.add_argument(
         "--output_file",
