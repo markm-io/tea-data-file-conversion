@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Python package called `tea-data-file-conversion` that transforms fixed-width text files into CSVs using dynamic YAML schema configurations. The package is specifically designed for processing Texas Education Agency (TEA) data files with different test formats (STAAR, STAAR EOC, STAAR Alt, CRS).
+This is a Python package called `tea-data-file-conversion` that transforms fixed-width or delimited (CSV) text files into CSVs using dynamic YAML schema configurations. The package is specifically designed for processing Texas Education Agency (TEA) data files with different test formats (STAAR, STAAR EOC, STAAR Alt, CRS).
 
 ## Architecture
 
@@ -17,7 +17,7 @@ The codebase follows a simple, focused architecture:
 
 ### Key Components
 
-1. **Schema-Based Processing**: The system automatically detects the test type and year from the first 4 characters of input files and selects the appropriate YAML schema
+1. **Schema-Based Processing**: The system automatically detects the test type and year — from the first 4 characters of the input for fixed-width files, or from the filename and a `YEAR` column for delimited files — and selects the appropriate YAML schema
 2. **Dynamic Field Mapping**: YAML schemas define field boundaries, output names, and filtering rules for fixed-width files
 3. **Template Export**: Built-in capability to export default schema templates for customization
 
@@ -96,7 +96,7 @@ The system determines test type and year from the header:
 - `staar` when the header month is < 10
 - `staar_eoc` otherwise
 
-Filename-based detection runs before month-based detection, so files whose headers would otherwise collide (TELPAS spring months overlap STAAR; accountability files use the year `2025` as their header which parses as month 20) still route correctly. The `crs/` and `staar_alt/` folders under `default_schema/` ship schemas but have no detection branch — adding support requires editing `processor.py:201`.
+Filename-based detection runs before month-based detection, so files whose headers would otherwise collide (TELPAS spring months overlap STAAR; accountability files use the year `2025` as their header which parses as month 20) still route correctly. The `crs/` and `staar_alt/` folders under `default_schema/` ship schemas but have no detection branch — adding support requires a new branch in `_test_name_from_filename` (called from `_identify_fixed_width_file`, which also handles the STAAR/STAAR EOC month-based fallback).
 
 **File format detection:** the input file's extension selects the parsing path.
 A `.csv` input is read as delimited (`processor.process_delimited_file`); anything
