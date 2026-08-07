@@ -241,6 +241,9 @@ def test_consolidated_accountability_2025_output_fields_are_unique():
     assert by_position[(2027, 2028)] == "2025 TELPAS - Reading Tested Grade"
     # Rule 4: the administration level is dropped when the description carries season and year.
     assert by_position[(1929, 1929)] == "Algebra I Summer 2022 Score Code"
+    # The trailing end-of-record marker: the PDF titles it "Period" with the value ".",
+    # which is unusable as a column name, so both years emit the literal "EOF".
+    assert by_position[(2206, 2206)] == "EOF"
 
 
 def test_process_fixed_width_file_preserves_strings(tmp_path):

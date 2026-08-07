@@ -4366,6 +4366,6 @@ fields:
     mapped_field_name: .nan
   - start: 2206
     end: 2206
-    output_field: EL Performance Measure Plan - Period
+    output_field: EOF
     keep: false
     mapped_field_name: .nan
